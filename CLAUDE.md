@@ -11,7 +11,8 @@ work alone, and only stop to ask the owner when something is truly blocked (expi
 - GitHub repo (public): `aidailydropchannel-coder/ai-daily-drop-videos` - engine, music, videos, state, stock robot
 - Stock robot: GitHub Action `fetch-stock` (Pixabay, secret `PIXABAY_API_KEY`). Never write any key into a file.
 
-## Routine (runs Tue-Sat at 11:36 PKT, one Short per run, in this order)
+## Routine (runs Mon-Fri nights at 23:34 PKT; each run makes the Short for the NEXT day, Tue-Sat)
+The owner uses Claude in the daytime, so runs happen only at night. The "posting day" is tomorrow's date (PKT).
 
 ### 0. Setup (about 2 min)
 1. If the repo is not in this session: `add_repo` owner `aidailydropchannel-coder`, repo `ai-daily-drop-videos`, access `push`; clone it to `/home/claude/ai-daily-drop-videos`.
@@ -30,7 +31,7 @@ work alone, and only stop to ask the owner when something is truly blocked (expi
    Keep learnings short and dated. Only call something a pattern when it holds across 3+ videos.
 
 ### 2. Pick today's story
-- Today's pillar comes from the weekly plan in `channel/strategy.md` (adjust if learnings say another pillar wins).
+- The pillar for the posting day (tomorrow) comes from the weekly plan in `channel/strategy.md` (adjust if learnings say another pillar wins).
 - Search the web (extended mode when needed) for AI tool launches / AI news from the last 72 hours. Prefer things a normal
   person can use or will care about (free tools, ChatGPT/Gemini/Claude features, phones, big money/big shocks).
 - Verify every fact you will say against the primary source (company blog/announcement) plus one other outlet.
@@ -70,15 +71,15 @@ Fix any word printed in "spelled-out words" warning.
 2. Metricool `createScheduledPost` blogId 7983937, media = the Cloudinary secure_url, providers youtube,
    youtubeData {title, type "short", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
    isAiGeneratedContent false}, publicationDate in Asia/Karachi at the slot from `channel/strategy.md`
-   (odd video number = Slot A 16:00 PKT today, even = Slot B 04:00 PKT tomorrow, until learnings pick a winner).
+   (posting day = tomorrow: odd video number = Slot A 16:00 PKT, even = Slot B 04:00 PKT, until learnings pick a winner).
    If the slot has already passed, use the next free slot. Record the slot in state + performance.csv.
 3. Update `state.json` (video entry with pillar, hook_style, voice, music, slot, metricool post id, status) and advance
    both rotation indexes. Commit + push.
 
 ### 7. Report
-- Daily: one short message to the owner: today's video title + when it goes live, yesterday's numbers (views, subs),
+- Each run: one short message to the owner: the new video's title + when it goes live, yesterday's numbers (views, subs),
   and one thing you learned or changed.
-- Saturdays: also the weekly report - totals vs last week, best and worst video and why, the plan for next week.
+- Friday-night run: also the weekly report - totals vs last week, best and worst video and why, the plan for next week.
 - Only ask the owner for help when blocked (expired connector, Metricool post limit, YouTube warning/strike, money).
 
 ## Hard rules

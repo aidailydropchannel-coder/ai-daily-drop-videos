@@ -36,9 +36,10 @@ From 1 Feb 2027 new applicants need 8,000 watch hours (365 days) or 20M Shorts v
 - **5 Shorts per week, Tuesday to Saturday** (about 21/month; the run skips a day if the month's 20 are used).
   Big 2026 studies agree Thursday-Saturday are the strongest days for Shorts; Metricool's own study found more uploads
   do not automatically mean faster growth, so 5 strong videos beat 7 rushed ones.
-- Two time slots under test (Asia/Karachi):
+- Production runs Mon-Fri at 23:34 PKT (night only - the owner uses Claude in the day). Each run makes tomorrow's Short.
+- Two time slots under test on the posting day (Asia/Karachi):
+  - **Slot B 04:00 PKT** (= 6 PM New York / 3 PM Los Angeles, the US evening window most studies favour for Shorts)
   - **Slot A 16:00 PKT** (Metricool's YouTube activity peak; = Europe afternoon, Asia evening, US early morning)
-  - **Slot B 04:00 PKT next day** (= 6 PM New York / 3 PM Los Angeles, the US evening window most studies favour for Shorts)
   - Alternate A/B by video number (odd = A, even = B) for the first 4 weeks, then use the winner from performance.csv.
 
 | Day | Pillar | Example |
@@ -47,7 +48,7 @@ From 1 Feb 2027 new applicants need 8,000 watch hours (365 days) or 20M Shorts v
 | Wed | Free AI that replaces a paid app | "Stop paying for Canva: try this" |
 | Thu | Biggest AI news of the week, explained simply | "OpenAI just raised $11B" |
 | Fri | 3 AI tools you didn't know | quick-fire list, 3 tools in 30 s |
-| Sat | AI tip / how-to (Saturday run also writes the weekly report) | "Make ChatGPT write like you" |
+| Sat | AI tip / how-to (made by the Friday-night run, which also writes the weekly report) | "Make ChatGPT write like you" |
 
 ## Free tools only (current stack)
 Claude (scripts, research, editing, analysis) - Kokoro voice (free, local) - Pixabay stock (free) - GitHub (free, robot +

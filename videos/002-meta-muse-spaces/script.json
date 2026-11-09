@@ -1,0 +1,67 @@
+{
+ "id": "002-meta-muse-spaces",
+ "voice": "bf_emma",
+ "speed": 1.08,
+ "music": "laniakea-the-grey-room-density-time",
+ "title": "Meta's AI Now Builds You Your Own Mini App 📱",
+ "description": "Meta just launched Spaces in its Muse app. Describe an idea in chat and Muse builds a custom space for you, like a gift tracker, a wedding planner or a daily word game. Connect your apps and it keeps itself updated with things like new concert dates or price changes.\n\nIt is live now wherever Muse is available. What would you build first? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Meta, \"Design the Muse App, Just for You\" (November 6, 2026)\n\n#AItools #AInews #Shorts #Meta #MetaAI",
+ "tags": ["Meta", "Meta AI", "Muse", "Muse Spaces", "Meta Muse", "AI tools", "AI news", "AI agent", "new AI tools", "tech news"],
+ "sources": [
+  "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+  "https://techcrunch.com/?p=3185929"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NEW FROM META",
+   "headline": ["Meta's AI", "builds your", "own app"],
+   "accent_line": 2,
+   "say": "Meta's AI now builds you your own mini app. From one sentence.",
+   "footage": ["woman using smartphone", "hand scrolling smartphone"]
+  },
+  {
+   "type": "flow",
+   "kicker": "MUSE SPACES",
+   "left": "Describe your idea",
+   "right": "Your own space",
+   "icon_left": "chat",
+   "icon_right": "spark",
+   "say": "It's called Spaces, inside Meta's Muse app. Describe your idea in chat, and Muse builds it for you.",
+   "footage": ["typing on phone", "person texting night", "abstract technology lines"]
+  },
+  {
+   "type": "feature",
+   "kicker": "IDEAS",
+   "icon": "bookmark",
+   "title": "Trackers, planners, games",
+   "subtitle": "Gift tracker. Wedding planner. Word game.",
+   "say": "A holiday gift tracker. A wedding planner. Even a daily word game.",
+   "footage": ["wrapping christmas gifts", "wedding table flowers", "word puzzle letters"]
+  },
+  {
+   "type": "feature",
+   "kicker": "ALWAYS UP TO DATE",
+   "icon": "gauge",
+   "title": "It updates itself",
+   "subtitle": "New concert dates. Price changes.",
+   "say": "Connect your apps, and it updates itself, like new concert dates or price changes.",
+   "footage": ["concert crowd lights", "online shopping laptop"]
+  },
+  {
+   "type": "feature",
+   "kicker": "YOUR WAY",
+   "icon": "chat",
+   "title": "Change it by chatting",
+   "subtitle": "New look. Missing pieces. Just ask.",
+   "say": "Don't like it? Just ask Muse to change the look, or add what's missing.",
+   "footage": ["woman smiling phone", "colorful design laptop"]
+  },
+  {
+   "type": "cta",
+   "kicker": "LIVE NOW",
+   "headline": ["What would", "you build?"],
+   "say": "It's live now wherever Muse is available. What would you build first? Follow AI Daily Drop for daily AI news.",
+   "footage": ["friends looking at phone", "city night lights"]
+  }
+ ]
+}

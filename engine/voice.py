@@ -10,15 +10,15 @@ from pathlib import Path
 import numpy as np
 import onnxruntime as ort
 
-HERE = Path(__file__).parent
+HERE = Path(__file__).parent / "tts_data"   # filled by engine/setup.sh
 SR = 24000
-VOCAB = json.load(open(HERE / "kokoro-src/src/kokoro_onnx/config.json"))["vocab"]
+VOCAB = json.load(open(HERE / "config.json"))["vocab"]
 
 LEXICONS = {}
 for lang in ("us", "gb"):
     LEXICONS[lang] = {}
     for name in (f"{lang}_gold.json", f"{lang}_silver.json"):
-        for k, v in json.load(open(HERE / "misaki-src/misaki/data" / name)).items():
+        for k, v in json.load(open(HERE / name)).items():
             LEXICONS[lang].setdefault(k, v)
 _LEX = LEXICONS["us"]
 

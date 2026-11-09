@@ -1,7 +1,46 @@
 {
-  "voice_rotation": ["am_michael", "bf_emma", "bm_george"],
-  "next_voice_index": 1,
-  "music_rotation": ["pulsar-the-grey-room-density-time", "laniakea-the-grey-room-density-time", "singularity-the-grey-room-density-time", "fascination-gregory-allison", "snowfall-asher-fulero", "resolution-or-reflection-the-grey-room-clark-sims", "anno-domini-beats-all-for-you"],
-  "next_music_index": 1,
-  "videos": [{"id": "001-chatgpt-images-2-6", "voice": "am_michael", "music": "pulsar-the-grey-room-density-time", "status": "awaiting_review"}]
+ "voice_rotation": [
+  "am_michael",
+  "bf_emma",
+  "bm_george"
+ ],
+ "next_voice_index": 1,
+ "music_rotation": [
+  "pulsar-the-grey-room-density-time",
+  "laniakea-the-grey-room-density-time",
+  "singularity-the-grey-room-density-time",
+  "fascination-gregory-allison",
+  "snowfall-asher-fulero",
+  "resolution-or-reflection-the-grey-room-clark-sims",
+  "anno-domini-beats-all-for-you"
+ ],
+ "next_music_index": 1,
+ "videos": [
+  {
+   "id": "001v2",
+   "story": "OpenAI Images 2.6 - ChatGPT makes GIFs (2026-11-04)",
+   "pillar": "new-ai-tool",
+   "hook_style": "you-can-now",
+   "voice": "am_michael",
+   "music": "pulsar-the-grey-room-density-time",
+   "length_s": 36.6,
+   "slot_pkt": "2026-11-09T21:15",
+   "metricool_post_id": 422034666,
+   "metricool_uuid": "5450756129063585554",
+   "cloudinary": "ai-daily-drop/001-chatgpt-images-2-6",
+   "status": "scheduled"
+  }
+ ],
+ "posts_this_month": {
+  "2026-11": 1
+ },
+ "hook_styles": [
+  "shock-claim",
+  "question",
+  "you-can-now",
+  "number",
+  "vs",
+  "warning"
+ ],
+ "next_video_number": 2
 }

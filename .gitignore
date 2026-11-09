@@ -1,0 +1,5 @@
+engine/tts_data/
+__pycache__/
+*.tmp.mp4
+build/
+stock_out/

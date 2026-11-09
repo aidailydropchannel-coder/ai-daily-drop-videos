@@ -64,7 +64,7 @@
    "type": "feature",
    "kicker": "IDEAS",
    "icon": "bookmark",
-   "title": "Trackers, planners, games",
+   "title": "Plan. Track. Play.",
    "subtitle": "Gift tracker. Wedding planner. Word game.",
    "say": "A holiday gift tracker. A wedding planner. Even a daily word game.",
    "footage": [
@@ -74,7 +74,8 @@
    ],
    "clips": [
     "s2_0.mp4@1",
-    "s2_1.mp4@1"
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
    ]
   },
   {

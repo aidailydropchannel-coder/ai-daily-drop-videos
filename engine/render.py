@@ -216,6 +216,64 @@ def pulse_dots(canvas, t):
             pos -= L
 
 
+# ---------- stock footage ----------
+ZW, ZH = 1296, 2304            # decode 20% larger than frame, then slow push-in crop
+
+
+class Footage:
+    """Streams frames of one clip (centre-cropped to 9:16) with a slow push-in. Frames must be read in order."""
+    def __init__(self, path, dur, start=1.0, zoom=(1.0, 1.09), drift=(0, 0)):
+        self.dur, self.zoom, self.drift = dur, zoom, drift
+        self.cmd = ["ffmpeg", "-loglevel", "error", "-ss", f"{start:.2f}", "-i", str(path), "-t", f"{dur + 0.3:.2f}",
+                    "-vf", f"fps={FPS},scale={ZW}:{ZH}:force_original_aspect_ratio=increase:flags=lanczos,crop={ZW}:{ZH}",
+                    "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+        self.proc, self.k, self.last = None, -1, None
+
+    def _frame(self, k):
+        if self.proc is None or k < self.k:
+            if self.proc: self.proc.kill()
+            self.proc = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL); self.k = -1
+        fs = ZW * ZH * 3
+        while self.k < k:
+            buf = self.proc.stdout.read(fs)
+            if len(buf) < fs: break           # clip ended: hold last frame
+            self.last = buf; self.k += 1
+        if self.last is None: raise SystemExit("no frames from " + self.cmd[5])
+        return Image.frombytes("RGB", (ZW, ZH), self.last)
+
+    def get(self, t):
+        im = self._frame(int(t * FPS))
+        p = clamp(t / self.dur)
+        z = self.zoom[0] + (self.zoom[1] - self.zoom[0]) * p
+        cw, ch = ZW / z, ZH / z
+        cx = ZW / 2 + self.drift[0] * p; cy = ZH / 2 + self.drift[1] * p
+        return im.resize((W, H), Image.BILINEAR, box=(cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2))
+
+
+def grade_layer(strength=1.0):
+    """Navy tint + darker top/bottom so brand bar and captions always read."""
+    y = np.linspace(0, 1, H)[:, None]
+    a = 0.16 + 0.45 * np.clip((0.16 - y) / 0.16, 0, 1) + 0.50 * np.clip((y - 0.58) / 0.30, 0, 1)
+    a = np.clip(a * strength, 0, 0.92)
+    xx = np.linspace(-1, 1, W)[None, :]
+    a = np.clip(a + 0.18 * (xx ** 2), 0, 0.95)
+    rgba = np.zeros((H, W, 4), np.uint8); rgba[..., :3] = BG; rgba[..., 3] = (a * 255).astype(np.uint8)
+    return Image.fromarray(rgba, "RGBA")
+
+
+def whoosh(sr=48000, dur=0.42):
+    n = int(sr * dur); t = np.arange(n) / sr
+    noise = np.random.default_rng(7).standard_normal(n)
+    # band-pass sweep via moving average differences
+    out = np.zeros(n); lp = 0.0; lp2 = 0.0
+    for i in range(n):
+        f = 0.02 + 0.25 * (i / n)
+        lp += f * (noise[i] - lp); lp2 += f * 0.5 * (lp - lp2); out[i] = lp - lp2
+    env = np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 2
+    out = out * env; out /= np.abs(out).max() + 1e-9
+    return (out * 0.5).astype(np.float32)
+
+
 # ---------- captions ----------
 def word_timings(text, dur):
     words = re.findall(r"[^\s]+", text)
@@ -266,27 +324,38 @@ def draw_caption(canvas, chunks, t):
 
 # ---------- scenes ----------
 class Scene:
-    def __init__(self, spec, dur, idx, total_scenes):
+    def __init__(self, spec, dur, idx, total_scenes, stock_dir=None):
         self.s, self.d, self.idx, self.n = spec, dur, idx, total_scenes
+        self.feeds, self.cuts = [], []
+        clips = spec.get("clips") or []
+        if clips and stock_dir:
+            seg = dur / len(clips); t0 = 0.0
+            for k, c in enumerate(clips):
+                drift = ((-1) ** (idx + k) * 40, (-1) ** k * 30)
+                name, _, st = c.partition("@")
+                self.feeds.append(Footage(Path(stock_dir) / name, seg + 0.05, start=float(st or 1.0), drift=drift))
+                self.cuts.append(t0); t0 += seg
         self.kicker = pill(spec.get("kicker", ""), F_BOLD(40)) if spec.get("kicker") else None
         getattr(self, "prep_" + spec["type"])()
 
     # --- hook / cta: big stacked headline ---
     def prep_hook(self):
-        self.lines = []
+        self.lines, self.line_h = [], []
         for i, line in enumerate(self.s["headline"]):
             acc = i == self.s.get("accent_line", -1)
+            self.line_h.append(int((168 if acc else 138) * 1.08))
             spr = text_sprite(line, F_BLACK(168 if acc else 138), fill=ACC_LIGHT if acc else WHITE)
             if acc: spr = glow(spr, radius=26, strength=0.75)
+            else: spr = glow(spr, color=(0, 0, 0), radius=16, strength=1.3)
             self.lines.append(spr)
 
     def draw_hook(self, c, t):
         y = 560 if self.s["type"] == "hook" else 600
         for i, spr in enumerate(self.lines):
             p = ease_out(prog(t, 0.08 + i * 0.14, 0.45))
-            h = spr.height if i != self.s.get("accent_line", -1) else spr.height - 60
+            h = self.line_h[i]
             place(c, spr, W / 2, y + h / 2 + (1 - p) * 80, alpha=p, scale=0.92 + 0.08 * ease_back(prog(t, 0.08 + i * 0.14, 0.5)))
-            y += h + 18
+            y += h + 6
 
     prep_cta = prep_hook
 
@@ -337,12 +406,18 @@ class Scene:
         self.ring = Image.new("RGBA", (460, 460), (0, 0, 0, 0))
         ImageDraw.Draw(self.ring).ellipse((10, 10, 450, 450), fill=(12, 30, 60, 230), outline=ACC + (170,), width=5)
         self.ring = glow(self.ring, radius=16, strength=0.9)
-        self.title = text_sprite(self.s["title"], F_BLACK(104))
-        self.sub = [text_sprite(l, F_MED(50), fill=MUTED) for l in wrap(self.s["subtitle"], F_MED(50), 860)]
+        self.title = glow(text_sprite(self.s["title"], F_BLACK(104)), color=(0, 0, 0), radius=14, strength=1.2)
+        self.sub = [glow(text_sprite(l, F_SEMI(50), fill=(225, 233, 243)), color=(0, 0, 0), radius=10, strength=1.3) for l in wrap(self.s["subtitle"], F_SEMI(50), 860)]
 
     def draw_feature(self, c, t):
         p = ease_back(prog(t, 0.05, 0.55)); pt = ease_out(prog(t, 0.35, 0.45)); ps = ease_out(prog(t, 0.6, 0.45))
         float_y = 8 * math.sin(t * 2.4)
+        if self.feeds:
+            place(c, self.ic, W / 2, 760 + float_y, alpha=clamp(p), scale=(0.42 + 0.18 * p))
+            place(c, self.title, W / 2, 940 + (1 - pt) * 50, alpha=pt)
+            for i, s_ in enumerate(self.sub):
+                place(c, s_, W / 2, 1035 + i * 62 + (1 - ps) * 40, alpha=ps)
+            return
         place(c, self.ring, W / 2, 640 + float_y, alpha=clamp(p), scale=0.6 + 0.4 * p)
         place(c, self.ic, W / 2, 640 + float_y, alpha=clamp(p), scale=(0.6 + 0.4 * p) * (1 + 0.03 * math.sin(t * 4)))
         place(c, self.title, W / 2, 975 + (1 - pt) * 50, alpha=pt)
@@ -351,7 +426,7 @@ class Scene:
 
     # --- stat: count-up number ---
     def prep_stat(self):
-        self.label = text_sprite(self.s["label"], F_BOLD(64))
+        self.label = glow(text_sprite(self.s["label"], F_BOLD(64)), color=(0, 0, 0), radius=12, strength=1.2)
         self.note = text_sprite(self.s.get("note", ""), F_MED(40), fill=MUTED) if self.s.get("note") else None
         self.cache = {}
 
@@ -372,6 +447,10 @@ class Scene:
         place(c, self.label, W / 2, 1010 + (1 - pl) * 40, alpha=pl)
         if self.note: place(c, self.note, W / 2, 1090 + (1 - pl) * 40, alpha=pl)
 
+    def background(self, t):
+        k = max(i for i, c0 in enumerate(self.cuts) if t >= c0 - 1e-6)
+        return self.feeds[k].get(t - self.cuts[k]), t - self.cuts[k], k
+
     # --- frame ---
     def draw(self, c, t):
         if self.kicker:
@@ -385,7 +464,7 @@ def wav_dur(p):
     with wave.open(str(p)) as w: return w.getnframes() / w.getframerate()
 
 
-def render(script_path, build, music_dir, out, preview_frames=None):
+def render(script_path, build, music_dir, out, preview_frames=None, stock_dir=None):
     spec = json.load(open(script_path)); build = Path(build)
     scenes = spec["scenes"]
     durs = [wav_dur(build / f"vo_{i}.wav") + PAD_AFTER for i in range(len(scenes))]
@@ -395,25 +474,36 @@ def render(script_path, build, music_dir, out, preview_frames=None):
     mark = logo_mark(92); brand = text_sprite("AI DAILY DROP", F_XBOLD(40))
     starts = np.cumsum([0] + durs[:-1])
 
+    grade = grade_layer()
+
     def frame(i, sc, t_local, chunks):
         tg = starts[i] + t_local
-        c = base.copy()
-        pulse_dots(c, tg)
+        flash = 0.0
+        if sc.feeds:
+            bgim, tc, k = sc.background(t_local)
+            c = bgim.convert("RGBA"); c.alpha_composite(grade)
+            since = tc if (k > 0 or i > 0) else 99
+            flash = max(0.0, 1 - since / 0.12) * 0.35
+        else:
+            c = base.copy()
+            pulse_dots(c, tg)
         place(c, mark, 110 + 46, 150)
         place(c, brand, 110 + 92 + 24 + brand.width / 2, 150)
         # global progress line
         ImageDraw.Draw(c).rounded_rectangle((60, 66, 60 + (W - 120) * tg / total, 74), radius=4, fill=ACC + (255,))
         sc.draw(c, t_local)
         draw_caption(c, chunks, t_local)
-        fade = clamp(t_local / 0.12)
         img = c.convert("RGB")
-        if fade < 1:
-            img = Image.blend(Image.new("RGB", (W, H), BG), img, fade)
+        if sc.feeds:
+            if flash > 0: img = Image.blend(img, Image.new("RGB", (W, H), (235, 250, 255)), flash)
+        else:
+            fade = clamp(t_local / 0.12)
+            if fade < 1: img = Image.blend(Image.new("RGB", (W, H), BG), img, fade)
         return img
 
     objs, chunk_list = [], []
     for i, s in enumerate(scenes):
-        objs.append(Scene(s, durs[i], i, len(scenes)))
+        objs.append(Scene(s, durs[i], i, len(scenes), stock_dir))
         chunk_list.append(caption_chunks(word_timings(s["say"], durs[i] - PAD_AFTER)))
 
     if preview_frames:
@@ -447,15 +537,30 @@ def render(script_path, build, music_dir, out, preview_frames=None):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(build / "list.txt"),
                     "-c", "copy", str(build / "video.mp4")], check=True)
 
+    cut_times = []
+    for i, sc in enumerate(objs):
+        for k, c0 in enumerate(sc.cuts):
+            if i > 0 or k > 0: cut_times.append(starts[i] + c0)
+    sfx_len = int(48000 * (sum(round(d * FPS) for d in durs) / FPS + 1))
+    sfx = np.zeros(sfx_len, np.float32); w_ = whoosh()
+    for ct in cut_times:
+        a = int((ct - 0.18) * 48000)
+        if a < 0: continue
+        sfx[a:a + len(w_)] += w_[: max(0, min(len(w_), sfx_len - a))] * 0.55
+    with wave.open(str(build / "sfx.wav"), "wb") as wf:
+        wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(48000)
+        wf.writeframes((np.clip(sfx, -1, 1) * 32767).astype(np.int16).tobytes())
+
     music = Path(music_dir) / f"{spec['music']}.mp3"
     vid_len = sum(round(d * FPS) for d in durs) / FPS
-    mix = (f"[1:a]aresample=48000,asplit=2[v1][v2];"
+    mix = (f"[3:a]volume=0.5[sfx];"
+           f"[1:a]aresample=48000,asplit=2[v1][v2];"
            f"[2:a]aresample=48000,atrim=0:{vid_len:.3f},volume=0.13,afade=t=in:d=0.6,afade=t=out:st={vid_len-1.5:.3f}:d=1.5[m];"
            f"[m][v1]sidechaincompress=threshold=0.04:ratio=6:attack=20:release=350[md];"
-           f"[v2][md]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+           f"[v2][md][sfx]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
     tmp_out = Path(out).with_suffix(".tmp.mp4")
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(build / "video.mp4"), "-i", str(build / "voice.wav"),
-                    "-i", str(music), "-filter_complex", mix, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
+                    "-i", str(music), "-i", str(build / "sfx.wav"), "-filter_complex", mix, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(tmp_out)], check=True)
     tmp_out.rename(out)
     print("done", out, f"{vid_len:.1f}s")
@@ -466,4 +571,7 @@ if __name__ == "__main__":
     pf = None
     if "--frames" in args:
         k = args.index("--frames"); pf = [float(x) for x in args[k + 1].split(",")]; args = args[:k] + args[k + 2:]
-    render(*args, preview_frames=pf)
+    sd = None
+    if "--stock" in args:
+        k = args.index("--stock"); sd = args[k + 1]; args = args[:k] + args[k + 2:]
+    render(*args, preview_frames=pf, stock_dir=sd)

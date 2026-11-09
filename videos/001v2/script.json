@@ -1,0 +1,119 @@
+{
+ "id": "001-chatgpt-images-2-6-v2",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "music": "pulsar-the-grey-room-density-time",
+ "title": "ChatGPT Can Now Make GIFs \ud83e\udd2f (Images 2.6)",
+ "description": "OpenAI just released Images 2.6 for ChatGPT. You can now turn a text prompt or a photo into an animated GIF, change its speed, edit single frames, and save reference images so ChatGPT remembers a face or mascot. OpenAI also says images now generate about 50% faster.\n\nRolling out now in ChatGPT and Codex. Would you try it? Tell us in the comments!\n\n\ud83d\udd14 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: OpenAI, \"Introducing Images 2.6\" (November 4, 2026)\n\n#ChatGPT #OpenAI #AItools #AInews #Shorts",
+ "tags": [
+  "ChatGPT",
+  "ChatGPT GIF",
+  "Images 2.6",
+  "OpenAI",
+  "AI tools",
+  "AI news",
+  "AI GIF maker",
+  "ChatGPT update",
+  "new AI tools",
+  "tech news"
+ ],
+ "sources": [
+  "https://openai.com/index/introducing-images-2-6/",
+  "https://thenextweb.com/news/chatgpt-animated-gifs-images-2-6-openai",
+  "https://www.techrepublic.com/article/news-chatgpt-images-2-6-gif-creation/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NEW IN CHATGPT",
+   "headline": [
+    "ChatGPT",
+    "now makes",
+    "GIFs"
+   ],
+   "accent_line": 2,
+   "say": "Stop scrolling. ChatGPT can now make GIFs.",
+   "clips": [
+    "s0a_new.mp4@3",
+    "s1b.mp4@2"
+   ]
+  },
+  {
+   "type": "flow",
+   "kicker": "IMAGES 2.6",
+   "left": "Your prompt or photo",
+   "right": "Animated GIF",
+   "icon_left": "chat",
+   "icon_right": "film",
+   "say": "OpenAI just released Images 2.6. Type a prompt, or upload a photo, and it turns it into an animated GIF.",
+   "clips": [
+    "s1a.mp4@1",
+    "s1c.mp4@0.5",
+    "s5a.mp4@4"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "FULL CONTROL",
+   "icon": "film",
+   "title": "Edit every frame",
+   "subtitle": "Change the speed. Fix single frames.",
+   "say": "Then you can change the speed, and even edit single frames.",
+   "clips": [
+    "s2b_c.mp4@1",
+    "s6b.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "REFERENCE IMAGES",
+   "icon": "bookmark",
+   "title": "It remembers",
+   "subtitle": "Save a face or a mascot and reuse it across chats.",
+   "say": "You can also save reference images, so it remembers a face or a mascot in other chats.",
+   "clips": [
+    "s3a.mp4@1",
+    "s3b_new.mp4@1"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "SPEED",
+   "value": 50,
+   "suffix": "%",
+   "label": "faster images",
+   "note": "according to OpenAI",
+   "say": "And OpenAI says images now generate about fifty percent faster.",
+   "clips": [
+    "s4a.mp4@2",
+    "s4b_new.mp4@6"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "SCALE",
+   "value": 4,
+   "suffix": "B+",
+   "label": "images made every week",
+   "note": "in ChatGPT, says OpenAI",
+   "say": "People already make over four billion images a week.",
+   "clips": [
+    "s6a.mp4@3",
+    "s5b.mp4@2"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "ROLLING OUT NOW",
+   "headline": [
+    "Would you",
+    "try it?"
+   ],
+   "say": "It is rolling out now in ChatGPT. Would you try it? Follow AI Daily Drop for daily AI news.",
+   "clips": [
+    "s0a_new.mp4@14",
+    "s6b.mp4@5"
+   ]
+  }
+ ]
+}

@@ -25,7 +25,7 @@ def download(url, dest):
 
 BLOCK = {"jesus", "christianity", "religion", "cross", "buddha", "buddhism", "meditation", "zen", "god", "church",
          "cartoon", "2d", "animated wallpaper", "nature animation video", "wallpaper engine", "sexy", "bikini",
-         "lingerie", "weapon", "gun", "blood", "war", "flag", "politics"}
+         "lingerie", "green screen", "chroma key", "greenscreen", "chromakey", "transition", "glitch", "mockup", "weapon", "gun", "blood", "war", "flag", "politics"}
 
 
 def relevance(q, tags):

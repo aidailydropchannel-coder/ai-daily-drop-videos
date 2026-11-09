@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 1,
+ "next_voice_index": 2,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 1,
+ "next_music_index": 2,
  "videos": [
   {
    "id": "001v2",
@@ -28,11 +28,27 @@
    "metricool_post_id": 422034666,
    "metricool_uuid": "5450756129063585554",
    "cloudinary": "ai-daily-drop/001-chatgpt-images-2-6",
+   "status": "published",
+   "youtube_id": "nJ5pUpuwb50"
+  },
+  {
+   "id": "002-meta-muse-spaces",
+   "story": "Meta Muse Spaces - AI builds custom trackers/planners/games (2026-11-06)",
+   "pillar": "new-ai-tool",
+   "hook_style": "shock-claim",
+   "voice": "bf_emma",
+   "music": "laniakea-the-grey-room-density-time",
+   "length_s": 28.3,
+   "slot_pkt": "2026-11-10T04:00",
+   "slot": "B",
+   "metricool_post_id": 422247323,
+   "metricool_uuid": "-6991742906356973532",
+   "cloudinary": "ai-daily-drop/002-meta-muse-spaces",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 1
+  "2026-11": 2
  },
  "hook_styles": [
   "shock-claim",
@@ -42,5 +58,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 2
+ "next_video_number": 3
 }

@@ -19,8 +19,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Download stock media from Pexels
+      - name: Download stock media from Pixabay
         env:
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 engine/fetch_stock.py

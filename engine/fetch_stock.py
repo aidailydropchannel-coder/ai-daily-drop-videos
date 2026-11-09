@@ -1,50 +1,57 @@
-"""Runs on GitHub Actions: download Pexels stock clips/photos for a request file.
+"""Runs on GitHub Actions: download Pixabay stock clips/photos for a request file.
 
 Request file: requests/<id>.json
-  {"id": "002-...", "items": [{"name": "s1", "q": "person typing laptop night", "kind": "video"}, ...]}
-Result: GitHub release "stock-<id>" with <name>.mp4 / <name>.jpg and manifest.json (credits).
+  {"id": "002-...", "items": [{"name": "s1", "q": "person typing laptop", "kind": "video"}, ...]}
+Result: GitHub release "stock-<id>" with <name>.mp4 / <name>.jpg and manifest.json (sources).
+Pixabay Content License: free for commercial use, no attribution required.
 """
 import json, os, subprocess, sys, urllib.parse, urllib.request
 from pathlib import Path
 
-KEY = os.environ["PEXELS_API_KEY"]
-UA = {"Authorization": KEY, "User-Agent": "ai-daily-drop-stock/1.0"}
+KEY = os.environ["PIXABAY_API_KEY"]
+UA = {"User-Agent": "ai-daily-drop-stock/1.0"}
 
 
 def get(url):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=60) as r:
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
         return json.load(r)
 
 
 def download(url, dest):
-    req = urllib.request.Request(url, headers={"User-Agent": UA["User-Agent"]})
-    with urllib.request.urlopen(req, timeout=180) as r, open(dest, "wb") as f:
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=300) as r, open(dest, "wb") as f:
         while chunk := r.read(1 << 20):
             f.write(chunk)
 
 
-def pick_video(q, used):
-    for orientation in ("portrait", None):
-        params = {"query": q, "per_page": 15, "size": "medium"}
-        if orientation: params["orientation"] = orientation
-        data = get("https://api.pexels.com/videos/search?" + urllib.parse.urlencode(params))
-        for v in data.get("videos", []):
-            if v["id"] in used or not 4 <= v.get("duration", 0) <= 40: continue
-            files = [f for f in v["video_files"] if f.get("file_type") == "video/mp4" and f.get("height")]
-            portrait = orientation == "portrait"
-            # prefer ~1080-wide portrait or >=1080 tall landscape, avoid giant 4K files
-            files.sort(key=lambda f: (abs((f["width"] if portrait else f["height"]) - 1080), f["width"] * f["height"]))
-            if files:
-                return v, files[0]
-    return None, None
+def pick_video(q, used, min_dur=4, max_dur=60):
+    data = get("https://pixabay.com/api/videos/?" + urllib.parse.urlencode(
+        {"key": KEY, "q": q, "per_page": 30, "safesearch": "true", "order": "popular"}))
+    best = None
+    for h in data.get("hits", []):
+        if h["id"] in used or not min_dur <= h.get("duration", 0) <= max_dur: continue
+        vids = {k: v for k, v in h["videos"].items() if v.get("url") and v.get("width")}
+        if not vids: continue
+        vertical = any(v["height"] > v["width"] for v in vids.values())
+        # want a file that can fill 1080x1920 after a centre crop, without huge 4K downloads when possible
+        def ok(v):
+            return (v["width"] >= 1080 and v["height"] >= 1920) if v["height"] > v["width"] else v["height"] >= 2160
+        cands = sorted(vids.values(), key=lambda v: (not ok(v), v.get("size", 0) or v["width"] * v["height"]))
+        f = cands[0]
+        if not ok(f):
+            f = max(vids.values(), key=lambda v: v["width"] * v["height"])
+        score = (vertical, ok(f), h.get("likes", 0) + h.get("downloads", 0) / 50)
+        if best is None or score > best[0]:
+            best = (score, h, f)
+    return (best[1], best[2]) if best else (None, None)
 
 
 def pick_photo(q, used):
-    data = get("https://api.pexels.com/v1/search?" + urllib.parse.urlencode({"query": q, "per_page": 15, "orientation": "portrait"}))
-    for p in data.get("photos", []):
-        if p["id"] not in used:
-            return p
+    data = get("https://pixabay.com/api/?" + urllib.parse.urlencode(
+        {"key": KEY, "q": q, "image_type": "photo", "orientation": "vertical", "per_page": 30,
+         "safesearch": "true", "min_height": 1920}))
+    for h in data.get("hits", []):
+        if h["id"] not in used:
+            return h
     return None
 
 
@@ -53,38 +60,36 @@ def main():
     for req_path in sorted(Path("requests").glob("*.json")):
         req = json.load(open(req_path))
         tag = f"stock-{req['id']}"
-        exists = subprocess.run(["gh", "release", "view", tag], capture_output=True).returncode == 0
-        if exists:
+        if subprocess.run(["gh", "release", "view", tag], capture_output=True).returncode == 0:
             print("skip", tag); continue
         out = out_root / req["id"]; out.mkdir(exist_ok=True)
         manifest, used = [], set()
         for item in req["items"]:
             try:
                 if item.get("kind", "video") == "video":
-                    v, f = pick_video(item["q"], used)
-                    if not v:
+                    h, f = pick_video(item["q"], used)
+                    if not h:
                         manifest.append({"name": item["name"], "q": item["q"], "error": "no result"}); continue
-                    used.add(v["id"]); dest = out / f"{item['name']}.mp4"
-                    download(f["link"], dest)
+                    used.add(h["id"]); dest = out / f"{item['name']}.mp4"
+                    download(f["url"], dest)
                     manifest.append({"name": item["name"], "q": item["q"], "file": dest.name, "kind": "video",
-                                     "pexels_url": v["url"], "author": v["user"]["name"], "duration": v["duration"],
-                                     "width": f["width"], "height": f["height"]})
+                                     "source": h["pageURL"], "author": h.get("user"), "duration": h["duration"],
+                                     "width": f["width"], "height": f["height"], "tags": h.get("tags")})
                 else:
-                    p = pick_photo(item["q"], used)
-                    if not p:
+                    h = pick_photo(item["q"], used)
+                    if not h:
                         manifest.append({"name": item["name"], "q": item["q"], "error": "no result"}); continue
-                    used.add(p["id"]); dest = out / f"{item['name']}.jpg"
-                    download(p["src"]["large2x"], dest)
+                    used.add(h["id"]); dest = out / f"{item['name']}.jpg"
+                    download(h["largeImageURL"], dest)
                     manifest.append({"name": item["name"], "q": item["q"], "file": dest.name, "kind": "photo",
-                                     "pexels_url": p["url"], "author": p["photographer"]})
+                                     "source": h["pageURL"], "author": h.get("user"), "tags": h.get("tags")})
                 print("ok", item["name"], item["q"])
             except Exception as e:
                 manifest.append({"name": item["name"], "q": item["q"], "error": str(e)})
                 print("fail", item["name"], e, file=sys.stderr)
         (out / "manifest.json").write_text(json.dumps(manifest, indent=1))
-        files = [str(p) for p in out.iterdir()]
-        subprocess.run(["gh", "release", "create", tag, *files, "--title", tag,
-                        "--notes", "Pexels stock media (free to use, see manifest.json for credits)"], check=True)
+        subprocess.run(["gh", "release", "create", tag, *[str(p) for p in out.iterdir()], "--title", tag,
+                        "--notes", "Pixabay stock media (Pixabay Content License). Sources in manifest.json."], check=True)
         print("released", tag)
 
 

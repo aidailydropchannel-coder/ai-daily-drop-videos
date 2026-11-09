@@ -11,7 +11,7 @@ work alone, and only stop to ask the owner when something is truly blocked (expi
 - GitHub repo (public): `aidailydropchannel-coder/ai-daily-drop-videos` - engine, music, videos, state, stock robot
 - Stock robot: GitHub Action `fetch-stock` (Pixabay, secret `PIXABAY_API_KEY`). Never write any key into a file.
 
-## Daily routine (every run, in this order)
+## Routine (runs Tue-Sat at 11:36 PKT, one Short per run, in this order)
 
 ### 0. Setup (about 2 min)
 1. If the repo is not in this session: `add_repo` owner `aidailydropchannel-coder`, repo `ai-daily-drop-videos`, access `push`; clone it to `/home/claude/ai-daily-drop-videos`.
@@ -39,7 +39,9 @@ work alone, and only stop to ask the owner when something is truly blocked (expi
 
 ### 3. Write the script -> `videos/<NNN-slug>/script.json`
 Copy the format of `videos/001v2/script.json`. Rules that make people stay:
-- 30-45 s total, 6-8 scenes. Scene 1 = hook in under 3 s that states the surprising thing (no "hi guys", no intro).
+- 25-35 s total, 5-7 scenes. Scene 1 = hook in under 2 s that states the surprising thing (no "hi guys", no intro).
+  The algorithm judges 'viewed vs swiped away' in the first 1-2 s and then completion %: see channel/strategy.md.
+- Last line should loop back to the opening or ask a question that invites comments.
 - Rotate hook styles (record which in state): `shock-claim`, `question`, `you-can-now`, `number`, `vs`, `warning`.
 - One idea per scene, plain words, short sentences. Include 1-2 concrete numbers when the source has them.
 - End with a question to drive comments + "Follow AI Daily Drop".
@@ -67,15 +69,16 @@ Fix any word printed in "spelled-out words" warning.
    folder `ai-daily-drop`, public_id `<id>`.
 2. Metricool `createScheduledPost` blogId 7983937, media = the Cloudinary secure_url, providers youtube,
    youtubeData {title, type "short", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
-   isAiGeneratedContent false}, publicationDate in Asia/Karachi at today's slot from `channel/strategy.md`.
-   If the slot has already passed, use the next free slot.
+   isAiGeneratedContent false}, publicationDate in Asia/Karachi at the slot from `channel/strategy.md`
+   (odd video number = Slot A 16:00 PKT today, even = Slot B 04:00 PKT tomorrow, until learnings pick a winner).
+   If the slot has already passed, use the next free slot. Record the slot in state + performance.csv.
 3. Update `state.json` (video entry with pillar, hook_style, voice, music, slot, metricool post id, status) and advance
    both rotation indexes. Commit + push.
 
 ### 7. Report
 - Daily: one short message to the owner: today's video title + when it goes live, yesterday's numbers (views, subs),
   and one thing you learned or changed.
-- Sundays: weekly report instead - totals vs last week, best and worst video and why, the plan for next week.
+- Saturdays: also the weekly report - totals vs last week, best and worst video and why, the plan for next week.
 - Only ask the owner for help when blocked (expired connector, Metricool post limit, YouTube warning/strike, money).
 
 ## Hard rules
@@ -83,5 +86,6 @@ Fix any word printed in "spelled-out words" warning.
 - Never invent facts, quotes or numbers. If unsure, leave it out.
 - Keep content original and varied (YouTube "inauthentic content" policy): different hooks, structures, footage, voices.
 - Never put API keys or passwords in the repo (it is public).
-- Metricool free plan = 20 posts/month. Track `posts_this_month` in state.json; if it would go over, tell the owner
-  (Starter plan ~ $20-25/month) and skip scheduling rather than failing silently.
+- Stay on free tools. Metricool free plan = 20 posts/month: track `posts_this_month` in state.json; if the month's 20 are
+  used, still make and commit the video but do not schedule it; tell the owner it is ready to upload by hand in
+  YouTube Studio (or posts first next month). Never buy or upgrade anything.

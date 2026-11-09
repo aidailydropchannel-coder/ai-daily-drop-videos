@@ -1,0 +1,30 @@
+{
+  "id": "001-chatgpt-images-2-6",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "music": "pulsar-the-grey-room-density-time",
+  "title": "ChatGPT Can Now Make GIFs 🤯 (Images 2.6)",
+  "description": "OpenAI just released Images 2.6 for ChatGPT. You can now turn a text prompt or a photo into an animated GIF, change its speed, edit single frames, and save reference images so ChatGPT remembers a face or mascot. OpenAI also says images now generate about 50% faster.\n\nRolling out now in ChatGPT and Codex. Would you try it? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: OpenAI, \"Introducing Images 2.6\" (November 4, 2026)\n\n#ChatGPT #OpenAI #AItools #AInews #Shorts",
+  "tags": ["ChatGPT", "ChatGPT GIF", "Images 2.6", "OpenAI", "AI tools", "AI news", "AI GIF maker", "ChatGPT update", "new AI tools", "tech news"],
+  "sources": [
+    "https://openai.com/index/introducing-images-2-6/",
+    "https://thenextweb.com/news/chatgpt-animated-gifs-images-2-6-openai",
+    "https://www.techrepublic.com/article/news-chatgpt-images-2-6-gif-creation/"
+  ],
+  "scenes": [
+    {"type": "hook", "kicker": "NEW IN CHATGPT", "headline": ["ChatGPT", "now makes", "GIFs"], "accent_line": 2,
+     "say": "Stop scrolling. ChatGPT can now make GIFs."},
+    {"type": "flow", "kicker": "IMAGES 2.6", "left": "Your prompt or photo", "right": "Animated GIF", "icon_left": "chat", "icon_right": "film",
+     "say": "OpenAI just released Images 2.6. Type a prompt, or upload a photo, and it turns it into an animated GIF."},
+    {"type": "feature", "kicker": "FULL CONTROL", "icon": "film", "title": "Edit every frame", "subtitle": "Change the speed. Fix single frames.",
+     "say": "Then you can change the speed, and even edit single frames."},
+    {"type": "feature", "kicker": "REFERENCE IMAGES", "icon": "bookmark", "title": "It remembers", "subtitle": "Save a face or a mascot and reuse it across chats.",
+     "say": "You can also save reference images, so it remembers a face or a mascot in other chats."},
+    {"type": "stat", "kicker": "SPEED", "value": 50, "suffix": "%", "label": "faster images", "note": "according to OpenAI",
+     "say": "And OpenAI says images now generate about fifty percent faster."},
+    {"type": "stat", "kicker": "SCALE", "value": 4, "suffix": "B+", "label": "images made every week", "note": "in ChatGPT, says OpenAI",
+     "say": "People already make over four billion images a week."},
+    {"type": "cta", "kicker": "ROLLING OUT NOW", "headline": ["Would you", "try it?"],
+     "say": "It is rolling out now in ChatGPT. Would you try it? Follow AI Daily Drop for daily AI news."}
+  ]
+}

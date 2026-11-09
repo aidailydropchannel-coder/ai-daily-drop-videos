@@ -1,0 +1,7 @@
+{
+  "voice_rotation": ["am_michael", "bf_emma", "bm_george"],
+  "next_voice_index": 1,
+  "music_rotation": ["pulsar-the-grey-room-density-time", "laniakea-the-grey-room-density-time", "singularity-the-grey-room-density-time", "fascination-gregory-allison", "snowfall-asher-fulero", "resolution-or-reflection-the-grey-room-clark-sims", "anno-domini-beats-all-for-you"],
+  "next_music_index": 1,
+  "videos": [{"id": "001-chatgpt-images-2-6", "voice": "am_michael", "music": "pulsar-the-grey-room-density-time", "status": "awaiting_review"}]
+}

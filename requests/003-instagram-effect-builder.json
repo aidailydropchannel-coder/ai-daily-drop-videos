@@ -1,0 +1,75 @@
+{
+ "id": "003-instagram-effect-builder",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "woman selfie smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "typing on laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "vintage film camera",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "old film projector",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "sunset beach colors",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "neon lights night",
+   "kind": "video"
+  },
+  {
+   "name": "s2_2",
+   "q": "watercolor paint brush",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "woman using laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "friends taking selfie",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "people looking at phones",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "young woman smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "friends looking at phone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "city night lights",
+   "kind": "video"
+  }
+ ]
+}

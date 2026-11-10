@@ -5,7 +5,19 @@
  "music": "singularity-the-grey-room-density-time",
  "title": "Make Your Own Instagram Filter Just by Typing ✨",
  "description": "Instagram just launched Effect Builder, a free web tool in its Edits app. Describe the look you want, or upload a photo as a style reference, and AI builds a Stories effect you can test on your own photos and publish with your name on it. Meta reviews each effect for safety, usually in under 24 hours. It is available in the US for users 18+ for now.\n\nWhat filter would you make? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Instagram Edits, \"Introducing Effect Builder\" (November 9, 2026)\n\n#AItools #AInews #Shorts #Instagram #InstagramStories",
- "tags": ["Instagram", "Instagram filter", "Effect Builder", "Instagram Edits", "Instagram Stories", "Meta AI", "AI tools", "AI news", "free AI tools", "new AI tools", "tech news"],
+ "tags": [
+  "Instagram",
+  "Instagram filter",
+  "Effect Builder",
+  "Instagram Edits",
+  "Instagram Stories",
+  "Meta AI",
+  "AI tools",
+  "AI news",
+  "free AI tools",
+  "new AI tools",
+  "tech news"
+ ],
  "sources": [
   "https://edits.instagram.com/blog/introducing-effect-builder/",
   "https://www.socialmediatoday.com/news/instagram-launches-visual-effects-creator-for-edits/874205/",
@@ -13,23 +25,111 @@
   "https://thenextweb.com/news/instagram-effect-builder-ai-stories-filters"
  ],
  "scenes": [
-  {"type": "hook", "kicker": "NEW ON INSTAGRAM", "headline": ["Your own", "Instagram", "filter?"], "accent_line": 2,
+  {
+   "type": "hook",
+   "kicker": "NEW ON INSTAGRAM",
+   "headline": [
+    "Your own",
+    "Instagram",
+    "filter?"
+   ],
+   "accent_line": 2,
    "say": "Want your own Instagram filter? Now you just type it.",
-   "footage": ["woman selfie smartphone", "hand scrolling smartphone"]},
-  {"type": "flow", "kicker": "EFFECT BUILDER", "left": "Describe the look", "right": "AI builds it", "icon_left": "chat", "icon_right": "spark",
+   "footage": [
+    "young woman taking selfie",
+    "hand scrolling smartphone"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1"
+   ]
+  },
+  {
+   "type": "flow",
+   "kicker": "EFFECT BUILDER",
+   "left": "Describe the look",
+   "right": "AI builds it",
+   "icon_left": "chat",
+   "icon_right": "spark",
    "say": "Instagram's new Effect Builder is free. Describe a look, like vintage film grain, and AI builds the effect.",
-   "footage": ["typing on laptop", "vintage film camera", "old film projector"]},
-  {"type": "feature", "kicker": "STYLE MATCH", "icon": "film", "title": "Copy any vibe", "subtitle": "Upload a photo. AI matches the look.",
+   "footage": [
+    "typing on laptop",
+    "analog camera hands",
+    "old film projector"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "STYLE MATCH",
+   "icon": "film",
+   "title": "Copy any vibe",
+   "subtitle": "Upload a photo. AI matches the look.",
    "say": "Upload a photo, and it copies the colors, lighting and texture.",
-   "footage": ["sunset beach colors", "neon lights night", "watercolor paint brush"]},
-  {"type": "feature", "kicker": "NO SKILLS NEEDED", "icon": "bookmark", "title": "No code needed", "subtitle": "Test it on your photos, then publish.",
+   "footage": [
+    "sunset beach colors",
+    "neon light abstract",
+    "watercolor paint brush"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "NO SKILLS NEEDED",
+   "icon": "bookmark",
+   "title": "No code needed",
+   "subtitle": "Test it on your photos, then publish.",
    "say": "No coding, no design skills. Test it on your own photos, then publish.",
-   "footage": ["woman using laptop", "friends taking selfie"]},
-  {"type": "stat", "kicker": "SAFETY CHECK", "value": 24, "suffix": "h", "label": "Review time", "note": "Usually less than 24 hours",
+   "footage": [
+    "woman using laptop",
+    "friends taking selfie"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "SAFETY CHECK",
+   "value": 24,
+   "suffix": "h",
+   "label": "Review time",
+   "note": "Usually less than 24 hours",
    "say": "Meta checks it, usually in under twenty four hours. Then anyone can use it, with your name on it.",
-   "footage": ["people looking at phones", "young woman smartphone"]},
-  {"type": "cta", "kicker": "US ONLY FOR NOW", "headline": ["What filter", "would you make?"],
+   "footage": [
+    "teenagers using smartphones",
+    "young woman smartphone"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "US ONLY FOR NOW",
+   "headline": [
+    "What filter",
+    "would you make?"
+   ],
    "say": "It's US only for now, eighteen plus. What filter would you make? Follow AI Daily Drop.",
-   "footage": ["friends looking at phone", "city night lights"]}
+   "footage": [
+    "friends looking at phone",
+    "city night lights"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
+   ]
+  }
  ]
 }

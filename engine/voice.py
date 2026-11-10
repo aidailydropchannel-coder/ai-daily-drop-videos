@@ -32,6 +32,7 @@ CUSTOM = {
     "Kimi": "kˈimi", "Qwen": "kwˈɛn", "DeepSeek": "dˈipsik", "Copilot": "kˈOpIlət",
     "Perplexity": "pɚplˈɛksᵻti", "Sora": "sˈɔɹə", "Grok": "ɡɹˈɑk", "xAI": "ˈɛks ˌAˈI",
     "LLM": "ˌɛlˌɛlˈɛm", "LLMs": "ˌɛlˌɛlˈɛmz", "CEO": "sˌiˌiˈO", "GIF": "ɡˈɪf", "GIFs": "ɡˈɪfs", "Codex": "kˈOdɛks",
+    "copies": "kˈɑpiz",
 }
 
 LETTERS = {c: p for c, p in zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", [

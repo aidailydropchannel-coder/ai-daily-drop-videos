@@ -40,8 +40,8 @@
     "hand scrolling smartphone"
    ],
    "clips": [
-    "s0_0.mp4@1",
-    "s0_1.mp4@1"
+    "s0_1.mp4@1",
+    "s4_0.mp4@0"
    ]
   },
   {
@@ -51,7 +51,7 @@
    "right": "AI builds it",
    "icon_left": "chat",
    "icon_right": "spark",
-   "say": "Instagram's new Effect Builder is free. Describe a look, like vintage film grain, and AI builds the effect.",
+   "say": "Instagram's new Effect Builder is free. Describe a look, like vintage film, and AI builds it.",
    "footage": [
     "typing on laptop",
     "analog camera hands",
@@ -59,7 +59,6 @@
    ],
    "clips": [
     "s1_0.mp4@1",
-    "s1_1.mp4@1",
     "s1_2.mp4@1"
    ]
   },
@@ -110,16 +109,16 @@
     "young woman smartphone"
    ],
    "clips": [
-    "s4_0.mp4@1",
-    "s4_1.mp4@1"
+    "s4_1.mp4@1",
+    "s5_0.mp4@3"
    ]
   },
   {
    "type": "cta",
    "kicker": "US ONLY FOR NOW",
    "headline": [
-    "What filter",
-    "would you make?"
+    "What would",
+    "you make?"
    ],
    "say": "It's US only for now, eighteen plus. What filter would you make? Follow AI Daily Drop.",
    "footage": [
@@ -127,7 +126,7 @@
     "city night lights"
    ],
    "clips": [
-    "s5_0.mp4@1",
+    "s3_1.mp4@4",
     "s5_1.mp4@1"
    ]
   }

@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 2,
+ "next_voice_index": 0,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 2,
+ "next_music_index": 3,
  "videos": [
   {
    "id": "001v2",
@@ -44,11 +44,27 @@
    "metricool_post_id": 422247323,
    "metricool_uuid": "-6991742906356973532",
    "cloudinary": "ai-daily-drop/002-meta-muse-spaces",
+   "status": "published",
+   "youtube_id": "WTouvnkYeDg"
+  },
+  {
+   "id": "003-instagram-effect-builder",
+   "story": "Instagram Effect Builder - free AI Stories effects from text (2026-11-09)",
+   "pillar": "free-ai-replaces-paid",
+   "hook_style": "question",
+   "voice": "bm_george",
+   "music": "singularity-the-grey-room-density-time",
+   "length_s": 31.1,
+   "slot_pkt": "2026-11-11T16:00",
+   "slot": "A",
+   "metricool_post_id": 423546064,
+   "metricool_uuid": "5788875795520702921",
+   "cloudinary": "ai-daily-drop/003-instagram-effect-builder",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 2
+  "2026-11": 3
  },
  "hook_styles": [
   "shock-claim",
@@ -58,5 +74,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 3
+ "next_video_number": 4
 }

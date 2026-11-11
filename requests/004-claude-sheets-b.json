@@ -1,0 +1,20 @@
+{
+ "id": "004-claude-sheets-b",
+ "items": [
+  {
+   "name": "s2_0",
+   "q": "woman reading laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "hand writing whiteboard",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "laptop video chat",
+   "kind": "video"
+  }
+ ]
+}

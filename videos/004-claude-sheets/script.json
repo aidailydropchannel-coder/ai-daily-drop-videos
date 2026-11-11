@@ -27,10 +27,23 @@
   {
    "type": "hook",
    "kicker": "THIS WEEK IN AI",
-   "headline": ["Claude", "vs", "Excel?"],
+   "headline": [
+    "Claude",
+    "vs",
+    "Excel?"
+   ],
    "accent_line": 2,
    "say": "Claude versus Excel? Claude just got its own spreadsheets.",
-   "footage": ["spreadsheet on laptop screen", "hand typing keyboard", "office desk computer"]
+   "footage": [
+    "spreadsheet on laptop screen",
+    "hand typing keyboard",
+    "office desk computer"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
+   ]
   },
   {
    "type": "flow",
@@ -40,7 +53,16 @@
    "icon_left": "chat",
    "icon_right": "spark",
    "say": "It's called Claude Sheets. Ask for a budget or a tracker, and Claude builds it, with tabs, formulas and drop-downs.",
-   "footage": ["woman working laptop", "financial charts screen", "calculator budget desk"]
+   "footage": [
+    "woman working laptop",
+    "financial charts screen",
+    "calculator budget desk"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -49,7 +71,14 @@
    "title": "See every edit",
    "subtitle": "Claude lists each change it makes.",
    "say": "Claude edits the cells itself, and lists every change it made.",
-   "footage": ["man looking at monitor", "data on computer screen"]
+   "footage": [
+    "woman reading laptop",
+    "data on computer screen"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -58,7 +87,16 @@
    "title": "Plan to timeline",
    "subtitle": "Owners and dates, done for you.",
    "say": "There's also Whiteboards. Brainstorm with your team, and Claude turns the plan into a timeline with owners and dates.",
-   "footage": ["team brainstorming whiteboard", "sticky notes wall", "colleagues meeting office"]
+   "footage": [
+    "team brainstorming whiteboard",
+    "hand writing whiteboard",
+    "colleagues meeting office"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1",
+    "s3_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -67,14 +105,33 @@
    "title": "It joins calls",
    "subtitle": "Notes and to-dos on Google Meet.",
    "say": "And for teams, Claude Meetings joins Google Meet calls and writes the notes and to-dos.",
-   "footage": ["video call laptop", "woman video conference", "online meeting home"]
+   "footage": [
+    "video call laptop",
+    "laptop video chat",
+    "online meeting home"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1",
+    "s4_2.mp4@1"
+   ]
   },
   {
    "type": "cta",
    "kicker": "BETA, PAID PLANS",
-   "headline": ["Excel or", "Claude?"],
+   "headline": [
+    "Excel or",
+    "Claude?"
+   ],
    "say": "It's in beta on paid plans, and exports to Excel. So, Excel or Claude? Tell me below, and follow AI Daily Drop.",
-   "footage": ["young man smartphone", "city night lights"]
+   "footage": [
+    "young man smartphone",
+    "city night lights"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
+   ]
   }
  ]
 }

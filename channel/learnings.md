@@ -1,5 +1,11 @@
 # Learnings (newest first)
 
+## 2026-11-11 night run (video 004)
+- 003 published on time at 16:00 PKT (YouTube id djHqCYJHOPA). Metricool still returns no per-video rows and 0 channel totals for all 3 published Shorts (2+ days after 001). If still empty at the next run, check the YouTube connection in Metricool or ask the owner for Studio numbers.
+- Video 004 (Claude Sheets/Whiteboards/Meetings): first `vs` hook ("Claude vs Excel?"), first Thursday "news of the week" pillar, voice am_michael, Slot B 04:00 PKT.
+- Length: first render was 36.3 s with ~96 spoken words; cutting to ~85 words gave 31.7 s. Rule of thumb at speed 1.08: about 2.7 words per second, so aim for 70-90 words.
+- Stock robot: "man looking at monitor" returned a statue, "sticky notes wall" music notes, "hand writing whiteboard" an ink bottle. Office/laptop/video-call phrases worked well.
+
 ## 2026-11-10 night run (video 003)
 - Both 001 and 002 are published on YouTube (Metricool status PUBLISHED), but Metricool still returns no per-video rows and channel totals of 0. Its YouTube analytics seem to lag 1-2+ days; numbers to be filled in as soon as they show.
 - Video 003 (Instagram Effect Builder): first `question` hook, voice bm_george, 31.1 s, Slot A 16:00 PKT (first Slot A test). Wednesday pillar "free AI replaces a paid app".

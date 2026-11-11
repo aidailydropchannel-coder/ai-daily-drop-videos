@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 0,
+ "next_voice_index": 1,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 3,
+ "next_music_index": 4,
  "videos": [
   {
    "id": "001v2",
@@ -60,11 +60,27 @@
    "metricool_post_id": 423546064,
    "metricool_uuid": "5788875795520702921",
    "cloudinary": "ai-daily-drop/003-instagram-effect-builder",
+   "status": "published",
+   "youtube_id": "djHqCYJHOPA"
+  },
+  {
+   "id": "004-claude-sheets",
+   "story": "Anthropic Claude Sheets + Whiteboards (beta, paid plans) and Claude Meetings (2026-11-10)",
+   "pillar": "news-of-the-week",
+   "hook_style": "vs",
+   "voice": "am_michael",
+   "music": "fascination-gregory-allison",
+   "length_s": 31.7,
+   "slot_pkt": "2026-11-12T04:00",
+   "slot": "B",
+   "metricool_post_id": 424801041,
+   "metricool_uuid": "-3666312318398019195",
+   "cloudinary": "ai-daily-drop/004-claude-sheets",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 3
+  "2026-11": 4
  },
  "hook_styles": [
   "shock-claim",
@@ -74,5 +90,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 4
+ "next_video_number": 5
 }

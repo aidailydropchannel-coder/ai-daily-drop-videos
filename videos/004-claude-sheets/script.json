@@ -40,8 +40,8 @@
     "office desk computer"
    ],
    "clips": [
-    "s0_0.mp4@1",
-    "s0_1.mp4@1",
+    "s0_0.mp4@0",
+    "s0_1.mp4@0",
     "s0_2.mp4@1"
    ]
   },
@@ -52,7 +52,7 @@
    "right": "Claude builds it",
    "icon_left": "chat",
    "icon_right": "spark",
-   "say": "It's called Claude Sheets. Ask for a budget or a tracker, and Claude builds it, with tabs, formulas and drop-downs.",
+   "say": "It's called Claude Sheets. Ask for a budget or a tracker, and Claude builds it, with formulas and drop-downs.",
    "footage": [
     "woman working laptop",
     "financial charts screen",
@@ -60,8 +60,7 @@
    ],
    "clips": [
     "s1_0.mp4@1",
-    "s1_1.mp4@1",
-    "s1_2.mp4@1"
+    "s1_1.mp4@0"
    ]
   },
   {
@@ -86,15 +85,14 @@
    "icon": "spark",
    "title": "Plan to timeline",
    "subtitle": "Owners and dates, done for you.",
-   "say": "There's also Whiteboards. Brainstorm with your team, and Claude turns the plan into a timeline with owners and dates.",
+   "say": "Then there's Whiteboards. Claude turns your team's plan into a timeline with owners and dates.",
    "footage": [
     "team brainstorming whiteboard",
     "hand writing whiteboard",
     "colleagues meeting office"
    ],
    "clips": [
-    "s3_0.mp4@1",
-    "s3_1.mp4@1",
+    "s3_0.mp4@0",
     "s3_2.mp4@1"
    ]
   },
@@ -103,17 +101,16 @@
    "kicker": "CLAUDE MEETINGS",
    "icon": "chat",
    "title": "It joins calls",
-   "subtitle": "Notes and to-dos on Google Meet.",
-   "say": "And for teams, Claude Meetings joins Google Meet calls and writes the notes and to-dos.",
+   "subtitle": "Takes notes on Google Meet.",
+   "say": "And Claude Meetings joins team calls on Google Meet, and takes the notes.",
    "footage": [
     "video call laptop",
     "laptop video chat",
     "online meeting home"
    ],
    "clips": [
-    "s4_0.mp4@1",
-    "s4_1.mp4@1",
-    "s4_2.mp4@1"
+    "s4_2.mp4@0",
+    "s1_0.mp4@6"
    ]
   },
   {
@@ -123,14 +120,14 @@
     "Excel or",
     "Claude?"
    ],
-   "say": "It's in beta on paid plans, and exports to Excel. So, Excel or Claude? Tell me below, and follow AI Daily Drop.",
+   "say": "It's in beta on paid plans. So, Excel or Claude? Tell me below, and follow AI Daily Drop.",
    "footage": [
     "young man smartphone",
     "city night lights"
    ],
    "clips": [
-    "s5_0.mp4@1",
-    "s5_1.mp4@1"
+    "s5_0.mp4@0",
+    "s5_1.mp4@0"
    ]
   }
  ]

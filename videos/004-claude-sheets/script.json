@@ -1,0 +1,80 @@
+{
+ "id": "004-claude-sheets",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "music": "fascination-gregory-allison",
+ "title": "Claude vs Excel? Claude Just Got Its Own Spreadsheets 📊",
+ "description": "Anthropic just added Claude Sheets and Claude Whiteboards (both in beta on paid plans, on web, desktop and mobile). Ask for a budget or a tracker and Claude builds the spreadsheet with tabs, formulas and drop-downs, edits the cells itself and lists every change. Whiteboards turn a team brainstorm into a timeline with owners and dates, and Claude Meetings (beta for Team and Enterprise) joins Google Meet calls to take notes and action items. Sheets export to Excel or CSV.\n\nExcel or Claude: which would you use? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Anthropic, \"Introducing Claude Whiteboards, Claude Sheets, and Claude Data\" (November 10, 2026); TechCrunch (November 10, 2026)\n\n#AItools #AInews #Shorts #Claude #Anthropic",
+ "tags": [
+  "Claude",
+  "Claude Sheets",
+  "Claude Whiteboards",
+  "Claude Meetings",
+  "Anthropic",
+  "Claude AI",
+  "Excel",
+  "AI spreadsheet",
+  "AI tools",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://claude.com/resources/articles/sheets-whiteboards-data",
+  "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+  "https://gizmodo.com/anthropic-goes-for-microsofts-crown-with-new-claude-powered-office-tools-2000837885"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "THIS WEEK IN AI",
+   "headline": ["Claude", "vs", "Excel?"],
+   "accent_line": 2,
+   "say": "Claude versus Excel? Claude just got its own spreadsheets.",
+   "footage": ["spreadsheet on laptop screen", "hand typing keyboard", "office desk computer"]
+  },
+  {
+   "type": "flow",
+   "kicker": "CLAUDE SHEETS",
+   "left": "Ask for a sheet",
+   "right": "Claude builds it",
+   "icon_left": "chat",
+   "icon_right": "spark",
+   "say": "It's called Claude Sheets. Ask for a budget or a tracker, and Claude builds it, with tabs, formulas and drop-downs.",
+   "footage": ["woman working laptop", "financial charts screen", "calculator budget desk"]
+  },
+  {
+   "type": "feature",
+   "kicker": "NO MYSTERY EDITS",
+   "icon": "bookmark",
+   "title": "See every edit",
+   "subtitle": "Claude lists each change it makes.",
+   "say": "Claude edits the cells itself, and lists every change it made.",
+   "footage": ["man looking at monitor", "data on computer screen"]
+  },
+  {
+   "type": "feature",
+   "kicker": "CLAUDE WHITEBOARDS",
+   "icon": "spark",
+   "title": "Plan to timeline",
+   "subtitle": "Owners and dates, done for you.",
+   "say": "There's also Whiteboards. Brainstorm with your team, and Claude turns the plan into a timeline with owners and dates.",
+   "footage": ["team brainstorming whiteboard", "sticky notes wall", "colleagues meeting office"]
+  },
+  {
+   "type": "feature",
+   "kicker": "CLAUDE MEETINGS",
+   "icon": "chat",
+   "title": "It joins calls",
+   "subtitle": "Notes and to-dos on Google Meet.",
+   "say": "And for teams, Claude Meetings joins Google Meet calls and writes the notes and to-dos.",
+   "footage": ["video call laptop", "woman video conference", "online meeting home"]
+  },
+  {
+   "type": "cta",
+   "kicker": "BETA, PAID PLANS",
+   "headline": ["Excel or", "Claude?"],
+   "say": "It's in beta on paid plans, and exports to Excel. So, Excel or Claude? Tell me below, and follow AI Daily Drop.",
+   "footage": ["young man smartphone", "city night lights"]
+  }
+ ]
+}

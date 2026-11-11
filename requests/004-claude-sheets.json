@@ -1,0 +1,85 @@
+{
+ "id": "004-claude-sheets",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "spreadsheet on laptop screen",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "hand typing keyboard",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "office desk computer",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "woman working laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "financial charts screen",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "calculator budget desk",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "man looking at monitor",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "data on computer screen",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "team brainstorming whiteboard",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "sticky notes wall",
+   "kind": "video"
+  },
+  {
+   "name": "s3_2",
+   "q": "colleagues meeting office",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "video call laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "woman video conference",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "online meeting home",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "city night lights",
+   "kind": "video"
+  }
+ ]
+}

@@ -41,6 +41,11 @@
     "hand scrolling smartphone",
     "young woman phone surprised",
     "city night lights"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -54,7 +59,12 @@
    "footage": [
     "online shopping laptop",
     "person reading phone couch",
-    "shopping bags"
+    "woman shopping phone"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
    ]
   },
   {
@@ -67,6 +77,10 @@
    "footage": [
     "woman laptop home",
     "hand holding smartphone"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1"
    ]
   },
   {
@@ -78,8 +92,13 @@
    "say": "Two: Spotify's AI DJ got nine new voices, plus a switch to stop the talking. Premium only.",
    "footage": [
     "woman headphones music",
-    "man listening headphones",
+    "girl dancing headphones",
     "headphones phone music"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1",
+    "s3_2.mp4@1"
    ]
   },
   {
@@ -90,9 +109,14 @@
    "subtitle": "Uses another photo of them.",
    "say": "Three: Lightroom's Open Eyes. Someone blinked? AI opens their eyes, using another photo of them. It's in beta.",
    "footage": [
-    "friends group photo",
+    "family taking selfie",
     "photographer editing photos",
-    "woman closing eyes"
+    "camera taking portrait"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1",
+    "s4_2.mp4@1"
    ]
   },
   {
@@ -105,7 +129,10 @@
    "say": "Which would you try first? Comment below, and follow AI Daily Drop.",
    "footage": [
     "young man smartphone",
-    "friends laughing phone"
+    "woman using phone cafe"
+   ],
+   "clips": [
+    "s5_0.mp4@1"
    ]
   }
  ],

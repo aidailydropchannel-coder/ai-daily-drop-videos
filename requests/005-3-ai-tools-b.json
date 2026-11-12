@@ -1,0 +1,30 @@
+{
+ "id": "005-3-ai-tools-b",
+ "items": [
+  {
+   "name": "s1_2",
+   "q": "woman shopping phone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "girl dancing headphones",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "family taking selfie",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "camera taking portrait",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman using phone cafe",
+   "kind": "video"
+  }
+ ]
+}

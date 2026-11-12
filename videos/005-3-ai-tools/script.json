@@ -1,0 +1,122 @@
+{
+ "id": "005-3-ai-tools",
+ "voice": "bf_emma",
+ "speed": 1.08,
+ "music": "snowfall-asher-fulero",
+ "title": "3 AI Tools You Missed: Reddit, Spotify, Lightroom 🤯",
+ "description": "3 new AI tools you might have missed this week. Reddit Reviews uses AI to sum up what Redditors say about about 10,000 products (rolling out in the US; brands can't pay to be featured). Spotify's AI DJ got nine new voices and a setting to turn off the talking between songs (Premium). And Adobe Lightroom's Open Eyes (beta) fixes a blink using another photo of the same person.\n\nWhich one would you try first? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Reddit, \"Introducing Reddit Reviews\" (November 10, 2026); Spotify, \"Make Spotify's DJ Your Own With New Voices and Even More Control\" (November 10, 2026); Adobe, Creative Cloud at Adobe MAX (November 10, 2026); The Next Web (November 10, 2026)\n\n#AItools #AInews #Shorts #Spotify #Reddit",
+ "tags": [
+  "AI tools",
+  "new AI tools",
+  "free AI tools",
+  "Reddit Reviews",
+  "Spotify AI DJ",
+  "Spotify DJ",
+  "Lightroom Open Eyes",
+  "Adobe Lightroom",
+  "Adobe MAX",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://redditinc.com/news/introducing-reddit-reviews",
+  "https://thenextweb.com/news/reddit-reviews-ai-product-summaries-no-cut-tnw",
+  "https://newsroom.spotify.com/2026-11-10/dj-new-voices-controls/",
+  "https://routenote.com/radar/?p=6056",
+  "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools",
+  "https://thenextweb.com/news/adobe-photoshop-relight-premiere-lightroom-open-eyes"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "THIS WEEK IN AI",
+   "headline": [
+    "3 AI tools",
+    "you",
+    "missed"
+   ],
+   "accent_line": 0,
+   "say": "Three AI tools you missed this week. The last one fixes blinks.",
+   "footage": [
+    "hand scrolling smartphone",
+    "young woman phone surprised",
+    "city night lights"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "1. REDDIT REVIEWS",
+   "value": 10,
+   "suffix": "K",
+   "label": "products summed up",
+   "note": "from real Reddit comments",
+   "say": "One: Reddit Reviews. AI sums up what Redditors really say about ten thousand products.",
+   "footage": [
+    "online shopping laptop",
+    "person reading phone couch",
+    "shopping bags"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "REDDIT REVIEWS",
+   "icon": "bookmark",
+   "title": "No paid picks",
+   "subtitle": "Brands can't pay to get in.",
+   "say": "Brands can't pay to get in. It's rolling out in the US.",
+   "footage": [
+    "woman laptop home",
+    "hand holding smartphone"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "2. SPOTIFY AI DJ",
+   "icon": "chat",
+   "title": "9 new voices",
+   "subtitle": "Or switch the talking off.",
+   "say": "Two: Spotify's AI DJ got nine new voices, plus a switch to stop the talking. Premium only.",
+   "footage": [
+    "woman headphones music",
+    "man listening headphones",
+    "headphones phone music"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "3. LIGHTROOM OPEN EYES",
+   "icon": "spark",
+   "title": "Fix a blink",
+   "subtitle": "Uses another photo of them.",
+   "say": "Three: Lightroom's Open Eyes. Someone blinked? AI opens their eyes, using another photo of them. It's in beta.",
+   "footage": [
+    "friends group photo",
+    "photographer editing photos",
+    "woman closing eyes"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Which one",
+    "first?"
+   ],
+   "say": "Which would you try first? Comment below, and follow AI Daily Drop.",
+   "footage": [
+    "young man smartphone",
+    "friends laughing phone"
+   ]
+  }
+ ],
+ "first_comment": "Which app do you use most: Reddit, Spotify or Lightroom? 👇",
+ "thumb": {
+  "lines": [
+   "REDDIT",
+   "SPOTIFY",
+   "LIGHTROOM"
+  ],
+  "accent": 2,
+  "badge": "NEW"
+ }
+}

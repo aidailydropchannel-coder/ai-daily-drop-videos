@@ -1,0 +1,85 @@
+{
+ "id": "005-3-ai-tools",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "young woman phone surprised",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "city night lights",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "online shopping laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "person reading phone couch",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "shopping bags",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "woman laptop home",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "hand holding smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "woman headphones music",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "man listening headphones",
+   "kind": "video"
+  },
+  {
+   "name": "s3_2",
+   "q": "headphones phone music",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "friends group photo",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "photographer editing photos",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "woman closing eyes",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "friends laughing phone",
+   "kind": "video"
+  }
+ ]
+}

@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 1,
+ "next_voice_index": 2,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 4,
+ "next_music_index": 5,
  "videos": [
   {
    "id": "001v2",
@@ -76,11 +76,28 @@
    "metricool_post_id": 424801041,
    "metricool_uuid": "-3666312318398019195",
    "cloudinary": "ai-daily-drop/004-claude-sheets",
+   "status": "published",
+   "youtube_id": "09y5zqkgIVo"
+  },
+  {
+   "id": "005-3-ai-tools",
+   "story": "3 AI tools: Reddit Reviews, Spotify AI DJ new voices, Lightroom Open Eyes (2026-11-10)",
+   "pillar": "3-ai-tools",
+   "hook_style": "number",
+   "voice": "bf_emma",
+   "music": "snowfall-asher-fulero",
+   "length_s": 28.5,
+   "slot_pkt": "2026-11-13T16:00",
+   "slot": "A",
+   "metricool_post_id": 426087099,
+   "metricool_uuid": "8255420442929808622",
+   "cloudinary": "ai-daily-drop/005-3-ai-tools",
+   "thumbnail": "ai-daily-drop/005-3-ai-tools-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 4
+  "2026-11": 5
  },
  "hook_styles": [
   "shock-claim",
@@ -90,5 +107,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 5
+ "next_video_number": 6
 }

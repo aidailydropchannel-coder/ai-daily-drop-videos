@@ -1,5 +1,12 @@
 # Learnings (newest first)
 
+## 2026-11-12 night run (video 005)
+- Metricool still returns 0 / no rows for YouTube analytics (4 Shorts published, 001 now 3+ days old). Rely on vidIQ channel analytics (Mon/Wed/Fri) for real numbers; Metricool YouTube stats look broken, not just slow.
+- vidIQ keyword check (5 credits, 140 left): "ai tools" ~700K searches/month, "free ai tools" ~182K (best overall score 69, lower competition 46), "new ai tools" ~84K but falling (-32%). Top markets IN/PK/US. Put "AI tools" / "free AI tools" in titles and tags.
+- Video 005: first `number` hook and first Friday "3 AI tools" list. 85 words at speed 1.08 gave 28.5 s (about 3 words per second for a list).
+- Metricool accepted a custom videoThumbnailUrl for this Short (no VIDEO_THUMBNAIL_NOT_APPLICABLE error).
+- Stock robot: "friends group photo" returned kids running in an alley, "woman closing eyes" an underwater fantasy image, "shopping bags" a text animation. Headphones/music and phone phrases worked well.
+
 ## 2026-11-12 - first real numbers (vidIQ / YouTube Analytics, 9-12 Nov)
 - Channel: 707 total views across 4 Shorts in 3 days, 0 subscribers yet.
 - 001 ChatGPT GIFs (36.6 s): 146 views, avg 15 s = 41% viewed.

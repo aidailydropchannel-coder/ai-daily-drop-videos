@@ -3,8 +3,8 @@
  "voice": "am_michael",
  "speed": 1.08,
  "music": "pulsar-the-grey-room-density-time",
- "title": "ChatGPT Can Now Make GIFs \ud83e\udd2f (Images 2.6)",
- "description": "OpenAI just released Images 2.6 for ChatGPT. You can now turn a text prompt or a photo into an animated GIF, change its speed, edit single frames, and save reference images so ChatGPT remembers a face or mascot. OpenAI also says images now generate about 50% faster.\n\nRolling out now in ChatGPT and Codex. Would you try it? Tell us in the comments!\n\n\ud83d\udd14 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: OpenAI, \"Introducing Images 2.6\" (November 4, 2026)\n\n#ChatGPT #OpenAI #AItools #AInews #Shorts",
+ "title": "ChatGPT Can Now Make GIFs 🤯 (Images 2.6)",
+ "description": "OpenAI just released Images 2.6 for ChatGPT. You can now turn a text prompt or a photo into an animated GIF, change its speed, edit single frames, and save reference images so ChatGPT remembers a face or mascot. OpenAI also says images now generate about 50% faster.\n\nRolling out now in ChatGPT and Codex. Would you try it? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: OpenAI, \"Introducing Images 2.6\" (November 4, 2026)\n\n#ChatGPT #OpenAI #AItools #AInews #Shorts",
  "tags": [
   "ChatGPT",
   "ChatGPT GIF",
@@ -115,5 +115,14 @@
     "s6b.mp4@5"
    ]
   }
- ]
+ ],
+ "thumb": {
+  "lines": [
+   "CHATGPT",
+   "NOW MAKES",
+   "GIFS"
+  ],
+  "accent": 2,
+  "badge": "NEW"
+ }
 }

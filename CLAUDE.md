@@ -51,6 +51,9 @@ Copy the format of `videos/001v2/script.json`. Rules that make people stay:
 - Voice: next in `state.json` voice_rotation (am_michael -> bf_emma -> bm_george). Music: next in music_rotation.
 - Title <= 60 chars with the hook + 1 emoji; description with 2-3 sentence summary, the question, follow line,
   "Source: <name>, <title> (<date>)", and hashtags `#AItools #AInews #Shorts` + 2 topic tags. 8-12 tags.
+- Thumbnail text: add `"thumb": {"lines": [...], "accent": <index>, "badge": "NEW"}` to script.json. 2-3 lines,
+  max ~12 characters each, ALL CAPS, a curiosity hook that is NOT just the title (e.g. "CHATGPT / NOW MAKES / GIFS").
+  Badge optional and short (NEW, FREE, WARNING, VS). Must be true to the video - no clickbait lies.
 - New brand/tech words the voice may mispronounce: add them to CUSTOM in engine/voice.py (misaki symbols, see file).
 
 ### 4. Footage
@@ -61,17 +64,22 @@ for fine control (`file.mp4@start_seconds`).
 
 ### 5. Render and check
 `python3 engine/make_short.py render <id>` -> videos/<id>/final.mp4 + check frames in build/<id>/.
-Look at the check frames: text readable, nothing overlapping, footage fits the words. Fix and re-render if not.
+The render also writes videos/<id>/thumb.jpg. Look at the check frames AND the thumbnail: text readable, nothing overlapping, footage fits the words. Fix and re-render if not.
 Fix any word printed in "spelled-out words" warning.
 
 ### 6. Publish
 1. Commit + push (video, script, state). Then Cloudinary `upload-asset` (resource_type video) with
    `https://raw.githubusercontent.com/aidailydropchannel-coder/ai-daily-drop-videos/main/videos/<id>/final.mp4`,
    folder `ai-daily-drop`, public_id `<id>`.
-2. Metricool `createScheduledPost` blogId 7983937, media = the Cloudinary secure_url, providers youtube,
+   Also upload the thumbnail: Cloudinary `upload-asset` resource_type image, file = raw.githubusercontent URL of
+   videos/<id>/thumb.jpg, public_id `<id>-thumb`.
+2. Metricool `createScheduledPost` blogId 7983937, media = the Cloudinary secure_url, videoThumbnailUrl = the
+   thumbnail's secure_url, providers youtube,
    youtubeData {title, type "short", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
    isAiGeneratedContent false}, publicationDate in Asia/Karachi at the slot from `channel/strategy.md`
    (posting day = tomorrow: odd video number = Slot A 16:00 PKT, even = Slot B 04:00 PKT, until learnings pick a winner).
+   If Metricool rejects the post with VIDEO_THUMBNAIL_NOT_APPLICABLE, schedule again without videoThumbnailUrl and
+   note it in learnings (YouTube has not enabled Shorts thumbnails for the channel yet).
    If the slot has already passed, use the next free slot. Record the slot in state + performance.csv.
 3. Update `state.json` (video entry with pillar, hook_style, voice, music, slot, metricool post id, status) and advance
    both rotation indexes. Commit + push.

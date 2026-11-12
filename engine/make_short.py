@@ -114,6 +114,8 @@ def render(vid):
         sh("ffmpeg", "-loglevel", "error", "-y", "-ss", str(t), "-i", str(out), "-frames:v", "1", "-vf", "scale=360:-2",
            str(bd / f"check_{t}.jpg"))
     print("check frames:", bd)
+    from thumbnail import make as make_thumb
+    make_thumb(vid)
 
 
 if __name__ == "__main__":

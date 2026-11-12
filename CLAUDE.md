@@ -19,7 +19,15 @@ The owner uses Claude in the daytime, so runs happen only at night. The "posting
 2. `bash engine/setup.sh` (downloads the Kokoro voice model + pronunciation data into engine/tts_data, data only).
 3. Read `state.json`, `channel/strategy.md`, `channel/learnings.md`, and the last 14 rows of `channel/performance.csv`.
 
-### 1. Analyse yesterday (Metricool)
+### 1. Analyse (vidIQ + Metricool)
+vidIQ is connected (free plan: 150 credits/month, most tools cost 5 credits/call). Budget: at most ONE paid vidIQ call per
+run (about 100 credits/month), never more than 140 in a month (check `vidiq_balance`, free). Alternate:
+- Mon/Wed/Fri runs: `vidiq_channel_analytics` channelId UClvGMr0uqnpy0zyUda04Pew, dimensions ["video"], metrics
+  ["views","engagedViews","averageViewDuration","averageViewPercentage","likes","subscribersGained"], last 28 days.
+  These are YouTube's own numbers (real retention); prefer them over Metricool. Video ids are in Metricool getScheduledPosts.
+- Tue/Thu runs: topic demand check for the story - `vidiq_keyword_research` (mode research) on the main keyword, or
+  `vidiq_outliers` contentType "short" for the niche; use the result to pick the angle/title wording people search for.
+Metricool (free, no credits) for the rest:
 1. `getAnalyticsDataByMetrics` brandId 7983937, from 30 days ago to now, metrics
    `["YTVV17","YTVV02","YTVV06","YTVV08","YTVV09","YTVV11","YTVV12"]` (title, published, views, avg view duration, likes, comments, shares).
 2. Channel totals: `["YTEV01","YTEV02","YTEV05","YTEV06"]` (subscribers, views, gained, lost); traffic sources `["YTTS01","YTTS02"]`.

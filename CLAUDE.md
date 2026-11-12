@@ -51,6 +51,9 @@ Copy the format of `videos/001v2/script.json`. Rules that make people stay:
 - Voice: next in `state.json` voice_rotation (am_michael -> bf_emma -> bm_george). Music: next in music_rotation.
 - Title <= 60 chars with the hook + 1 emoji; description with 2-3 sentence summary, the question, follow line,
   "Source: <name>, <title> (<date>)", and hashtags `#AItools #AInews #Shorts` + 2 topic tags. 8-12 tags.
+- SEO: the main keyword (tool/company name) in the first 3 words of the title AND the first line of the description.
+- Pinned-style first comment: write `"first_comment"` in script.json - a short question or poll ("Free or paid: which
+  would you pick? 👇") that is different from the question in the video. Pass it as Metricool `firstCommentText`.
 - Thumbnail text: add `"thumb": {"lines": [...], "accent": <index>, "badge": "NEW"}` to script.json. 2-3 lines,
   max ~12 characters each, ALL CAPS, a curiosity hook that is NOT just the title (e.g. "CHATGPT / NOW MAKES / GIFS").
   Badge optional and short (NEW, FREE, WARNING, VS). Must be true to the video - no clickbait lies.
@@ -74,7 +77,7 @@ Fix any word printed in "spelled-out words" warning.
    Also upload the thumbnail: Cloudinary `upload-asset` resource_type image, file = raw.githubusercontent URL of
    videos/<id>/thumb.jpg, public_id `<id>-thumb`.
 2. Metricool `createScheduledPost` blogId 7983937, media = the Cloudinary secure_url, videoThumbnailUrl = the
-   thumbnail's secure_url, providers youtube,
+   thumbnail's secure_url, firstCommentText = script first_comment, providers youtube,
    youtubeData {title, type "short", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
    isAiGeneratedContent false}, publicationDate in Asia/Karachi at the slot from `channel/strategy.md`
    (posting day = tomorrow: odd video number = Slot A 16:00 PKT, even = Slot B 04:00 PKT, until learnings pick a winner).

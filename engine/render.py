@@ -561,7 +561,7 @@ def render(script_path, build, music_dir, out, preview_frames=None, stock_dir=No
     tmp_out = Path(out).with_suffix(".tmp.mp4")
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(build / "video.mp4"), "-i", str(build / "voice.wav"),
                     "-i", str(music), "-i", str(build / "sfx.wav"), "-filter_complex", mix, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(tmp_out)], check=True)
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-shortest", "-movflags", "+faststart", str(tmp_out)], check=True)
     tmp_out.rename(out)
     print("done", out, f"{vid_len:.1f}s")
 

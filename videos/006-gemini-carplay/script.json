@@ -1,0 +1,82 @@
+{
+ "id": "006-gemini-carplay",
+ "voice": "bm_george",
+ "speed": 1.08,
+ "music": "resolution-or-reflection-the-grey-room-clark-sims",
+ "title": "Gemini on CarPlay: Stop Grabbing Your Phone 🚗",
+ "description": "Gemini is now on Apple CarPlay. Google is rolling out Gemini Live to CarPlay worldwide for Gemini users on iPhone: tap the Gemini icon on your car screen and talk hands-free to catch up on unread emails, draft a reply by voice, check your day or find a lunch spot nearby. To set it up, update the Gemini app, allow the microphone, use Gemini Live on your phone once, then connect your iPhone to your car.\n\nWould you talk to AI while you drive? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Google, \"Talk it through with Gemini, now on Apple CarPlay\" (November 11, 2026); FoneArena (November 12, 2026)\n\n#AItools #AInews #Shorts #Gemini #CarPlay",
+ "tags": [
+  "Gemini",
+  "Gemini CarPlay",
+  "Apple CarPlay",
+  "Gemini Live",
+  "Google Gemini",
+  "CarPlay AI",
+  "iPhone tips",
+  "AI tools",
+  "free AI tools",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
+  "https://www.fonearena.com/blog/496883/google-gemini-live-apple-carplay.html"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "AI TIP",
+   "headline": ["Stop grabbing", "your phone", "in the car"],
+   "accent_line": 0,
+   "say": "Stop grabbing your phone in the car. Gemini just landed on Apple CarPlay.",
+   "footage": ["car dashboard driving", "hands steering wheel", "city traffic night"]
+  },
+  {
+   "type": "flow",
+   "kicker": "GEMINI ON CARPLAY",
+   "left": "Tap Gemini",
+   "right": "Just talk",
+   "icon_left": "spark",
+   "icon_right": "chat",
+   "say": "Tap the Gemini icon on your car screen, and just talk.",
+   "footage": ["car touchscreen dashboard", "man driving car", "woman driving car"]
+  },
+  {
+   "type": "feature",
+   "kicker": "YOUR INBOX",
+   "icon": "chat",
+   "title": "Emails, by voice",
+   "subtitle": "Catch up and reply hands-free.",
+   "say": "Ask it to catch you up on unread emails, or help you reply by voice.",
+   "footage": ["email inbox laptop", "car interior night", "woman driving smiling"]
+  },
+  {
+   "type": "feature",
+   "kicker": "YOUR DAY",
+   "icon": "gauge",
+   "title": "Plan on the go",
+   "subtitle": "Your calendar, or a lunch spot.",
+   "say": "Check your day, or find a quick lunch spot nearby.",
+   "footage": ["calendar planner desk", "street cafe lunch", "busy city street"]
+  },
+  {
+   "type": "stat",
+   "kicker": "HOW TO SET IT UP",
+   "value": 4,
+   "suffix": "",
+   "label": "quick steps",
+   "note": "update, mic, Live, connect",
+   "say": "To set it up: update the Gemini app, allow the mic, use Gemini Live once, then connect your car.",
+   "footage": ["hand holding smartphone", "phone car mount", "car highway driving"]
+  },
+  {
+   "type": "cta",
+   "kicker": "IPHONE + CARPLAY",
+   "headline": ["Would you", "use it?"],
+   "say": "Would you talk to AI while you drive? Tell me below, and follow AI Daily Drop.",
+   "footage": ["highway driving sunset", "young man smartphone"]
+  }
+ ],
+ "first_comment": "Siri or Gemini: which one would you rather have in your car? 👇",
+ "thumb": {"lines": ["GEMINI", "IS IN YOUR", "CAR NOW"], "accent": 0, "badge": "NEW"}
+}

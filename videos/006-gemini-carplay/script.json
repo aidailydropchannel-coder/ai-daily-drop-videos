@@ -27,7 +27,7 @@
    "type": "hook",
    "kicker": "AI TIP",
    "headline": [
-    "Stop grabbing",
+    "Don't grab",
     "your phone",
     "in the car"
    ],
@@ -39,9 +39,9 @@
     "city traffic night"
    ],
    "clips": [
-    "s0_0.mp4@1",
-    "s0_1.mp4@1",
-    "s0_2.mp4@1"
+    "s1_1.mp4@0",
+    "s0_1.mp4@0",
+    "s0_2.mp4@0"
    ]
   },
   {
@@ -58,8 +58,8 @@
     "woman driving car"
    ],
    "clips": [
-    "s1_1.mp4@1",
-    "s1_2.mp4@1"
+    "s2_2.mp4@0",
+    "s1_2.mp4@0"
    ]
   },
   {
@@ -75,8 +75,8 @@
     "woman driving smiling"
    ],
    "clips": [
-    "s2_1.mp4@1",
-    "s2_2.mp4@1"
+    "s4_0.mp4@0",
+    "s2_1.mp4@0"
    ]
   },
   {
@@ -92,9 +92,8 @@
     "busy city street"
    ],
    "clips": [
-    "s3_0.mp4@1",
-    "s3_1.mp4@1",
-    "s3_2.mp4@1"
+    "s3_2.mp4@0",
+    "s4_2.mp4@0"
    ]
   },
   {
@@ -111,8 +110,8 @@
     "car highway driving"
    ],
    "clips": [
-    "s4_0.mp4@1",
-    "s4_2.mp4@1"
+    "s5_1.mp4@0",
+    "s2_0.mp4@0"
    ]
   },
   {
@@ -128,8 +127,8 @@
     "young man smartphone"
    ],
    "clips": [
-    "s5_0.mp4@1",
-    "s5_1.mp4@1"
+    "s5_0.mp4@0",
+    "s0_0.mp4@0"
    ]
   }
  ],

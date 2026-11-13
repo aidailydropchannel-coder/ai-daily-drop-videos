@@ -1,0 +1,25 @@
+{
+ "id": "006-gemini-carplay-b",
+ "items": [
+  {
+   "name": "s2_0",
+   "q": "woman reading phone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "friends lunch restaurant",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "woman walking city",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "man phone car",
+   "kind": "video"
+  }
+ ]
+}

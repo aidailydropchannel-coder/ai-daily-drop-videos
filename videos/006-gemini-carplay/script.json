@@ -26,10 +26,23 @@
   {
    "type": "hook",
    "kicker": "AI TIP",
-   "headline": ["Stop grabbing", "your phone", "in the car"],
+   "headline": [
+    "Stop grabbing",
+    "your phone",
+    "in the car"
+   ],
    "accent_line": 0,
    "say": "Stop grabbing your phone in the car. Gemini just landed on Apple CarPlay.",
-   "footage": ["car dashboard driving", "hands steering wheel", "city traffic night"]
+   "footage": [
+    "car dashboard driving",
+    "hands steering wheel",
+    "city traffic night"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
+   ]
   },
   {
    "type": "flow",
@@ -39,7 +52,15 @@
    "icon_left": "spark",
    "icon_right": "chat",
    "say": "Tap the Gemini icon on your car screen, and just talk.",
-   "footage": ["car touchscreen dashboard", "man driving car", "woman driving car"]
+   "footage": [
+    "car touchscreen dashboard",
+    "man driving car",
+    "woman driving car"
+   ],
+   "clips": [
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -48,7 +69,15 @@
    "title": "Emails, by voice",
    "subtitle": "Catch up and reply hands-free.",
    "say": "Ask it to catch you up on unread emails, or help you reply by voice.",
-   "footage": ["email inbox laptop", "car interior night", "woman driving smiling"]
+   "footage": [
+    "woman reading phone",
+    "car interior night",
+    "woman driving smiling"
+   ],
+   "clips": [
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -57,7 +86,16 @@
    "title": "Plan on the go",
    "subtitle": "Your calendar, or a lunch spot.",
    "say": "Check your day, or find a quick lunch spot nearby.",
-   "footage": ["calendar planner desk", "street cafe lunch", "busy city street"]
+   "footage": [
+    "friends lunch restaurant",
+    "woman walking city",
+    "busy city street"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1",
+    "s3_2.mp4@1"
+   ]
   },
   {
    "type": "stat",
@@ -67,16 +105,42 @@
    "label": "quick steps",
    "note": "update, mic, Live, connect",
    "say": "To set it up: update the Gemini app, allow the mic, use Gemini Live once, then connect your car.",
-   "footage": ["hand holding smartphone", "phone car mount", "car highway driving"]
+   "footage": [
+    "hand holding smartphone",
+    "man phone car",
+    "car highway driving"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_2.mp4@1"
+   ]
   },
   {
    "type": "cta",
    "kicker": "IPHONE + CARPLAY",
-   "headline": ["Would you", "use it?"],
+   "headline": [
+    "Would you",
+    "use it?"
+   ],
    "say": "Would you talk to AI while you drive? Tell me below, and follow AI Daily Drop.",
-   "footage": ["highway driving sunset", "young man smartphone"]
+   "footage": [
+    "highway driving sunset",
+    "young man smartphone"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
+   ]
   }
  ],
  "first_comment": "Siri or Gemini: which one would you rather have in your car? 👇",
- "thumb": {"lines": ["GEMINI", "IS IN YOUR", "CAR NOW"], "accent": 0, "badge": "NEW"}
+ "thumb": {
+  "lines": [
+   "GEMINI",
+   "IS IN YOUR",
+   "CAR NOW"
+  ],
+  "accent": 0,
+  "badge": "NEW"
+ }
 }

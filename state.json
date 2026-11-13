@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 2,
+ "next_voice_index": 0,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 5,
+ "next_music_index": 6,
  "videos": [
   {
    "id": "001v2",
@@ -93,11 +93,28 @@
    "metricool_uuid": "8255420442929808622",
    "cloudinary": "ai-daily-drop/005-3-ai-tools",
    "thumbnail": "ai-daily-drop/005-3-ai-tools-thumb",
+   "status": "published",
+   "youtube_id": "Z5DUtfMvgdY"
+  },
+  {
+   "id": "006-gemini-carplay",
+   "story": "Gemini on Apple CarPlay - Gemini Live hands-free in the car, 4 setup steps (2026-11-11)",
+   "pillar": "ai-tip",
+   "hook_style": "warning",
+   "voice": "bm_george",
+   "music": "resolution-or-reflection-the-grey-room-clark-sims",
+   "length_s": 28.6,
+   "slot_pkt": "2026-11-14T04:00",
+   "slot": "B",
+   "metricool_post_id": 427330585,
+   "metricool_uuid": "6537504336384901676",
+   "cloudinary": "ai-daily-drop/006-gemini-carplay",
+   "thumbnail": "ai-daily-drop/006-gemini-carplay-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 5
+  "2026-11": 6
  },
  "hook_styles": [
   "shock-claim",
@@ -107,5 +124,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 6
+ "next_video_number": 7
 }

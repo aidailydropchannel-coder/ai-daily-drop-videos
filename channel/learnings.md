@@ -1,5 +1,14 @@
 # Learnings (newest first)
 
+## 2026-11-13 Friday night run (video 006) + week 1 review
+- vidIQ (YouTube Analytics, 16 Oct-13 Nov, 5 credits, 135 left): still only 001 and 002 have rows; 003-005 not in YouTube Analytics yet (about 2-day lag).
+  001: 146 views, 13 engaged views, avg 15 s (41%). 002: 61 views (up from 38), 4 engaged views, avg 19 s (69%), 1 like. 0 subscribers.
+- Engaged views are only ~7-9% of views: most viewers swipe away in the first seconds. The first frame + first sentence must work harder (big claim on screen at 0.1 s, strong moving shot).
+- Metricool YouTube analytics still empty (only a 184-view row on 9 Nov). Keep using vidIQ.
+- Video 006 (Gemini on Apple CarPlay): first `warning` hook ("Don't grab your phone in the car"), first Saturday "AI tip" pillar, bm_george, 28.6 s with ~83 words, Slot B 04:00 PKT. All 6 hook styles now used once.
+- Render check: hook headline "Stop grabbing" (13 chars) overflowed in the big hook font; keep hook lines <= ~11 characters.
+- Stock robot: "car touchscreen dashboard", "email inbox laptop", "phone car mount" gave no result; "calendar planner desk" gave a text card, "friends lunch restaurant" gave flowers. In-car driving shots (Peugeot interior, hands on wheel) worked well.
+
 ## 2026-11-12 night run (video 005)
 - Metricool still returns 0 / no rows for YouTube analytics (4 Shorts published, 001 now 3+ days old). Rely on vidIQ channel analytics (Mon/Wed/Fri) for real numbers; Metricool YouTube stats look broken, not just slow.
 - vidIQ keyword check (5 credits, 140 left): "ai tools" ~700K searches/month, "free ai tools" ~182K (best overall score 69, lower competition 46), "new ai tools" ~84K but falling (-32%). Top markets IN/PK/US. Put "AI tools" / "free AI tools" in titles and tags.

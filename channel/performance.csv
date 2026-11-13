@@ -1,6 +1,7 @@
 id,title,published_pkt,pillar,hook_style,voice,music,length_s,views,avg_view_s,retention_pct,likes,comments,shares,checked_at
-001v2,ChatGPT Can Now Make GIFs 🤯 (Images 2.6),2026-11-09 21:15,new-ai-tool,you-can-now,am_michael,pulsar,36.6,146,15,41.0,,,,2026-11-12 (vidIQ)
-002-meta-muse-spaces,Meta's AI Now Builds You Your Own Mini App 📱,2026-11-10 04:00,new-ai-tool,shock-claim,bf_emma,laniakea,28.3,38,23,81.3,,,,2026-11-12 (vidIQ)
-003-instagram-effect-builder,Make Your Own Instagram Filter Just by Typing ✨,2026-11-11 16:00,free-ai-replaces-paid,question,bm_george,singularity,31.1,,,,,,,2026-11-11 23:45
-004-claude-sheets,Claude vs Excel? Claude Just Got Its Own Spreadsheets 📊,2026-11-12 04:00,news-of-the-week,vs,am_michael,fascination,31.7,,,,,,,"2026-11-12 23:50 (published, no data yet)"
-005-3-ai-tools,"3 AI Tools You Missed: Reddit, Spotify, Lightroom 🤯",2026-11-13 16:00,3-ai-tools,number,bf_emma,snowfall,28.5,,,,,,,
+001v2,ChatGPT Can Now Make GIFs 🤯 (Images 2.6),2026-11-09 21:15,new-ai-tool,you-can-now,am_michael,pulsar,36.6,146,15,41.0,,,,"2026-11-13 (vidIQ, 13 engaged views)"
+002-meta-muse-spaces,Meta's AI Now Builds You Your Own Mini App 📱,2026-11-10 04:00,new-ai-tool,shock-claim,bf_emma,laniakea,28.3,61,19,67.1,1,,,"2026-11-13 (vidIQ, 4 engaged views)"
+003-instagram-effect-builder,Make Your Own Instagram Filter Just by Typing ✨,2026-11-11 16:00,free-ai-replaces-paid,question,bm_george,singularity,31.1,,,,,,,"2026-11-13 (published, not in YouTube Analytics yet)"
+004-claude-sheets,Claude vs Excel? Claude Just Got Its Own Spreadsheets 📊,2026-11-12 04:00,news-of-the-week,vs,am_michael,fascination,31.7,,,,,,,"2026-11-13 (published, not in YouTube Analytics yet)"
+005-3-ai-tools,"3 AI Tools You Missed: Reddit, Spotify, Lightroom 🤯",2026-11-13 16:00,3-ai-tools,number,bf_emma,snowfall,28.5,,,,,,,"2026-11-13 (published, not in YouTube Analytics yet)"
+006-gemini-carplay,Gemini on CarPlay: Stop Grabbing Your Phone 🚗,2026-11-14 04:00,ai-tip,warning,bm_george,resolution-or-reflection,28.6,,,,,,,

@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 0,
+ "next_voice_index": 1,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 6,
+ "next_music_index": 0,
  "videos": [
   {
    "id": "001v2",
@@ -110,11 +110,28 @@
    "metricool_uuid": "6537504336384901676",
    "cloudinary": "ai-daily-drop/006-gemini-carplay",
    "thumbnail": "ai-daily-drop/006-gemini-carplay-thumb",
+   "status": "published",
+   "youtube_id": "-yTNwqFmDV4"
+  },
+  {
+   "id": "007-gemini-4-hydrogen",
+   "story": "Google Gemini 4 Hydrogen - fast model, free users via auto selection, 2.5x faster than 3.8 Flash, AA index 51 vs Argon 50 (2026-11-12)",
+   "pillar": "new-ai-tool",
+   "hook_style": "shock-claim",
+   "voice": "am_michael",
+   "music": "anno-domini-beats-all-for-you",
+   "length_s": 26.9,
+   "slot_pkt": "2026-11-17T16:00",
+   "slot": "A",
+   "metricool_post_id": 430494549,
+   "metricool_uuid": "-8728896618634002307",
+   "cloudinary": "ai-daily-drop/007-gemini-4-hydrogen",
+   "thumbnail": "ai-daily-drop/007-gemini-4-hydrogen-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 6
+  "2026-11": 7
  },
  "hook_styles": [
   "shock-claim",
@@ -124,5 +141,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 7
+ "next_video_number": 8
 }

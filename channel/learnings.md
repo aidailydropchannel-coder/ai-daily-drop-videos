@@ -1,5 +1,15 @@
 # Learnings (newest first)
 
+## 2026-11-16 Monday night run (video 007)
+- vidIQ (YouTube Analytics, 19 Oct-16 Nov, 5 credits, 130 left): 1,771 views on 6 Shorts, 0 subscribers.
+  005 3 AI tools 669 (67 engaged, 47%), 003 Instagram 627 (38 engaged, 46%), 001 146, 006 CarPlay 132 (avg 7 s = 24.5%, worst), 004 120, 002 77.
+- PATTERN (holds across all 5 slot-tested videos): Slot A 16:00 PKT beats Slot B 04:00 PKT by ~5x. A: 627, 669 views. B: 77, 120, 132.
+  Keep the A/B alternation until the 4-week test ends as the strategy says, but if the next B video (008) is again under 200 views, switch all posts to 16:00 PKT.
+- Early signal (not yet a pattern): the `warning` hook + how-to (006) lost viewers fastest (24.5%); `number` list and `question` hooks did best. Broad consumer apps (Instagram, Spotify/Reddit) beat niche ones (CarPlay).
+- Engaged views are still only 6-10% of views: swipe-away in the first second is the main problem. 007 hook tested with a 10-word claim and on-screen headline from frame 1.
+- Video 007 (Gemini 4 Hydrogen): `shock-claim`, am_michael, 26.9 s with ~74 words (shortest yet), Slot A. render.py stat scene now supports decimals (2.5x).
+- Stock robot: "scoreboard stadium" gave an aerial city, "laptop screen code" had readable Unity code text, "coffee shop laptop" a cartoon. Dropped them via `clips`.
+
 ## 2026-11-13 Friday night run (video 006) + week 1 review
 - vidIQ (YouTube Analytics, 16 Oct-13 Nov, 5 credits, 135 left): still only 001 and 002 have rows; 003-005 not in YouTube Analytics yet (about 2-day lag).
   001: 146 views, 13 engaged views, avg 15 s (41%). 002: 61 views (up from 38), 4 engaged views, avg 19 s (69%), 1 like. 0 subscribers.

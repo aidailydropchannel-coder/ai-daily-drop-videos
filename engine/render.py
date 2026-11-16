@@ -432,7 +432,11 @@ class Scene:
 
     def draw_stat(self, c, t):
         p = ease_out(prog(t, 0.1, 1.1))
-        val = int(round(self.s["value"] * p))
+        v = self.s["value"]
+        if isinstance(v, float) and not v.is_integer():
+            val = f"{v * p:.1f}"  # decimals, e.g. 2.5x
+        else:
+            val = int(round(v * p))
         key = val
         if key not in self.cache:
             self.cache[key] = glow(text_sprite(f"{val}{self.s['suffix']}", F_BLACK(300), fill=ACC_LIGHT), radius=30, strength=0.75)

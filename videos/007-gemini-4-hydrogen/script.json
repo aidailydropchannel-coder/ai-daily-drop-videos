@@ -37,6 +37,11 @@
     "hand scrolling smartphone",
     "man surprised phone",
     "city lights night"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -50,6 +55,10 @@
     "woman typing laptop",
     "young man smartphone",
     "laptop screen code"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s1_1.mp4@1"
    ]
   },
   {
@@ -64,6 +73,11 @@
     "fast car highway",
     "running track sprint",
     "timelapse city traffic"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
    ]
   },
   {
@@ -78,6 +92,10 @@
     "scoreboard stadium",
     "man working computer",
     "chess game board"
+   ],
+   "clips": [
+    "s3_2.mp4@1",
+    "s3_1.mp4@1"
    ]
   },
   {
@@ -91,6 +109,10 @@
     "student studying laptop",
     "woman smiling phone",
     "coffee shop laptop"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1"
    ]
   },
   {
@@ -104,6 +126,10 @@
    "footage": [
     "friends looking phone",
     "sunset city skyline"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
    ]
   }
  ],

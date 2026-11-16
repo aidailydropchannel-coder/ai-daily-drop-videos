@@ -1,0 +1,120 @@
+{
+ "id": "007-gemini-4-hydrogen",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "music": "anno-domini-beats-all-for-you",
+ "title": "Gemini 4 Hydrogen: Google's Free AI Just Got Faster ⚡",
+ "description": "Gemini 4 Hydrogen is Google's newest fast AI model, rolling out now in the Gemini app and Google Search. Google says it finishes tasks 2.5 times faster than Gemini 3.8 Flash, and it scored 51 on the Artificial Analysis Intelligence Index, one point above the paid Gemini 4 Argon (50). Free Gemini users get it automatically when a prompt needs it.\n\nFaster or smarter: which matters more to you? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Google, \"Introducing Gemini 4 Hydrogen\" (November 12, 2026); FoneArena (November 13, 2026)\n\n#AItools #AInews #Shorts #Gemini #GoogleAI",
+ "tags": [
+  "Gemini 4 Hydrogen",
+  "Gemini 4",
+  "Google Gemini",
+  "Gemini",
+  "Gemini app",
+  "Google AI",
+  "free AI tools",
+  "AI tools",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+  "https://www.fonearena.com/blog/496944/google-gemini-4-hydrogen-features.html",
+  "https://www.makeuseof.com/gemini-4-hydrogen-rolls-out/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NEW FROM GOOGLE",
+   "headline": [
+    "Free Gemini",
+    "beat the",
+    "paid one"
+   ],
+   "accent_line": 0,
+   "say": "Google's new free Gemini just beat its own paid model.",
+   "footage": [
+    "hand scrolling smartphone",
+    "man surprised phone",
+    "city lights night"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "MEET GEMINI 4",
+   "icon": "spark",
+   "title": "Hydrogen",
+   "subtitle": "Rolling out in Gemini and Search.",
+   "say": "It's Gemini 4 Hydrogen, rolling out now in the Gemini app and Google Search.",
+   "footage": [
+    "woman typing laptop",
+    "young man smartphone",
+    "laptop screen code"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "GOOGLE SAYS",
+   "value": 2.5,
+   "suffix": "x",
+   "label": "faster",
+   "note": "than Gemini 3.8 Flash",
+   "say": "Google says it finishes tasks two and a half times faster.",
+   "footage": [
+    "fast car highway",
+    "running track sprint",
+    "timelapse city traffic"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "AI SCORECARD",
+   "value": 51,
+   "suffix": "",
+   "label": "points",
+   "note": "paid Gemini 4 Argon: 50",
+   "say": "On a big AI scorecard it got 51. The paid Argon model got 50.",
+   "footage": [
+    "scoreboard stadium",
+    "man working computer",
+    "chess game board"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "FREE USERS",
+   "icon": "gauge",
+   "title": "No upgrade",
+   "subtitle": "Gemini picks it when you need it.",
+   "say": "Free users get it automatically when a question needs it.",
+   "footage": [
+    "student studying laptop",
+    "woman smiling phone",
+    "coffee shop laptop"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "GEMINI 4 HYDROGEN",
+   "headline": [
+    "Faster or",
+    "smarter?"
+   ],
+   "say": "Faster or smarter: which matters more to you? Tell me below, and follow AI Daily Drop.",
+   "footage": [
+    "friends looking phone",
+    "sunset city skyline"
+   ]
+  }
+ ],
+ "first_comment": "Gemini or ChatGPT: which one do you open first? 👇",
+ "thumb": {
+  "lines": [
+   "FREE GEMINI",
+   "JUST GOT",
+   "FASTER"
+  ],
+  "accent": 0,
+  "badge": "NEW"
+ }
+}

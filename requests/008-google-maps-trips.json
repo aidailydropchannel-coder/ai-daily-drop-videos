@@ -1,0 +1,90 @@
+{
+ "id": "008-google-maps-trips",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "car driving coastal road",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "hand holding smartphone street",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "road trip car",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "tourist city walking",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "woman using smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "paper map travel",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "city traffic night",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "restaurant lunch table",
+   "kind": "video"
+  },
+  {
+   "name": "s2_2",
+   "q": "car dashboard driving",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "nail salon manicure",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "dog grooming",
+   "kind": "video"
+  },
+  {
+   "name": "s3_2",
+   "q": "car mechanic garage",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "earth globe rotating",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "airplane flying sky",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "european old town street",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "friends road trip",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "sunset mountain road",
+   "kind": "video"
+  }
+ ]
+}

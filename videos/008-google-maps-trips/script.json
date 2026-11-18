@@ -1,0 +1,80 @@
+{
+ "id": "008-google-maps-trips",
+ "voice": "bf_emma",
+ "speed": 1.08,
+ "music": "pulsar-the-grey-room-density-time",
+ "title": "Google Maps Now Plans Your Whole Trip 🗺️",
+ "description": "Google Maps can now plan your whole trip: Ask Maps builds a day-by-day itinerary with a numbered pin for every stop, live traffic, opening hours and new stops on request. In the U.S. it can even call local businesses like salons, pet groomers and garages to find you an appointment, and Ask Maps is now in more than 200 countries and territories on Android and iOS.\n\nWould you let AI plan your next trip? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Google, \"New Ask Maps features for the holidays\" (November 16, 2026); TechCrunch (November 16, 2026)\n\n#AItools #AInews #Shorts #GoogleMaps #TravelTips",
+ "tags": [
+  "Google Maps",
+  "Ask Maps",
+  "Google Maps AI",
+  "Google Maps itinerary",
+  "AI trip planner",
+  "Google AI",
+  "travel tips",
+  "AI tools",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+  "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NEW IN GOOGLE MAPS",
+   "headline": ["Maps plans", "your trip"],
+   "accent_line": 0,
+   "say": "Did you know Google Maps can now plan your whole trip?",
+   "footage": ["car driving coastal road", "hand holding smartphone street", "road trip car"]
+  },
+  {
+   "type": "feature",
+   "kicker": "ASK MAPS",
+   "icon": "pin",
+   "title": "Day by day",
+   "subtitle": "A numbered pin for every stop.",
+   "say": "Ask Maps builds a day-by-day plan, with a pin for every stop.",
+   "footage": ["tourist city walking", "woman using smartphone", "paper map travel"]
+  },
+  {
+   "type": "feature",
+   "kicker": "ON THE ROAD",
+   "icon": "gauge",
+   "title": "Live updates",
+   "subtitle": "Traffic, open hours, new stops.",
+   "say": "It shows live traffic and what's open, and adds a lunch stop when you ask.",
+   "footage": ["city traffic night", "restaurant lunch table", "car dashboard driving"]
+  },
+  {
+   "type": "feature",
+   "kicker": "IN THE U.S.",
+   "icon": "chat",
+   "title": "It calls for you",
+   "subtitle": "Salons, pet care, car repair.",
+   "say": "In America, it can even call local businesses to find you an appointment.",
+   "footage": ["nail salon manicure", "dog grooming", "car mechanic garage"]
+  },
+  {
+   "type": "stat",
+   "kicker": "ASK MAPS NOW IN",
+   "value": 200,
+   "suffix": "+",
+   "label": "countries",
+   "note": "and territories",
+   "say": "And Ask Maps now works in over 200 countries and territories.",
+   "footage": ["earth globe rotating", "airplane flying sky", "european old town street"]
+  },
+  {
+   "type": "cta",
+   "kicker": "GOOGLE MAPS",
+   "headline": ["Would you", "trust it?"],
+   "say": "Would you let AI plan your next trip? Tell me below, and follow AI Daily Drop.",
+   "footage": ["friends road trip", "sunset mountain road"]
+  }
+ ],
+ "first_comment": "Road trip or city break: which would you let Google Maps plan first? 👇",
+ "thumb": {"lines": ["GOOGLE MAPS", "NOW PLANS", "YOUR TRIP"], "accent": 0, "badge": "NEW"}
+}

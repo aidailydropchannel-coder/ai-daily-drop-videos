@@ -34,6 +34,7 @@ CUSTOM = {
     "LLM": "ˌɛlˌɛlˈɛm", "LLMs": "ˌɛlˌɛlˈɛmz", "CEO": "sˌiˌiˈO", "GIF": "ɡˈɪf", "GIFs": "ɡˈɪfs", "Codex": "kˈOdɛks",
     "copies": "kˈɑpiz", "Reddit": "ɹˈɛdɪt", "Redditors": "ɹˈɛdɪtɚz", "Spotify": "spˈɑtᵻfI", "Lightroom": "lˈItɹum",
     "CarPlay": "kˈɑɹplˌA",
+    "countries": "kˈʌntɹiz", "territories": "tˈɛɹətˌɔɹiz", "iPhone": "ˈIfˌOn", "Android": "ˈændɹYd",
 }
 
 LETTERS = {c: p for c, p in zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", [

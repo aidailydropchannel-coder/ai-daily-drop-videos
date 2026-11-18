@@ -154,6 +154,19 @@ def icon(name, size=300, stroke=None):
         d.arc((m, m, S - m, S - m), 150, 390, fill=c, width=sw)
         d.line([(S / 2, S / 2), (S * 0.74, S * 0.3)], fill=c, width=sw)
         r = S * 0.06; d.ellipse((S / 2 - r, S / 2 - r, S / 2 + r, S / 2 + r), fill=c)
+    elif name == "pin":  # map location pin
+        cx, cy, r = S * 0.5, S * 0.38, S * 0.26
+        d.pieslice((cx - r, cy - r, cx + r, cy + r), 150, 390, fill=c)
+        d.polygon([(cx - r * 0.87, cy + r * 0.5), (cx + r * 0.87, cy + r * 0.5), (cx, S - m)], fill=c)
+        ri = r * 0.42; d.ellipse((cx - ri, cy - ri, cx + ri, cy + ri), fill=(0, 0, 0, 0))
+    elif name == "calendar":
+        d.rounded_rectangle((m, S * 0.2, S - m, S - m), radius=S * 0.06, outline=c, width=sw)
+        d.line([(m, S * 0.38), (S - m, S * 0.38)], fill=c, width=sw)
+        for x in (S * 0.33, S * 0.67): d.line([(x, S * 0.1), (x, S * 0.28)], fill=c, width=sw)
+        for i in range(3):
+            for j in range(2):
+                x = S * (0.3 + 0.2 * i); y = S * (0.56 + 0.17 * j); r = S * 0.04
+                d.ellipse((x - r, y - r, x + r, y + r), fill=c)
     im = im.resize((size, size), Image.LANCZOS)
     return glow(im, radius=size // 16, strength=1.4)
 

@@ -51,7 +51,10 @@ def make(vid):
     for i, line in enumerate(lines):
         size = 190 if len(line) <= 8 else 160 if len(line) <= 11 else 130
         fill = ACC_LIGHT if i == accent else WHITE
-        spr = text_sprite(line, F_BLACK(size), fill=fill, stroke=10, stroke_fill=(2, 6, 16))
+        while True:  # shrink until the line fits the frame width (wide letters like M/W overflow)
+            spr = text_sprite(line, F_BLACK(size), fill=fill, stroke=10, stroke_fill=(2, 6, 16))
+            if spr.width <= W - 90 or size <= 90: break
+            size -= 8
         spr = glow(spr, color=ACC if i == accent else (0, 0, 0), radius=22, strength=1.0 if i == accent else 1.3)
         place(bg, spr, W / 2, y + size * 0.55)
         y += int(size * 1.02)

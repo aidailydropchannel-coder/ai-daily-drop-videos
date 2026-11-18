@@ -38,7 +38,6 @@
    ],
    "clips": [
     "s0_0.mp4@1",
-    "s0_1.mp4@1",
     "s0_2.mp4@1"
    ]
   },
@@ -48,16 +47,15 @@
    "icon": "pin",
    "title": "Day by day",
    "subtitle": "A numbered pin for every stop.",
-   "say": "Ask Maps builds a day-by-day plan, with a pin for every stop.",
+   "say": "Just ask Maps. It builds a day-by-day plan, with insider tips and a pin for every stop.",
    "footage": [
     "tourist city walking",
     "woman using smartphone",
     "couple travel city map"
    ],
    "clips": [
-    "s1_0.mp4@1",
     "s1_1.mp4@1",
-    "s1_2.mp4@1"
+    "s1_0.mp4@1"
    ]
   },
   {
@@ -74,7 +72,6 @@
    ],
    "clips": [
     "s2_0.mp4@1",
-    "s2_1.mp4@1",
     "s2_2.mp4@1"
    ]
   },
@@ -91,7 +88,6 @@
     "car mechanic garage"
    ],
    "clips": [
-    "s3_0.mp4@1",
     "s3_1.mp4@1",
     "s3_2.mp4@1"
    ]
@@ -103,7 +99,7 @@
    "suffix": "+",
    "label": "countries",
    "note": "and territories",
-   "say": "And Ask Maps now works in over 200 countries and territories.",
+   "say": "And Ask Maps now works in over 200 countries and territories, on Android and iPhone.",
    "footage": [
     "earth globe rotating",
     "airplane flying sky",
@@ -129,16 +125,16 @@
    ],
    "clips": [
     "s5_0.mp4@1",
-    "s5_1.mp4@1"
+    "s0_0.mp4@5"
    ]
   }
  ],
  "first_comment": "Road trip or city break: which would you let Google Maps plan first? 👇",
  "thumb": {
   "lines": [
-   "GOOGLE MAPS",
-   "NOW PLANS",
-   "YOUR TRIP"
+   "MAPS NOW",
+   "PLANS YOUR",
+   "WHOLE TRIP"
   ],
   "accent": 0,
   "badge": "NEW"

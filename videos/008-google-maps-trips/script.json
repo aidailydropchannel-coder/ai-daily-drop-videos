@@ -25,10 +25,22 @@
   {
    "type": "hook",
    "kicker": "NEW IN GOOGLE MAPS",
-   "headline": ["Maps plans", "your trip"],
+   "headline": [
+    "Maps plans",
+    "your trip"
+   ],
    "accent_line": 0,
    "say": "Did you know Google Maps can now plan your whole trip?",
-   "footage": ["car driving coastal road", "hand holding smartphone street", "road trip car"]
+   "footage": [
+    "car driving coastal road",
+    "woman looking phone outdoors",
+    "road trip car"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -37,7 +49,16 @@
    "title": "Day by day",
    "subtitle": "A numbered pin for every stop.",
    "say": "Ask Maps builds a day-by-day plan, with a pin for every stop.",
-   "footage": ["tourist city walking", "woman using smartphone", "paper map travel"]
+   "footage": [
+    "tourist city walking",
+    "woman using smartphone",
+    "couple travel city map"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -46,7 +67,16 @@
    "title": "Live updates",
    "subtitle": "Traffic, open hours, new stops.",
    "say": "It shows live traffic and what's open, and adds a lunch stop when you ask.",
-   "footage": ["city traffic night", "restaurant lunch table", "car dashboard driving"]
+   "footage": [
+    "city traffic night",
+    "friends eating cafe",
+    "car dashboard driving"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
+   ]
   },
   {
    "type": "feature",
@@ -55,7 +85,16 @@
    "title": "It calls for you",
    "subtitle": "Salons, pet care, car repair.",
    "say": "In America, it can even call local businesses to find you an appointment.",
-   "footage": ["nail salon manicure", "dog grooming", "car mechanic garage"]
+   "footage": [
+    "hairdresser cutting hair",
+    "dog grooming",
+    "car mechanic garage"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1",
+    "s3_2.mp4@1"
+   ]
   },
   {
    "type": "stat",
@@ -65,16 +104,43 @@
    "label": "countries",
    "note": "and territories",
    "say": "And Ask Maps now works in over 200 countries and territories.",
-   "footage": ["earth globe rotating", "airplane flying sky", "european old town street"]
+   "footage": [
+    "earth globe rotating",
+    "airplane flying sky",
+    "european old town street"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1",
+    "s4_2.mp4@1"
+   ]
   },
   {
    "type": "cta",
    "kicker": "GOOGLE MAPS",
-   "headline": ["Would you", "trust it?"],
+   "headline": [
+    "Would you",
+    "trust it?"
+   ],
    "say": "Would you let AI plan your next trip? Tell me below, and follow AI Daily Drop.",
-   "footage": ["friends road trip", "sunset mountain road"]
+   "footage": [
+    "friends road trip",
+    "sunset mountain road"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
+   ]
   }
  ],
  "first_comment": "Road trip or city break: which would you let Google Maps plan first? 👇",
- "thumb": {"lines": ["GOOGLE MAPS", "NOW PLANS", "YOUR TRIP"], "accent": 0, "badge": "NEW"}
+ "thumb": {
+  "lines": [
+   "GOOGLE MAPS",
+   "NOW PLANS",
+   "YOUR TRIP"
+  ],
+  "accent": 0,
+  "badge": "NEW"
+ }
 }

@@ -1,0 +1,25 @@
+{
+ "id": "008-google-maps-trips-b",
+ "items": [
+  {
+   "name": "s0_1",
+   "q": "woman looking phone outdoors",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "couple travel city map",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "friends eating cafe",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "hairdresser cutting hair",
+   "kind": "video"
+  }
+ ]
+}

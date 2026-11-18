@@ -1,5 +1,18 @@
 # Learnings (newest first)
 
+## 2026-11-18 Wednesday night run (video 008)
+- No Tuesday-night run happened (17 Nov), so no Short goes out on Wed 18 Nov. 008 is for Thu 19 Nov.
+- vidIQ (YouTube Analytics, 21 Oct-18 Nov, 5 credits, 125 left): 1,875 views on 6 Shorts, still 0 subscribers.
+  Only 005 is still growing (669 -> 771 views, 80 engaged); the others are flat, so a Short gets almost all its views in the first 2-3 days.
+  007 Gemini 4 Hydrogen (published 17 Nov 16:00, YouTube ebWuYbsB9yw) is not in YouTube Analytics yet (2-day lag).
+- Metricool YouTube per-video analytics still empty; channel daily views now show (13 Nov 817, 11 Nov 646) but 0 subscribers.
+- Video 008 (Google Maps Ask Maps trip planner): `question` hook (2nd use; 003 question = 627 views), bf_emma, 26.0 s, ~85 words, Slot B 04:00 PKT.
+  This is the deciding Slot B test: if 008 is under 200 views by the Monday run, switch all posts to Slot A 16:00 PKT.
+- Engine: added `pin` and `calendar` icons; thumbnail lines now shrink to fit the width ("MAPS NOW" in the 190 px font overflowed: M/W are wide).
+  Voice: "countries", "territories", "iPhone", "Android" added to CUSTOM.
+- Stock robot: "nail salon manicure" gave an abstract pink render, "hand holding smartphone street" a cartoon, "couple travel city map" an old map with country names,
+  "hairdresser cutting hair" clippers with a brand logo, "friends eating cafe" no result. "dog grooming", "car mechanic garage", "airplane flying sky", aerial coastal road worked well.
+
 ## 2026-11-16 Monday night run (video 007)
 - vidIQ (YouTube Analytics, 19 Oct-16 Nov, 5 credits, 130 left): 1,771 views on 6 Shorts, 0 subscribers.
   005 3 AI tools 669 (67 engaged, 47%), 003 Instagram 627 (38 engaged, 46%), 001 146, 006 CarPlay 132 (avg 7 s = 24.5%, worst), 004 120, 002 77.

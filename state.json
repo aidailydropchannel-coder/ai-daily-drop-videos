@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 1,
+ "next_voice_index": 2,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 0,
+ "next_music_index": 1,
  "videos": [
   {
    "id": "001v2",
@@ -127,11 +127,28 @@
    "metricool_uuid": "-8728896618634002307",
    "cloudinary": "ai-daily-drop/007-gemini-4-hydrogen",
    "thumbnail": "ai-daily-drop/007-gemini-4-hydrogen-thumb",
+   "status": "published",
+   "youtube_id": "ebWuYbsB9yw"
+  },
+  {
+   "id": "008-google-maps-trips",
+   "story": "Google Maps Ask Maps - AI trip itineraries with live details, calls US businesses for appointments, 200+ countries (2026-11-16)",
+   "pillar": "news-of-the-week",
+   "hook_style": "question",
+   "voice": "bf_emma",
+   "music": "pulsar-the-grey-room-density-time",
+   "length_s": 26.0,
+   "slot_pkt": "2026-11-19T04:00",
+   "slot": "B",
+   "metricool_post_id": 433259759,
+   "metricool_uuid": "9148176894023124545",
+   "cloudinary": "ai-daily-drop/008-google-maps-trips",
+   "thumbnail": "ai-daily-drop/008-google-maps-trips-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 7
+  "2026-11": 8
  },
  "hook_styles": [
   "shock-claim",
@@ -141,5 +158,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 8
+ "next_video_number": 9
 }

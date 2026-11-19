@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 0,
+ "next_voice_index": 1,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 2,
+ "next_music_index": 3,
  "videos": [
   {
    "id": "001v2",
@@ -162,10 +162,27 @@
    "cloudinary": "ai-daily-drop/009-gemini-tasks-free",
    "thumbnail": "ai-daily-drop/009-gemini-tasks-free-thumb",
    "status": "scheduled"
+  },
+  {
+   "id": "010-chatgpt-live-dictation",
+   "story": "ChatGPT Live Dictation - speech typed live as you talk, every plan incl. free, worldwide, 10-minute limit removed (2026-11-18)",
+   "pillar": "free-ai-replaces-paid",
+   "hook_style": "you-can-now",
+   "voice": "am_michael",
+   "music": "singularity-the-grey-room-density-time",
+   "length_s": 32.2,
+   "slot_pkt": "2026-11-20T04:00",
+   "slot": "B",
+   "metricool_post_id": 434695458,
+   "metricool_uuid": "3384718838670903772",
+   "cloudinary": "ai-daily-drop/010-chatgpt-live-dictation",
+   "thumbnail": "ai-daily-drop/010-chatgpt-live-dictation-thumb",
+   "status": "scheduled",
+   "note": "catch-up for missed Tue 17 Nov run"
   }
  ],
  "posts_this_month": {
-  "2026-11": 9
+  "2026-11": 10
  },
  "hook_styles": [
   "shock-claim",
@@ -175,5 +192,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 10
+ "next_video_number": 11
 }

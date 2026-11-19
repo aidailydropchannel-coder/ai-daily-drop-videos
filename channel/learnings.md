@@ -1,5 +1,10 @@
 # Learnings (newest first)
 
+## 2026-11-20 catch-up run (video 010, replaces missed Tue 17 Nov run)
+- Video 010 (ChatGPT Live Dictation, free on every plan): `you-can-now` hook (2nd use), Wednesday pillar "free AI replaces a paid app", am_michael, 32.2 s, Slot B 04:00 PKT Fri 20 Nov (009 has Slot A 16:00 the same day: first same-day A vs B test).
+- Added a `mic` icon to engine/render.py.
+- Stock robot: "man speaking microphone" returned a dark party crowd; "student laptop library" an anime illustration; "friends laughing phone" no result. Stopwatch/hourglass and phone-keyboard phrases worked well.
+
 ## 2026-11-19 Thursday night run (video 009)
 - 008 Google Maps published 19 Nov 04:00 PKT (YouTube BeTPYbFU6eA). Metricool shows the channel's FIRST subscriber on 18 Nov (YTEV01 = 1). Metricool per-video rows still empty; daily views rows stop after 15 Nov (2-3 day lag).
 - vidIQ keyword check (5 credits, 120 left): "free ai tools" ~194K/month (IN 31%, PK 26%), "google ai pro free" ~155K (+56%, low competition 30), "gemini ai" ~120K, "gemini free" ~33K. Free-Google-AI wording is in demand: used "Now Free" in title + thumbnail.

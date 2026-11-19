@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 2,
+ "next_voice_index": 0,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 1,
+ "next_music_index": 2,
  "videos": [
   {
    "id": "001v2",
@@ -144,11 +144,28 @@
    "metricool_uuid": "9148176894023124545",
    "cloudinary": "ai-daily-drop/008-google-maps-trips",
    "thumbnail": "ai-daily-drop/008-google-maps-trips-thumb",
+   "status": "published",
+   "youtube_id": "BeTPYbFU6eA"
+  },
+  {
+   "id": "009-gemini-tasks-free",
+   "story": "3 AI tools: Tasks in Gemini free in 6 countries (US, IN, JP, KR, CA, AU), Suno Visuals music videos up to 15 s, Instagram content protection test (2026-11-17)",
+   "pillar": "3-ai-tools",
+   "hook_style": "number",
+   "voice": "bm_george",
+   "music": "laniakea-the-grey-room-density-time",
+   "length_s": 32.2,
+   "slot_pkt": "2026-11-20T16:00",
+   "slot": "A",
+   "metricool_post_id": 434614779,
+   "metricool_uuid": "-867682979743446668",
+   "cloudinary": "ai-daily-drop/009-gemini-tasks-free",
+   "thumbnail": "ai-daily-drop/009-gemini-tasks-free-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 8
+  "2026-11": 9
  },
  "hook_styles": [
   "shock-claim",
@@ -158,5 +175,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 9
+ "next_video_number": 10
 }

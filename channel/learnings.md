@@ -1,5 +1,12 @@
 # Learnings (newest first)
 
+## 2026-11-19 Thursday night run (video 009)
+- 008 Google Maps published 19 Nov 04:00 PKT (YouTube BeTPYbFU6eA). Metricool shows the channel's FIRST subscriber on 18 Nov (YTEV01 = 1). Metricool per-video rows still empty; daily views rows stop after 15 Nov (2-3 day lag).
+- vidIQ keyword check (5 credits, 120 left): "free ai tools" ~194K/month (IN 31%, PK 26%), "google ai pro free" ~155K (+56%, low competition 30), "gemini ai" ~120K, "gemini free" ~33K. Free-Google-AI wording is in demand: used "Now Free" in title + thumbnail.
+- Video 009 (3 AI tools: Gemini Tasks free, Suno Visuals, Instagram content protection): `number` hook again (005 number = best video, 771 views), bm_george, 32.2 s, ~88 words, Slot A 16:00 PKT Fri 20 Nov.
+  Hook leads with the strongest item ("Gemini's paid AI agent is now free") instead of "3 tools you missed" to fight the first-second swipe.
+- Stock robot: "young man phone surprised" gave a woman on black, "tokyo city night" and "singer microphone studio" gave AI anime art, "person reading phone couch" a dark portrait, "woman using phone cafe" a woman in bed. "new york city aerial", "india city street" (Delhi metro), "woman headphones music", "woman filming smartphone" worked.
+
 ## 2026-11-18 Wednesday night run (video 008)
 - No Tuesday-night run happened (17 Nov), so no Short goes out on Wed 18 Nov. 008 is for Thu 19 Nov.
 - vidIQ (YouTube Analytics, 21 Oct-18 Nov, 5 credits, 125 left): 1,875 views on 6 Shorts, still 0 subscribers.

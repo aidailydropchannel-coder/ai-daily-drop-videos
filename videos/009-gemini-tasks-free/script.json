@@ -41,6 +41,10 @@
     "hand scrolling smartphone",
     "young man phone surprised",
     "city night lights"
+   ],
+   "clips": [
+    "s0_0.mp4@0",
+    "s0_2.mp4@0"
    ]
   },
   {
@@ -54,6 +58,10 @@
     "man drinking coffee morning",
     "woman laptop home",
     "person reading phone couch"
+   ],
+   "clips": [
+    "s1_1.mp4@0",
+    "s1_0.mp4@0"
    ]
   },
   {
@@ -68,6 +76,10 @@
     "india city street",
     "new york city aerial",
     "tokyo city night"
+   ],
+   "clips": [
+    "s2_1.mp4@0",
+    "s2_0.mp4@0"
    ]
   },
   {
@@ -81,6 +93,10 @@
     "woman headphones music",
     "singer microphone studio",
     "girl dancing headphones"
+   ],
+   "clips": [
+    "s3_0.mp4@0",
+    "s3_2.mp4@0"
    ]
   },
   {
@@ -94,6 +110,11 @@
     "woman filming smartphone",
     "young woman phone video",
     "hand holding smartphone"
+   ],
+   "clips": [
+    "s4_1.mp4@0",
+    "s4_0.mp4@0",
+    "s4_2.mp4@0"
    ]
   },
   {
@@ -107,6 +128,10 @@
    "footage": [
     "young man smartphone",
     "woman using phone cafe"
+   ],
+   "clips": [
+    "s5_0.mp4@0",
+    "s4_2.mp4@2"
    ]
   }
  ],

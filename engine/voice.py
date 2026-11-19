@@ -33,7 +33,7 @@ CUSTOM = {
     "Perplexity": "pɚplˈɛksᵻti", "Sora": "sˈɔɹə", "Grok": "ɡɹˈɑk", "xAI": "ˈɛks ˌAˈI",
     "LLM": "ˌɛlˌɛlˈɛm", "LLMs": "ˌɛlˌɛlˈɛmz", "CEO": "sˌiˌiˈO", "GIF": "ɡˈɪf", "GIFs": "ɡˈɪfs", "Codex": "kˈOdɛks",
     "copies": "kˈɑpiz", "Reddit": "ɹˈɛdɪt", "Redditors": "ɹˈɛdɪtɚz", "Spotify": "spˈɑtᵻfI", "Lightroom": "lˈItɹum",
-    "CarPlay": "kˈɑɹplˌA",
+    "CarPlay": "kˈɑɹplˌA", "Suno": "sˈunO",
     "countries": "kˈʌntɹiz", "territories": "tˈɛɹətˌɔɹiz", "iPhone": "ˈIfˌOn", "Android": "ˈændɹYd",
 }
 

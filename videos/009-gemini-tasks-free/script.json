@@ -1,0 +1,123 @@
+{
+ "id": "009-gemini-tasks-free",
+ "voice": "bm_george",
+ "speed": 1.08,
+ "music": "laniakea-the-grey-room-density-time",
+ "title": "Gemini Tasks Is Now Free + 2 More New AI Tools 🤯",
+ "description": "Gemini's Tasks feature, which used to need a paid Google AI plan, is now free in six countries: the US, India, Japan, South Korea, Canada and Australia. Gemini can run jobs for you in the background, like a morning briefing from your email and calendar. Also new: Suno Visuals turns your songs into music videos, lyric videos and album art (clips up to 15 seconds, separate Visuals credits), and Instagram is testing content protection that finds copies of a creator's videos so they can block them.\n\nWhich one would you use first? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Google, Tasks in Gemini (November 17, 2026) via 9to5Google; Suno, \"Introducing Visuals\" (November 17, 2026); Instagram content protection via The Next Web (November 17, 2026)\n\n#AItools #AInews #Shorts #Gemini #Suno",
+ "tags": [
+  "Gemini",
+  "Gemini Tasks",
+  "Google Gemini free",
+  "free AI tools",
+  "AI tools",
+  "Suno",
+  "Suno Visuals",
+  "AI music video",
+  "Instagram",
+  "Instagram content protection",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://9to5google.com/2026/11/17/gemini-tasks-free/",
+  "https://www.ithinkdiff.com/gemini-tasks-free-six-countries/",
+  "https://suno.com/blog/introducing-visuals",
+  "https://thenextweb.com/news/suno-visuals-ai-video-lyric-videos-album-art",
+  "https://thenextweb.com/news/instagram-content-protection-ai-reposts-direct-messaging-app",
+  "https://www.newsbytesapp.com/news/science/instagram-launches-content-protection-to-block-ai-modified-video-reposts/tldr"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "3 NEW AI TOOLS",
+   "headline": [
+    "Paid Gemini",
+    "now FREE"
+   ],
+   "accent_line": 1,
+   "say": "Gemini's paid AI agent is now free. And that's just one of three tools.",
+   "footage": [
+    "hand scrolling smartphone",
+    "young man phone surprised",
+    "city night lights"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "1. TASKS IN GEMINI",
+   "icon": "calendar",
+   "title": "Works for you",
+   "subtitle": "Jobs done in the background.",
+   "say": "One: Tasks in Gemini. It does jobs for you in the background, like a morning briefing.",
+   "footage": [
+    "man drinking coffee morning",
+    "woman laptop home",
+    "person reading phone couch"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "NOW FREE IN",
+   "value": 6,
+   "suffix": "",
+   "label": "countries",
+   "note": "incl. India and the US",
+   "say": "It used to need a paid plan. Now it's free in six countries, including India and the US.",
+   "footage": [
+    "india city street",
+    "new york city aerial",
+    "tokyo city night"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "2. SUNO VISUALS",
+   "icon": "film",
+   "title": "Song to video",
+   "subtitle": "Clips up to 15 seconds.",
+   "say": "Two: Suno Visuals turns your song into a music video, up to fifteen seconds long.",
+   "footage": [
+    "woman headphones music",
+    "singer microphone studio",
+    "girl dancing headphones"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "3. INSTAGRAM",
+   "icon": "bookmark",
+   "title": "Stop copycats",
+   "subtitle": "Find and block copies.",
+   "say": "Three: Instagram is testing a tool that finds copies of your videos, so you can block them.",
+   "footage": [
+    "woman filming smartphone",
+    "young woman phone video",
+    "hand holding smartphone"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Which would",
+    "you use?"
+   ],
+   "say": "Which would you use first? Comment below, and follow AI Daily Drop.",
+   "footage": [
+    "young man smartphone",
+    "woman using phone cafe"
+   ]
+  }
+ ],
+ "first_comment": "Free AI or paid AI: which do you use more? 👇",
+ "thumb": {
+  "lines": [
+   "GEMINI",
+   "NOW FREE",
+   "+2 MORE"
+  ],
+  "accent": 1,
+  "badge": "FREE"
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "009-gemini-tasks-free",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "young man phone surprised",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "city night lights",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "man drinking coffee morning",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "woman laptop home",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "person reading phone couch",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "india city street",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "new york city aerial",
+   "kind": "video"
+  },
+  {
+   "name": "s2_2",
+   "q": "tokyo city night",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "woman headphones music",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "singer microphone studio",
+   "kind": "video"
+  },
+  {
+   "name": "s3_2",
+   "q": "girl dancing headphones",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "woman filming smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "young woman phone video",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "hand holding smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman using phone cafe",
+   "kind": "video"
+  }
+ ]
+}

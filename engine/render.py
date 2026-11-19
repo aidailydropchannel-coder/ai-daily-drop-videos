@@ -167,6 +167,11 @@ def icon(name, size=300, stroke=None):
             for j in range(2):
                 x = S * (0.3 + 0.2 * i); y = S * (0.56 + 0.17 * j); r = S * 0.04
                 d.ellipse((x - r, y - r, x + r, y + r), fill=c)
+    elif name == "mic":  # microphone
+        d.rounded_rectangle((S * 0.36, m, S * 0.64, S * 0.6), radius=S * 0.14, outline=c, width=sw)
+        d.arc((S * 0.24, S * 0.3, S * 0.76, S * 0.72), 0, 180, fill=c, width=sw)
+        d.line([(S * 0.5, S * 0.72), (S * 0.5, S * 0.86)], fill=c, width=sw)
+        d.line([(S * 0.34, S * 0.88), (S * 0.66, S * 0.88)], fill=c, width=sw)
     im = im.resize((size, size), Image.LANCZOS)
     return glow(im, radius=size // 16, strength=1.4)
 

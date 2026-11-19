@@ -5,7 +5,19 @@
  "music": "singularity-the-grey-room-density-time",
  "title": "ChatGPT Now Types While You Talk, Free 🎙️",
  "description": "ChatGPT's new Live Dictation turns your speech into text as you talk, and it is rolling out worldwide on every ChatGPT plan, including free. OpenAI also removed the old 10-minute recording limit, and you can edit the text before you send it. It works on the web, the desktop app, iPhone and Android.\n\nWould you rather type or talk to AI? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: OpenAI (@ChatGPT), Live Dictation announcement (November 18, 2026) via Digital Trends and iClarified (November 19, 2026)\n\n#AItools #AInews #Shorts #ChatGPT #VoiceTyping",
- "tags": ["ChatGPT", "ChatGPT Live Dictation", "ChatGPT voice typing", "free AI tools", "AI tools", "OpenAI", "voice to text", "speech to text", "dictation app", "AI news", "tech news"],
+ "tags": [
+  "ChatGPT",
+  "ChatGPT Live Dictation",
+  "ChatGPT voice typing",
+  "free AI tools",
+  "AI tools",
+  "OpenAI",
+  "voice to text",
+  "speech to text",
+  "dictation app",
+  "AI news",
+  "tech news"
+ ],
  "sources": [
   "https://x.com/ChatGPT (post, November 18, 2026, embedded in Digital Trends)",
   "https://www.digitaltrends.com/computing/chatgpt-now-supports-live-dictation-openai-removes-the-10-minute-recording-limit/",
@@ -13,25 +25,119 @@
   "https://tbreak.com/chatgpt-live-dictation/"
  ],
  "scenes": [
-  {"type": "hook", "kicker": "FREE IN CHATGPT", "headline": ["Just talk.", "It types."], "accent_line": 1,
+  {
+   "type": "hook",
+   "kicker": "FREE IN CHATGPT",
+   "headline": [
+    "Just talk.",
+    "It types."
+   ],
+   "accent_line": 1,
    "say": "You can now talk to ChatGPT and watch your words appear live. For free.",
-   "footage": ["man talking to phone", "woman speaking smartphone", "city street walking phone"]},
-  {"type": "feature", "kicker": "LIVE DICTATION", "icon": "mic", "title": "Talk to text", "subtitle": "Words appear as you speak.",
+   "footage": [
+    "man talking to phone",
+    "woman speaking smartphone",
+    "city street walking phone"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "LIVE DICTATION",
+   "icon": "mic",
+   "title": "Talk to text",
+   "subtitle": "Words appear as you speak.",
    "say": "It's called Live Dictation. Your speech turns into text while you talk, not after.",
-   "footage": ["woman talking laptop", "man speaking microphone", "person typing laptop"]},
-  {"type": "stat", "kicker": "OLD LIMIT GONE", "value": 10, "suffix": " min", "label": "recording cap", "note": "now removed",
+   "footage": [
+    "woman talking laptop",
+    "man speaking microphone",
+    "person typing laptop"
+   ],
+   "clips": [
+    "s1_2.mp4@1",
+    "s1_0.mp4@1"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "OLD LIMIT GONE",
+   "value": 10,
+   "suffix": " min",
+   "label": "recording cap",
+   "note": "now removed",
    "say": "Long voice notes used to stop at ten minutes. That limit is gone.",
-   "footage": ["stopwatch clock ticking", "hourglass sand time"]},
-  {"type": "feature", "kicker": "EVERY PLAN", "icon": "chat", "title": "Free plan too", "subtitle": "Web, desktop, iPhone, Android.",
+   "footage": [
+    "stopwatch clock ticking",
+    "hourglass sand time"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "EVERY PLAN",
+   "icon": "chat",
+   "title": "Free plan too",
+   "subtitle": "Web, desktop, iPhone, Android.",
    "say": "And it's on every ChatGPT plan, including free, on web, desktop, iPhone and Android.",
-   "footage": ["student laptop library", "hand holding smartphone", "woman laptop home"]},
-  {"type": "feature", "kicker": "HOW TO", "icon": "spark", "title": "Tap. Talk. Fix.", "subtitle": "Edit the text, then send.",
+   "footage": [
+    "student laptop library",
+    "hand holding smartphone",
+    "woman laptop home"
+   ],
+   "clips": [
+    "s3_2.mp4@1",
+    "s3_1.mp4@1"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "HOW TO",
+   "icon": "spark",
+   "title": "Tap. Talk. Fix.",
+   "subtitle": "Edit the text, then send.",
    "say": "Tap the mic, talk, fix any word, then send. No paid voice typing app needed for your prompts.",
-   "footage": ["finger tapping phone screen", "man phone couch", "young woman phone cafe"]},
-  {"type": "cta", "kicker": "COMMENT BELOW", "headline": ["Type or", "talk?"],
+   "footage": [
+    "finger tapping phone screen",
+    "man phone couch",
+    "young woman phone cafe"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_2.mp4@1"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Type or",
+    "talk?"
+   ],
    "say": "So, would you rather type or talk to AI? Comment below, and follow AI Daily Drop.",
-   "footage": ["young man smartphone", "friends laughing phone"]}
+   "footage": [
+    "young man smartphone",
+    "friends laughing phone"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s4_1.mp4@1"
+   ]
+  }
  ],
  "first_comment": "What would you dictate first: emails, notes or ideas? 👇",
- "thumb": {"lines": ["CHATGPT", "TYPES WHAT", "YOU SAY"], "accent": 1, "badge": "FREE"}
+ "thumb": {
+  "lines": [
+   "CHATGPT",
+   "TYPES WHAT",
+   "YOU SAY"
+  ],
+  "accent": 1,
+  "badge": "FREE"
+ }
 }

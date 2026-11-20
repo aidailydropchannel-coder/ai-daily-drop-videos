@@ -1,0 +1,117 @@
+{
+ "id": "011-google-ai-mode-incognito",
+ "voice": "bf_emma",
+ "speed": 1.08,
+ "music": "fascination-gregory-allison",
+ "title": "Google AI Mode Now Has Its Own Incognito Mode 🕵️",
+ "description": "Google AI Mode now has temporary threads, an incognito-style chat inside AI search. Tap the pen icon with the dotted border in the top-right corner of AI Mode: the chat is not saved to your history, your past preferences don't shape the answers, and once you close it, it's gone. It is rolling out worldwide on desktop and mobile browsers in every AI Mode language.\n\nWhat would you search in secret? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for the newest AI tools and tech news every day.\n\nSource: Google, \"Temporary threads are now available in AI Mode in Search\" (November 17, 2026); TechCrunch and 9to5Google (November 17-18, 2026)\n\n#AItools #AInews #Shorts #GoogleAI #PrivacyTips",
+ "tags": [
+  "Google AI Mode",
+  "AI Mode incognito",
+  "Google temporary threads",
+  "Google Search AI",
+  "Google AI",
+  "privacy tips",
+  "AI tips",
+  "free AI tools",
+  "AI tools",
+  "AI news",
+  "tech news"
+ ],
+ "sources": [
+  "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode/",
+  "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+  "https://9to5google.com/2026/11/17/google-ai-mode-temporary-threads/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NEW IN GOOGLE",
+   "headline": [
+    "Incognito",
+    "for AI"
+   ],
+   "accent_line": 1,
+   "say": "Want Google's AI to forget what you asked? AI Mode just got its own incognito mode.",
+   "footage": [
+    "woman phone night",
+    "hand scrolling smartphone",
+    "man laptop dark room"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "TEMPORARY THREADS",
+   "icon": "lock",
+   "title": "Private chat",
+   "subtitle": "Inside AI Mode in Search.",
+   "say": "Google calls it temporary threads, right inside AI Mode in Search.",
+   "footage": [
+    "person typing laptop",
+    "woman laptop home",
+    "laptop keyboard closeup"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "HOW TO",
+   "icon": "pen",
+   "title": "Tap the pen",
+   "subtitle": "Dotted icon, top right.",
+   "say": "Open AI Mode and tap the pen icon with the dotted border, top right.",
+   "footage": [
+    "finger tapping phone screen",
+    "hand holding smartphone"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "WHAT CHANGES",
+   "icon": "chat",
+   "title": "No history",
+   "subtitle": "Past chats don't shape answers.",
+   "say": "Your questions aren't saved to your history, and past searches won't shape the answers.",
+   "footage": [
+    "padlock security door",
+    "woman reading phone",
+    "young man laptop"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "WHEN YOU'RE DONE",
+   "icon": "spark",
+   "title": "Close = gone",
+   "subtitle": "Phone and computer browsers.",
+   "say": "Close the thread, and it's gone. It's rolling out worldwide in phone and computer browsers.",
+   "footage": [
+    "closing laptop desk",
+    "city night lights",
+    "world globe spinning"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Asking in",
+    "secret?"
+   ],
+   "say": "So, what would you ask it in secret? Comment below, and follow AI Daily Drop.",
+   "footage": [
+    "young man smartphone",
+    "woman smiling phone"
+   ]
+  }
+ ],
+ "first_comment": "Do you ever clear your search history? Yes or no 👇",
+ "thumb": {
+  "lines": [
+   "GOOGLE AI",
+   "HAS AN",
+   "INCOGNITO"
+  ],
+  "accent": 2,
+  "badge": "NEW"
+ }
+}

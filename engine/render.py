@@ -167,6 +167,21 @@ def icon(name, size=300, stroke=None):
             for j in range(2):
                 x = S * (0.3 + 0.2 * i); y = S * (0.56 + 0.17 * j); r = S * 0.04
                 d.ellipse((x - r, y - r, x + r, y + r), fill=c)
+    elif name == "lock":  # padlock
+        d.arc((S * 0.3, m, S * 0.7, S * 0.56), 180, 360, fill=c, width=sw)
+        d.line([(S * 0.3, S * 0.34), (S * 0.3, S * 0.46)], fill=c, width=sw)
+        d.line([(S * 0.7, S * 0.34), (S * 0.7, S * 0.46)], fill=c, width=sw)
+        d.rounded_rectangle((S * 0.2, S * 0.46, S * 0.8, S - m), radius=S * 0.06, outline=c, width=sw)
+        r = S * 0.06; d.ellipse((S * 0.5 - r, S * 0.62 - r, S * 0.5 + r, S * 0.62 + r), fill=c)
+        d.line([(S * 0.5, S * 0.64), (S * 0.5, S * 0.76)], fill=c, width=sw)
+    elif name == "pen":  # pen inside a dotted square
+        n = 9
+        for i in range(n + 1):
+            for (x0, y0, x1, y1) in ((m, m, S - m, m), (m, S - m, S - m, S - m), (m, m, m, S - m), (S - m, m, S - m, S - m)):
+                fx = x0 + (x1 - x0) * (i / n); fy = y0 + (y1 - y0) * (i / n)
+                r = S * 0.022; d.ellipse((fx - r, fy - r, fx + r, fy + r), fill=c)
+        d.line([(S * 0.32, S * 0.68), (S * 0.66, S * 0.34)], fill=c, width=sw * 2)
+        d.polygon([(S * 0.27, S * 0.73), (S * 0.30, S * 0.62), (S * 0.38, S * 0.70)], fill=c)
     elif name == "mic":  # microphone
         d.rounded_rectangle((S * 0.36, m, S * 0.64, S * 0.6), radius=S * 0.14, outline=c, width=sw)
         d.arc((S * 0.24, S * 0.3, S * 0.76, S * 0.72), 0, 180, fill=c, width=sw)

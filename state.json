@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 1,
+ "next_voice_index": 2,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 3,
+ "next_music_index": 4,
  "videos": [
   {
    "id": "001v2",
@@ -161,7 +161,8 @@
    "metricool_uuid": "-867682979743446668",
    "cloudinary": "ai-daily-drop/009-gemini-tasks-free",
    "thumbnail": "ai-daily-drop/009-gemini-tasks-free-thumb",
-   "status": "scheduled"
+   "status": "published",
+   "youtube_id": "YYwW5bng7Zs"
   },
   {
    "id": "010-chatgpt-live-dictation",
@@ -177,12 +178,29 @@
    "metricool_uuid": "3384718838670903772",
    "cloudinary": "ai-daily-drop/010-chatgpt-live-dictation",
    "thumbnail": "ai-daily-drop/010-chatgpt-live-dictation-thumb",
-   "status": "scheduled",
-   "note": "catch-up for missed Tue 17 Nov run"
+   "status": "published",
+   "note": "catch-up for missed Tue 17 Nov run",
+   "youtube_id": "e44-PoG_oF8"
+  },
+  {
+   "id": "011-google-ai-mode-incognito",
+   "story": "Google AI Mode temporary threads - incognito-style AI search chat, pen icon with dotted border top right, not saved to history, no personalization, gone when closed, rolling out globally on desktop+mobile browsers (2026-11-17)",
+   "pillar": "ai-tip",
+   "hook_style": "question",
+   "voice": "bf_emma",
+   "music": "fascination-gregory-allison",
+   "length_s": 28.0,
+   "slot_pkt": "2026-11-21T16:00",
+   "slot": "A",
+   "metricool_post_id": 435945461,
+   "metricool_uuid": "2672966611790939337",
+   "cloudinary": "ai-daily-drop/011-google-ai-mode-incognito",
+   "thumbnail": "ai-daily-drop/011-google-ai-mode-incognito-thumb",
+   "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 10
+  "2026-11": 11
  },
  "hook_styles": [
   "shock-claim",
@@ -192,5 +210,5 @@
   "vs",
   "warning"
  ],
- "next_video_number": 11
+ "next_video_number": 12
 }

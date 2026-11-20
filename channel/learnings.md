@@ -1,5 +1,15 @@
 # Learnings (newest first)
 
+## 2026-11-20 Friday night run (video 011) + week 2 review
+- vidIQ (YouTube Analytics, 23 Oct-20 Nov, 5 credits, 115 left): 1,887 views on 7 Shorts. FIRST SUBSCRIBER came from 007 Gemini 4 Hydrogen (Metricool YTEV01 = 1 on 18 and 19 Nov).
+  007 (Slot A, shock-claim, 26.9 s): only 28 views so far but 9 engaged and avg 20 s = 74% viewed, the best retention yet next to 002 (69%). 008-010 not in YouTube Analytics yet (2-day lag).
+- 007 breaks the "Slot A = 600+ views" pattern (A: 622, 775, 28). Topic matters more than slot: broad consumer apps (Instagram, Spotify/Reddit) took off, a model launch did not. Keep the slot test running; Monday run decides with 008 (B) and 009/010 (same-day A vs B).
+- Short Shorts keep viewers: 26-28 s videos (002, 007) hold 69-74%; 28-36 s list/news ones sit at 41-46%. Aim for ~26-28 s and ~80 words.
+- Metricool: 009 published as YouTube YYwW5bng7Zs, 010 as e44-PoG_oF8. Metricool per-video rows still empty.
+- Video 011 (Google AI Mode temporary threads = incognito for AI search): Saturday AI-tip pillar with a `question` hook instead of `warning` (006 warning + how-to was worst at 26%), bf_emma, 28.0 s, 85 words, Slot A 16:00 PKT Sat 21 Nov.
+- Engine: added `lock` and `pen` (dotted-border) icons.
+- Stock robot: "woman reading phone" returned a Quran-reading clip (dropped: religious), "padlock security door" an AI earth render, "laptop keyboard closeup" an abstract light blur. "hand scrolling smartphone", "finger tapping phone screen", "woman laptop home", "young man smartphone" worked well.
+
 ## 2026-11-20 catch-up run (video 010, replaces missed Tue 17 Nov run)
 - Video 010 (ChatGPT Live Dictation, free on every plan): `you-can-now` hook (2nd use), Wednesday pillar "free AI replaces a paid app", am_michael, 32.2 s, Slot B 04:00 PKT Fri 20 Nov (009 has Slot A 16:00 the same day: first same-day A vs B test).
 - Added a `mic` icon to engine/render.py.

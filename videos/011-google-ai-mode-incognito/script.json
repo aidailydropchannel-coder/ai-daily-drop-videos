@@ -37,6 +37,10 @@
     "woman phone night",
     "hand scrolling smartphone",
     "man laptop dark room"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1"
    ]
   },
   {
@@ -50,6 +54,10 @@
     "person typing laptop",
     "woman laptop home",
     "laptop keyboard closeup"
+   ],
+   "clips": [
+    "s1_1.mp4@1",
+    "s1_0.mp4@1"
    ]
   },
   {
@@ -62,6 +70,10 @@
    "footage": [
     "finger tapping phone screen",
     "hand holding smartphone"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1"
    ]
   },
   {
@@ -75,6 +87,10 @@
     "padlock security door",
     "woman reading phone",
     "young man laptop"
+   ],
+   "clips": [
+    "s3_2.mp4@1",
+    "s4_1.mp4@1"
    ]
   },
   {
@@ -88,6 +104,10 @@
     "closing laptop desk",
     "city night lights",
     "world globe spinning"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s3_0.mp4@1"
    ]
   },
   {
@@ -101,6 +121,10 @@
    "footage": [
     "young man smartphone",
     "woman smiling phone"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
    ]
   }
  ],

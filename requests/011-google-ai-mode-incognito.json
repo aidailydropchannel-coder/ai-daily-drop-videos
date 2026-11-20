@@ -1,0 +1,85 @@
+{
+ "id": "011-google-ai-mode-incognito",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "woman phone night",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "man laptop dark room",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "person typing laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "woman laptop home",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "laptop keyboard closeup",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "finger tapping phone screen",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "hand holding smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "padlock security door",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "woman reading phone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_2",
+   "q": "young man laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "closing laptop desk",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "city night lights",
+   "kind": "video"
+  },
+  {
+   "name": "s4_2",
+   "q": "world globe spinning",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman smiling phone",
+   "kind": "video"
+  }
+ ]
+}

@@ -42,7 +42,10 @@ def stock(vid, retry="", only=None):
         for n, q in enumerate(sc.get("footage", [])):
             name = f"s{i}_{n}"
             if only and name not in only: continue
-            items.append({"name": name, "q": q, "kind": "video"})
+            if isinstance(q, dict) and q.get("url"):          # {"url": "https://company.com/press.jpg"}
+                items.append({"name": name, "url": q["url"], "q": q.get("q", ""), "kind": "url"})
+            else:
+                items.append({"name": name, "q": q, "kind": "video"})
     (ROOT / "requests").mkdir(exist_ok=True)
     json.dump({"id": req_id, "items": items}, open(ROOT / "requests" / f"{req_id}.json", "w"), indent=1)
     sh("git", "-C", str(ROOT), "add", "requests", f"videos/{vid}")
@@ -72,7 +75,9 @@ def stock(vid, retry="", only=None):
     have = {m["name"] for m in merged if "file" in m}
     for i, sc in enumerate(spec["scenes"]):
         if sc.get("footage"):
-            sc["clips"] = [f"s{i}_{n}.mp4@1" for n in range(len(sc["footage"])) if f"s{i}_{n}" in have]
+            files = {x["name"]: x["file"] for x in merged if "file" in x}
+            sc["clips"] = [(files[f"s{i}_{n}"] + ("" if files[f"s{i}_{n}"].endswith((".jpg", ".jpeg", ".png", ".webp")) else "@1"))
+                           for n in range(len(sc["footage"])) if f"s{i}_{n}" in files]
     save(vid, spec)
     sheet(vid)
 
@@ -103,7 +108,7 @@ def render(vid):
     spec = load(vid); bd = build_dir(vid)
     v = V.Voice()
     for i, sc in enumerate(spec["scenes"]):
-        a = v.speak(sc["say"], spec["voice"], spec.get("speed", 1.08))
+        a = v.speak(sc["say"], spec["voice"], spec.get("speed", 1.15))
         idx = np.where(np.abs(a) > 0.01)[0]; a = a[max(idx[0] - 240, 0): idx[-1] + 2400]
         V.save_wav(bd / f"vo_{i}.wav", a)
     if V.MISSING: print("WARNING spelled-out words (add to CUSTOM in voice.py):", sorted(V.MISSING))

@@ -257,7 +257,10 @@ class Footage:
     """Streams frames of one clip (centre-cropped to 9:16) with a slow push-in. Frames must be read in order."""
     def __init__(self, path, dur, start=1.0, zoom=(1.0, 1.09), drift=(0, 0)):
         self.dur, self.zoom, self.drift = dur, zoom, drift
-        self.cmd = ["ffmpeg", "-loglevel", "error", "-ss", f"{start:.2f}", "-i", str(path), "-t", f"{dur + 0.3:.2f}",
+        is_still = str(path).lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
+        src = ["-loop", "1", "-framerate", str(FPS), "-i", str(path)] if is_still else ["-ss", f"{start:.2f}", "-i", str(path)]
+        if is_still: self.zoom = (1.0, 1.14)
+        self.cmd = ["ffmpeg", "-loglevel", "error", *src, "-t", f"{dur + 0.3:.2f}",
                     "-vf", f"fps={FPS},scale={ZW}:{ZH}:force_original_aspect_ratio=increase:flags=lanczos,crop={ZW}:{ZH}",
                     "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
         self.proc, self.k, self.last = None, -1, None
@@ -528,8 +531,9 @@ def render(script_path, build, music_dir, out, preview_frames=None, stock_dir=No
         place(c, brand, 110 + 92 + 24 + brand.width / 2, 150)
         # global progress line
         ImageDraw.Draw(c).rounded_rectangle((60, 66, 60 + (W - 120) * tg / total, 74), radius=4, fill=ACC + (255,))
-        sc.draw(c, t_local)
-        draw_caption(c, chunks, t_local)
+        # Scene 0: headline/kicker fully on screen from the very first frame (swipe decision happens in ~0.5 s)
+        sc.draw(c, t_local + (3.0 if i == 0 else 0.0))
+        draw_caption(c, chunks, max(t_local, chunks[0][0][1] + 0.2) if i == 0 and t_local < 0.3 else t_local)
         img = c.convert("RGB")
         if sc.feeds:
             if flash > 0: img = Image.blend(img, Image.new("RGB", (W, H), (235, 250, 255)), flash)

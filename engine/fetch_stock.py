@@ -81,6 +81,15 @@ def main():
         manifest, used = [], set()
         for item in req["items"]:
             try:
+                if item.get("kind") == "url":
+                    # official product/press image or video from the company's own newsroom / media kit
+                    ext = item["url"].split("?")[0].rsplit(".", 1)[-1].lower()
+                    ext = ext if ext in ("jpg", "jpeg", "png", "webp", "mp4") else "jpg"
+                    dest = out / f"{item['name']}.{ext}"
+                    download(item["url"], dest)
+                    manifest.append({"name": item["name"], "q": item.get("q", ""), "file": dest.name, "kind": "url",
+                                     "source": item["url"]})
+                    print("ok", item["name"], item["url"]); continue
                 if item.get("kind", "video") == "video":
                     h, f = pick_video(item["q"], used)
                     if not h:

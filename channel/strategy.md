@@ -63,3 +63,14 @@ compliance audit is approved (unaudited API uploads are locked to private, so it
 - Length: 25 s vs 35 s.
 - Later: one 6-10 min long video per week (watch hours for YPP); cross-post the same Shorts to TikTok/Instagram
   through Metricool (counts against the same 20 posts, so only once there is room).
+
+## Update 2026-11-21 (after weeks 1-2: ~1,900 views, 1 subscriber, only 6-10% engaged views)
+- Diagnosis: viewers swipe in the first second (empty/blurry first frame, headline faded in, generic stock footage that
+  did not show the product, niche topics). Fixed: instant headline at frame 0, official product images allowed,
+  voice 1.15x, 25-28 s, every Short at 16:00 PKT, broad topics.
+- Series for a reason to subscribe: number recurring formats in titles/thumbnails, e.g. "Free AI Tool #7",
+  "3 AI Tools You Missed #4". Keep the series names consistent.
+- Weekly plan (4 Shorts + 1 long video, inside Metricool's 20 free posts):
+  Tue: Free AI Tool #N | Wed: ChatGPT/Gemini trick | Thu: 3 AI Tools You Missed #N | Fri: biggest AI news people use |
+  Sun: long video "AI News This Week".
+- The growth analysis task (Wed + Sat nights) reviews this plan every few days and may change it based on data.

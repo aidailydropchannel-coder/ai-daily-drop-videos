@@ -19,24 +19,11 @@ The owner uses Claude in the daytime, so runs happen only at night. The "posting
 2. `bash engine/setup.sh` (downloads the Kokoro voice model + pronunciation data into engine/tts_data, data only).
 3. Read `state.json`, `channel/strategy.md`, `channel/learnings.md`, and the last 14 rows of `channel/performance.csv`.
 
-### 1. Analyse (vidIQ + Metricool)
-vidIQ is connected (free plan: 150 credits/month, most tools cost 5 credits/call). Budget: at most ONE paid vidIQ call per
-run (about 100 credits/month), never more than 140 in a month (check `vidiq_balance`, free). Alternate:
-- Mon/Wed/Fri runs: `vidiq_channel_analytics` channelId UClvGMr0uqnpy0zyUda04Pew, dimensions ["video"], metrics
-  ["views","engagedViews","averageViewDuration","averageViewPercentage","likes","subscribersGained"], last 28 days.
-  These are YouTube's own numbers (real retention); prefer them over Metricool. Video ids are in Metricool getScheduledPosts.
-- Tue/Thu runs: topic demand check for the story - `vidiq_keyword_research` (mode research) on the main keyword, or
-  `vidiq_outliers` contentType "short" for the niche; use the result to pick the angle/title wording people search for.
-Metricool (free, no credits) for the rest:
-1. `getAnalyticsDataByMetrics` brandId 7983937, from 30 days ago to now, metrics
-   `["YTVV17","YTVV02","YTVV06","YTVV08","YTVV09","YTVV11","YTVV12"]` (title, published, views, avg view duration, likes, comments, shares).
-2. Channel totals: `["YTEV01","YTEV02","YTEV05","YTEV06"]` (subscribers, views, gained, lost); traffic sources `["YTTS01","YTTS02"]`.
-3. Update `channel/performance.csv` (one row per video, overwrite numbers for existing ids). Columns:
-   `id,title,published_pkt,pillar,hook_style,voice,music,length_s,views,avg_view_s,retention_pct,likes,comments,shares,checked_at`
-   retention_pct = avg_view_s / length_s * 100.
-4. Spot patterns once there are 5+ videos: which pillar / hook style / topic / voice / posting hour gets the most views and
-   the best retention. Write findings (with the numbers) to `channel/learnings.md` and apply them to today's video.
-   Keep learnings short and dated. Only call something a pattern when it holds across 3+ videos.
+### 1. Read the latest analysis (no vidIQ calls in nightly runs)
+The "AI Daily Drop growth analysis" task (Wed + Sat nights) owns vidIQ credits, deep analysis and fixes. Nightly runs:
+1. Read `channel/analysis/latest.md` and follow its "Rules for the next videos" exactly (they override older rules here).
+2. Metricool (free, no credits) for quick numbers: `getAnalyticsDataByMetrics` brandId 7983937, channel totals
+   `["YTEV01","YTEV02","YTEV05","YTEV06"]`; publication ids/status via `getScheduledPosts`.
 
 ### 2. Pick today's story
 - The pillar for the posting day (tomorrow) comes from the weekly plan in `channel/strategy.md` (adjust if learnings say another pillar wins).
@@ -48,7 +35,7 @@ Metricool (free, no credits) for the rest:
 
 ### 3. Write the script -> `videos/<NNN-slug>/script.json`
 Copy the format of `videos/001v2/script.json`. Rules that make people stay:
-- 25-35 s total, 5-7 scenes. Scene 1 = hook in under 2 s that states the surprising thing (no "hi guys", no intro).
+- 25-28 s total (about 80 words at voice speed 1.15), 5-6 scenes. Scene 1 = hook in under 2 s that states the surprising thing (no "hi guys", no intro).
   The algorithm judges 'viewed vs swiped away' in the first 1-2 s and then completion %: see channel/strategy.md.
 - Last line should loop back to the opening or ask a question that invites comments.
 - Rotate hook styles (record which in state): `shock-claim`, `question`, `you-can-now`, `number`, `vs`, `warning`.
@@ -66,6 +53,16 @@ Copy the format of `videos/001v2/script.json`. Rules that make people stay:
   max ~12 characters each, ALL CAPS, a curiosity hook that is NOT just the title (e.g. "CHATGPT / NOW MAKES / GIFS").
   Badge optional and short (NEW, FREE, WARNING, VS). Must be true to the video - no clickbait lies.
 - New brand/tech words the voice may mispronounce: add them to CUSTOM in engine/voice.py (misaki symbols, see file).
+
+### 3b. Make the first second stop the scroll (biggest problem: ~90% swiped away in week 1-2)
+- The engine shows the scene-1 headline and caption fully from frame 0. Write a headline that is a bold, concrete claim
+  in <= 3 short lines (<= 11 characters each); no slow build-up.
+- Show the REAL product when the story is about one: in a scene's `footage` list you may put
+  `{"url": "<image or mp4 URL>", "q": "what it shows"}` using ONLY official media from the company itself (its newsroom,
+  press kit, or the announcement blog post images). Never use images from news sites, other creators or social posts.
+  Use at most 2 such stills per video; prefer them in scene 1 or 2. Mix with moving stock footage.
+- Prefer broad topics everyone uses (ChatGPT, Gemini, Instagram, WhatsApp, YouTube, TikTok, phones, free tools)
+  over niche launches (model names, car systems).
 
 ### 4. Footage
 `python3 engine/make_short.py stock <id>` -> waits for the GitHub Action, downloads clips, writes build/<id>/sheet.jpg.
@@ -88,7 +85,7 @@ Fix any word printed in "spelled-out words" warning.
    thumbnail's secure_url, firstCommentText = script first_comment, providers youtube,
    youtubeData {title, type "short", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
    isAiGeneratedContent false}, publicationDate in Asia/Karachi at the slot from `channel/strategy.md`
-   (posting day = tomorrow: odd video number = Slot A 16:00 PKT, even = Slot B 04:00 PKT, until learnings pick a winner).
+   (posting day = tomorrow, 16:00 PKT: the slot test is finished, 16:00 got ~5x the views of 04:00).
    If Metricool rejects the post with VIDEO_THUMBNAIL_NOT_APPLICABLE, schedule again without videoThumbnailUrl and
    note it in learnings (YouTube has not enabled Shorts thumbnails for the channel yet).
    If the slot has already passed, use the next free slot. Record the slot in state + performance.csv.

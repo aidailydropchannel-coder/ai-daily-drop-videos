@@ -201,7 +201,7 @@
   }
  ],
  "posts_this_month": {
-  "2026-11": 11
+  "2026-11": 12
  },
  "hook_styles": [
   "shock-claim",
@@ -223,7 +223,11 @@
    "music": "snowfall-asher-fulero",
    "thumbnail_choice": "B",
    "slot_pkt": "2026-11-22T21:00",
-   "status": "building"
+   "status": "scheduled",
+   "metricool_post_id": 437312193,
+   "metricool_uuid": "-6910487172301828401",
+   "cloudinary": "ai-daily-drop/L001-ai-news-this-week",
+   "thumbnail": "ai-daily-drop/L001-ai-news-this-week-thumb"
   }
  ],
  "next_long_number": 2

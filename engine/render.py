@@ -187,6 +187,15 @@ def icon(name, size=300, stroke=None):
         d.arc((S * 0.24, S * 0.3, S * 0.76, S * 0.72), 0, 180, fill=c, width=sw)
         d.line([(S * 0.5, S * 0.72), (S * 0.5, S * 0.86)], fill=c, width=sw)
         d.line([(S * 0.34, S * 0.88), (S * 0.66, S * 0.88)], fill=c, width=sw)
+    elif name == "shield":  # shield with check mark
+        d.polygon([(S * 0.5, m), (S - m * 1.3, S * 0.24), (S - m * 1.5, S * 0.56), (S * 0.5, S - m), (m * 1.5, S * 0.56), (m * 1.3, S * 0.24)], outline=c, width=sw)
+        d.line([(m * 1.3, S * 0.24), (S * 0.5, m), (S - m * 1.3, S * 0.24), (S - m * 1.5, S * 0.56), (S * 0.5, S - m), (m * 1.5, S * 0.56), (m * 1.3, S * 0.24)], fill=c, width=sw, joint="curve")
+        d.line([(S * 0.36, S * 0.5), (S * 0.47, S * 0.61), (S * 0.66, S * 0.4)], fill=c, width=sw, joint="curve")
+    elif name == "chart":  # rising bars + arrow
+        for i, h in enumerate((0.25, 0.42, 0.6)):
+            x0 = S * (0.18 + 0.23 * i); d.rounded_rectangle((x0, S * (0.86 - h), x0 + S * 0.15, S * 0.86), radius=S * 0.02, fill=c)
+        d.line([(S * 0.16, S * 0.5), (S * 0.45, S * 0.3), (S * 0.8, S * 0.14)], fill=c, width=sw)
+        d.polygon([(S * 0.86, S * 0.1), (S * 0.7, S * 0.1), (S * 0.82, S * 0.24)], fill=c)
     im = im.resize((size, size), Image.LANCZOS)
     return glow(im, radius=size // 16, strength=1.4)
 

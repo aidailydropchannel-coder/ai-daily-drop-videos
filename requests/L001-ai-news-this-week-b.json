@@ -1,0 +1,76 @@
+{
+ "id": "L001-ai-news-this-week-b",
+ "orientation": "landscape",
+ "items": [
+  {
+   "name": "g2_1_1",
+   "q": "crowd walking city",
+   "kind": "video"
+  },
+  {
+   "name": "g2_3_1",
+   "q": "parcel delivery door",
+   "kind": "video"
+  },
+  {
+   "name": "g2_4_0",
+   "q": "contactless payment phone",
+   "kind": "video"
+  },
+  {
+   "name": "g3_0_1",
+   "q": "woman voice message phone",
+   "kind": "video"
+  },
+  {
+   "name": "g3_4_0",
+   "q": "smartphone screen closeup",
+   "kind": "video"
+  },
+  {
+   "name": "g4_2_1",
+   "q": "people eating lunch",
+   "kind": "video"
+  },
+  {
+   "name": "g4_2_2",
+   "q": "tourists mountain view",
+   "kind": "video"
+  },
+  {
+   "name": "g4_4_2",
+   "q": "car repair mechanic",
+   "kind": "video"
+  },
+  {
+   "name": "g5_0_1",
+   "q": "man laptop dark room",
+   "kind": "video"
+  },
+  {
+   "name": "g5_2_2",
+   "q": "typing keyboard closeup",
+   "kind": "video"
+  },
+  {
+   "name": "g6_0_1",
+   "q": "server room lights",
+   "kind": "video"
+  },
+  {
+   "name": "g6_3_1",
+   "q": "girl smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "g6_4_0",
+   "q": "woman checking email laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g7_1_1",
+   "q": "music producer studio",
+   "kind": "video"
+  }
+ ]
+}

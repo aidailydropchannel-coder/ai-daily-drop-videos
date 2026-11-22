@@ -9,7 +9,22 @@
  "description_intro": "AI News This Week #1: Google made its Gemini AI agent (Tasks) free in six countries, ChatGPT now types your words live while you talk, Google Maps plans whole trips, AI Mode in Search gets a private \"temporary threads\" button, and Gemini 4 Hydrogen speeds up Google's AI. Plus quick hits: Anthropic's IPO, Suno Visuals and Instagram's new repost protection.\n\nWhich one will you try first? Tell us in the comments!\n\n🔔 Subscribe to AI Daily Drop: AI News This Week every Sunday, plus new AI Shorts during the week.",
  "sources_text": "Sources:\n- Google, \"Tasks in Gemini is now free\" (Nov 17, 2026) + 9to5Google, Digital Trends\n- OpenAI, ChatGPT release notes: Live Dictation (Nov 18, 2026) + Digital Trends, Gizmodo\n- Google, \"New Ask Maps features for the holidays\" (Nov 16, 2026) + TechCrunch\n- Google, \"Temporary threads are now available in AI Mode in Search\" (Nov 17, 2026) + TechCrunch\n- Google, \"Introducing Gemini 4 Hydrogen\" (Nov 12, 2026) + Digital Trends\n- Anthropic newsroom, IPO pricing (Nov 18, 2026) + Al Jazeera, The Wrap\n- Suno, \"Introducing Visuals\" (Nov 17, 2026)\n- Instagram content protection via TechCrunch and PetaPixel (Nov 17, 2026)\nProduct images: official company press images. Stock footage: Pixabay.",
  "hashtags": "#AInews #AItools #Gemini #ChatGPT #GoogleMaps",
- "tags": ["AI news this week", "AI news", "new AI tools", "free AI tools", "Gemini Tasks", "Gemini agent free", "ChatGPT Live Dictation", "Google Maps AI trip planner", "Ask Maps", "Google AI Mode", "Gemini 4 Hydrogen", "Anthropic IPO", "AI tools", "tech news"],
+ "tags": [
+  "AI news this week",
+  "AI news",
+  "new AI tools",
+  "free AI tools",
+  "Gemini Tasks",
+  "Gemini agent free",
+  "ChatGPT Live Dictation",
+  "Google Maps AI trip planner",
+  "Ask Maps",
+  "Google AI Mode",
+  "Gemini 4 Hydrogen",
+  "Anthropic IPO",
+  "AI tools",
+  "tech news"
+ ],
  "first_comment": "Quick poll: which update did you NOT know about before this video? 1) Gemini Tasks free 2) ChatGPT live typing 3) Maps trip plans 4) AI Mode private chats 👇",
  "sources": [
   "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
@@ -24,110 +39,595 @@
   "https://suno.com/blog/introducing-visuals"
  ],
  "segments": [
-  {"kind": "cold_open", "lines": [
-   {"say": "This week, Google made its AI agent free, ChatGPT started typing while you talk, and Google Maps learned to plan your whole trip.",
-    "graphic": {"type": "headline", "kicker": "AI NEWS THIS WEEK", "lines": ["GEMINI'S AGENT", "IS NOW FREE"], "accent": 1},
-    "footage": [{"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png", "q": "Google official: Tasks in Gemini hero"}, "woman talking smartphone", "aerial road trip car"]},
-   {"say": "Plus, the company behind Claude just raised over eighty-one billion dollars by going public.",
-    "footage": ["stock market screen", "city skyline night"]},
-   {"say": "Here's what changed, and how to use it.",
-    "footage": ["hand scrolling smartphone"]}
-  ]},
-  {"kind": "sting"},
-  {"kind": "chapter", "title": "Gemini's agent is now free", "short": "GEMINI TASKS", "lines": [
-   {"say": "Story one. Tasks in Gemini, Google's AI agent, used to need a paid AI Pro plan. This week, it became free.",
-    "footage": ["woman using smartphone home", "man phone couch"]},
-   {"say": "It's free in six countries: the US, India, Japan, South Korea, Canada and Australia.",
-    "graphic": {"type": "stat", "value": 6, "suffix": "", "label": "countries get it free", "note": "US · India · Japan · South Korea · Canada · Australia"},
-    "footage": ["world map globe", "busy city street people"]},
-   {"say": "To try it, open the Gemini app, and switch the toggle on the home screen from Chat to Task.",
-    "graphic": {"type": "flow", "left": "Chat", "right": "Task", "icon_left": "chat", "icon_right": "spark"},
-    "footage": [{"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_Gemini_Tasks_-_Text__Ema.width-1200.format-webp.webp", "q": "Google official: Gemini Tasks text and email"}, "hands typing phone"]},
-   {"say": "Then give it a long job, like analyzing a bill, shopping, or booking an appointment. It works in the background, and tells you when it's done.",
-    "footage": ["paper bills calculator", "online shopping laptop", "woman relaxing sofa"]},
-   {"say": "Anything it buys needs your approval, and you can set a hard spending limit.",
-    "graphic": {"type": "feature", "icon": "lock", "title": "You approve", "subtitle": "Every purchase, with a spending limit you set."},
-    "footage": ["credit card payment phone", "wallet money"]},
-   {"say": "In the US, you can even text Gemini, or forward it an email. Google says Tasks can still make mistakes, so check its work.",
-    "footage": ["man texting phone", "email laptop office", "woman thinking laptop"]}
-  ]},
-  {"kind": "chapter", "title": "ChatGPT types while you talk", "short": "CHATGPT DICTATION", "lines": [
-   {"say": "Story two. ChatGPT now shows your words live, while you're still talking.",
-    "graphic": {"type": "feature", "icon": "mic", "title": "Live Dictation", "subtitle": "Your words appear as you speak."},
-    "footage": ["woman talking phone", "man speaking microphone"]},
-   {"say": "Before, you saw nothing until you stopped, and recordings cut off at ten minutes. That ten-minute limit is gone.",
-    "graphic": {"type": "stat", "value": 10, "suffix": " min", "label": "recording limit: removed", "strike": true},
-    "footage": ["stopwatch timer", "sound wave"]},
-   {"say": "It's rolling out to every plan, including free, on iPhone, Android, the web, and the desktop app.",
-    "footage": ["smartphone hands", "laptop desk home", "people using phones"]},
-   {"say": "Just tap the mic and speak. Tap the waveform to show or hide the live text, and fix any word before you send.",
-    "footage": ["finger touch screen", "typing smartphone closeup"]},
-   {"say": "Privacy tip: to keep your voice out of model training, find the setting called Improve the model for everyone, and turn it off.",
-    "graphic": {"type": "feature", "icon": "lock", "title": "Privacy tip", "subtitle": "Settings: turn off \"Improve the model for everyone\"."},
-    "footage": ["phone settings", "woman phone privacy"]}
-  ]},
-  {"kind": "chapter", "title": "Google Maps plans your trip", "short": "GOOGLE MAPS", "lines": [
-   {"say": "Story three. Ask Maps, the AI inside Google Maps, can now plan a whole trip for you.",
-    "footage": [{"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.width-1300.png", "q": "Google official: Ask Maps hero"}, "aerial city travel"]},
-   {"say": "Ask for a weekend plan, and you get a day by day itinerary, with insider tips and a numbered pin for every stop.",
-    "graphic": {"type": "feature", "icon": "pin", "title": "Day-by-day plan", "subtitle": "Insider tips and a numbered pin for every stop."},
-    "footage": ["couple travel city", "tourist walking old town", "map phone travel"]},
-   {"say": "It shows live traffic, what's open, and the vibe of each place. Ask for a lunch stop or a viewpoint, and it adds one.",
-    "footage": ["city traffic aerial", "restaurant lunch friends", "mountain viewpoint"]},
-   {"say": "You can share the plan with friends, or export it to Google Docs on a computer.",
-    "footage": ["friends looking phone", "laptop desk work"]},
-   {"say": "In the US, it can also find appointments, like a four pm nail slot, and even call local businesses to check for you.",
-    "graphic": {"type": "feature", "icon": "calendar", "title": "Finds appointments", "subtitle": "US first: it can call local businesses for you."},
-    "footage": ["beauty salon", "dog grooming", "car mechanic garage"]},
-   {"say": "And Ask Maps is expanding to thirty more European countries, including the UK, Germany and Spain.",
-    "graphic": {"type": "stat", "value": 30, "suffix": "", "label": "more European countries", "note": "Including the UK, Germany and Spain"},
-    "footage": ["london city", "berlin city", "barcelona city"]}
-  ]},
-  {"kind": "chapter", "title": "AI Mode gets a private button", "short": "AI MODE", "lines": [
-   {"say": "Story four. Google's AI Mode in Search now has its own incognito button. Google calls it temporary threads.",
-    "footage": [{"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIM_Temporary_Thread_Stills_2784x1566_1.max-1440x810.png", "q": "Google official: AI Mode temporary threads"}, "man laptop night"]},
-   {"say": "Click the temporary threads icon in the top right corner of AI Mode. There are no settings to change.",
-    "graphic": {"type": "feature", "icon": "pen", "title": "Top-right icon", "subtitle": "One click starts a temporary thread."},
-    "footage": ["computer mouse click", "laptop screen dark"]},
-   {"say": "Those chats aren't saved to your history, your past searches don't shape the answers, and they won't change what Google shows you later.",
-    "footage": ["woman laptop home", "person typing laptop", "laptop keyboard closeup"]},
-   {"say": "Close the thread, and it's gone. It's rolling out worldwide in phone and computer browsers, in every language AI Mode supports.",
-    "footage": ["closing laptop", "people smartphones city", "globe network"]}
-  ]},
-  {"kind": "chapter", "title": "Gemini 4 Hydrogen gets faster", "short": "GEMINI 4 HYDROGEN", "lines": [
-   {"say": "Story five. Gemini 4 Hydrogen is Google's new fast model, and it already powers Google Search for everyone.",
-    "footage": [{"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg", "q": "Google official: Gemini 4 Hydrogen key art"}, "data center servers"]},
-   {"say": "Google says it finishes tasks two and a half times faster than Gemini 3.8 Flash.",
-    "graphic": {"type": "stat", "value": 2.5, "suffix": "x", "label": "faster than Gemini 3.8 Flash", "note": "Google's own numbers"},
-    "footage": ["fast light trails", "running sprint"]},
-   {"say": "It also makes over five times fewer made up claims, according to Google.",
-    "graphic": {"type": "stat", "value": 5, "prefix": "", "suffix": "x", "label": "fewer made-up claims", "note": "Google's own numbers"},
-    "footage": ["checking documents", "woman reading laptop"]},
-   {"say": "In the Gemini app, it's in the model menu, and free users get it automatically when it fits the question.",
-    "footage": ["phone app scrolling", "student phone"]},
-   {"say": "It's also better at working with your Gmail and Drive, and it's the engine behind the Tasks agent from story one.",
-    "footage": ["email inbox laptop", "office work computer"]}
-  ]},
-  {"kind": "chapter", "title": "Quick hits", "short": "QUICK HITS", "lines": [
-   {"say": "Quick hits. First, Anthropic, the company behind Claude, went public on the Nasdaq. It priced its shares at eighty-three dollars, and raised about eighty-one billion dollars.",
-    "graphic": {"type": "stat", "value": 81, "prefix": "$", "suffix": "B", "label": "raised in Anthropic's IPO", "note": "Priced at $83 a share on Nov 18 · Nasdaq: ANT"},
-    "footage": ["stock market screen", "new york city", "office building glass"]},
-   {"say": "Second, Suno Visuals turns your songs into short music videos, lyric videos and album art, with clips up to fifteen seconds. Visual credits are sold separately.",
-    "graphic": {"type": "feature", "icon": "film", "title": "Suno Visuals", "subtitle": "Song to music video: clips up to 15 seconds."},
-    "footage": [{"url": "https://cdn.sanity.io/images/cl7b1q1i/production/89947c59d1f2c8fda3d2133d67c0f7e11da012c5-3840x2160.jpg?w=1920&h=1080&fit=crop&auto=format", "q": "Suno official: Visuals"}, "music studio headphones", "concert lights"]},
-   {"say": "And third, Instagram now alerts eligible creators when someone reposts their Reels, so they can block the copy, or add an original by link.",
-    "graphic": {"type": "feature", "icon": "shield", "title": "Repost alerts", "subtitle": "Block copies of your Reels or add an \"original by\" link."},
-    "footage": ["girl filming smartphone", "content creator camera"]}
-  ]},
-  {"kind": "recap", "lines": [
-   {"say": "Quick recap. Gemini's agent is free in six countries. ChatGPT types live while you talk. Maps plans your trips. AI Mode has a private button. And Hydrogen makes Google's AI faster.",
-    "graphic": {"type": "bullets", "title": "THIS WEEK IN AI", "items": ["Gemini Tasks: free in 6 countries", "ChatGPT: live dictation, all plans", "Google Maps: AI trip plans", "AI Mode: temporary threads", "Gemini 4 Hydrogen: 2.5x faster"]},
-    "footage": ["sunset city timelapse"]}
-  ]},
-  {"kind": "cta", "lines": [
-   {"say": "Which one will you try first? Tell me in the comments. And subscribe to AI Daily Drop, for the AI news that matters every Sunday, plus new Shorts during the week.",
-    "graphic": {"type": "cta", "lines": ["Which will you", "try first?"]},
-    "footage": []}
-  ]}
+  {
+   "kind": "cold_open",
+   "lines": [
+    {
+     "say": "This week, Google made its AI agent free, ChatGPT started typing while you talk, and Google Maps learned to plan your whole trip.",
+     "graphic": {
+      "type": "headline",
+      "kicker": "AI NEWS THIS WEEK",
+      "lines": [
+       "GEMINI'S AGENT",
+       "IS NOW FREE"
+      ],
+      "accent": 1
+     },
+     "footage": [
+      {
+       "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png",
+       "q": "Google official: Tasks in Gemini hero"
+      },
+      "woman talking smartphone",
+      "aerial road trip car"
+     ],
+     "clips": [
+      "g0_0_0.png",
+      "g0_0_1.mp4@1",
+      "g0_0_2.mp4@1"
+     ]
+    },
+    {
+     "say": "Plus, the company behind Claude just raised over eighty-one billion dollars by going public.",
+     "footage": [
+      "stock market screen",
+      "city skyline night"
+     ],
+     "clips": [
+      "g0_1_0.mp4@1",
+      "g0_1_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Here's what changed, and how to use it.",
+     "footage": [
+      "hand scrolling smartphone"
+     ],
+     "clips": [
+      "g0_2_0.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "sting"
+  },
+  {
+   "kind": "chapter",
+   "title": "Gemini's agent is now free",
+   "short": "GEMINI TASKS",
+   "lines": [
+    {
+     "say": "Story one. Tasks in Gemini, Google's AI agent, used to need a paid AI Pro plan. This week, it became free.",
+     "footage": [
+      "woman using smartphone home",
+      "man phone couch"
+     ],
+     "clips": [
+      "g2_0_0.mp4@1",
+      "g2_0_1.mp4@1"
+     ]
+    },
+    {
+     "say": "It's free in six countries: the US, India, Japan, South Korea, Canada and Australia.",
+     "graphic": {
+      "type": "stat",
+      "value": 6,
+      "suffix": "",
+      "label": "countries get it free",
+      "note": "US · India · Japan · South Korea · Canada · Australia"
+     },
+     "footage": [
+      "world map globe",
+      "crowd walking city"
+     ],
+     "clips": [
+      "g2_1_0.mp4@1",
+      "g2_1_1.mp4@1"
+     ]
+    },
+    {
+     "say": "To try it, open the Gemini app, and switch the toggle on the home screen from Chat to Task.",
+     "graphic": {
+      "type": "flow",
+      "left": "Chat",
+      "right": "Task",
+      "icon_left": "chat",
+      "icon_right": "spark"
+     },
+     "footage": [
+      {
+       "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_Gemini_Tasks_-_Text__Ema.width-1200.format-webp.webp",
+       "q": "Google official: Gemini Tasks text and email"
+      },
+      "hands typing phone"
+     ],
+     "clips": [
+      "g2_2_0.webp",
+      "g2_2_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Then give it a long job, like analyzing a bill, shopping, or booking an appointment. It works in the background, and tells you when it's done.",
+     "footage": [
+      "paper bills calculator",
+      "parcel delivery door",
+      "woman relaxing sofa"
+     ],
+     "clips": [
+      "g2_3_0.mp4@1",
+      "g2_3_1.mp4@1",
+      "g2_3_2.mp4@1"
+     ]
+    },
+    {
+     "say": "Anything it buys needs your approval, and you can set a hard spending limit.",
+     "graphic": {
+      "type": "feature",
+      "icon": "lock",
+      "title": "You approve",
+      "subtitle": "Every purchase, with a spending limit you set."
+     },
+     "footage": [
+      "contactless payment phone",
+      "wallet money"
+     ],
+     "clips": [
+      "g2_4_0.mp4@1",
+      "g2_4_1.mp4@1"
+     ]
+    },
+    {
+     "say": "In the US, you can even text Gemini, or forward it an email. Google says Tasks can still make mistakes, so check its work.",
+     "footage": [
+      "man texting phone",
+      "email laptop office",
+      "woman thinking laptop"
+     ],
+     "clips": [
+      "g2_5_0.mp4@1",
+      "g2_5_1.mp4@1",
+      "g2_5_2.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "title": "ChatGPT types while you talk",
+   "short": "CHATGPT DICTATION",
+   "lines": [
+    {
+     "say": "Story two. ChatGPT now shows your words live, while you're still talking.",
+     "graphic": {
+      "type": "feature",
+      "icon": "mic",
+      "title": "Live Dictation",
+      "subtitle": "Your words appear as you speak."
+     },
+     "footage": [
+      "woman talking phone",
+      "woman voice message phone"
+     ],
+     "clips": [
+      "g3_0_0.mp4@1",
+      "g3_0_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Before, you saw nothing until you stopped, and recordings cut off at ten minutes. That ten-minute limit is gone.",
+     "graphic": {
+      "type": "stat",
+      "value": 10,
+      "suffix": " min",
+      "label": "recording limit: removed",
+      "strike": true
+     },
+     "footage": [
+      "stopwatch timer",
+      "sound wave"
+     ],
+     "clips": [
+      "g3_1_0.mp4@1",
+      "g3_1_1.mp4@1"
+     ]
+    },
+    {
+     "say": "It's rolling out to every plan, including free, on iPhone, Android, the web, and the desktop app.",
+     "footage": [
+      "smartphone hands",
+      "laptop desk home",
+      "people using phones"
+     ],
+     "clips": [
+      "g3_2_0.mp4@1",
+      "g3_2_1.mp4@1",
+      "g3_2_2.mp4@1"
+     ]
+    },
+    {
+     "say": "Just tap the mic and speak. Tap the waveform to show or hide the live text, and fix any word before you send.",
+     "footage": [
+      "finger touch screen",
+      "typing smartphone closeup"
+     ],
+     "clips": [
+      "g3_3_0.mp4@1",
+      "g3_3_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Privacy tip: to keep your voice out of model training, find the setting called Improve the model for everyone, and turn it off.",
+     "graphic": {
+      "type": "feature",
+      "icon": "lock",
+      "title": "Privacy tip",
+      "subtitle": "Settings: turn off \"Improve the model for everyone\"."
+     },
+     "footage": [
+      "smartphone screen closeup",
+      "woman phone privacy"
+     ],
+     "clips": [
+      "g3_4_0.mp4@1",
+      "g3_4_1.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "title": "Google Maps plans your trip",
+   "short": "GOOGLE MAPS",
+   "lines": [
+    {
+     "say": "Story three. Ask Maps, the AI inside Google Maps, can now plan a whole trip for you.",
+     "footage": [
+      {
+       "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.width-1300.png",
+       "q": "Google official: Ask Maps hero"
+      },
+      "aerial city travel"
+     ],
+     "clips": [
+      "g4_0_0.png",
+      "g4_0_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Ask for a weekend plan, and you get a day by day itinerary, with insider tips and a numbered pin for every stop.",
+     "graphic": {
+      "type": "feature",
+      "icon": "pin",
+      "title": "Day-by-day plan",
+      "subtitle": "Insider tips and a numbered pin for every stop."
+     },
+     "footage": [
+      "couple travel city",
+      "tourist walking old town",
+      "map phone travel"
+     ],
+     "clips": [
+      "g4_1_0.mp4@1",
+      "g4_1_1.mp4@1",
+      "g4_1_2.mp4@1"
+     ]
+    },
+    {
+     "say": "It shows live traffic, what's open, and the vibe of each place. Ask for a lunch stop or a viewpoint, and it adds one.",
+     "footage": [
+      "city traffic aerial",
+      "people eating lunch",
+      "tourists mountain view"
+     ],
+     "clips": [
+      "g4_2_0.mp4@1",
+      "g4_2_1.mp4@1",
+      "g4_2_2.mp4@1"
+     ]
+    },
+    {
+     "say": "You can share the plan with friends, or export it to Google Docs on a computer.",
+     "footage": [
+      "friends looking phone",
+      "laptop desk work"
+     ],
+     "clips": [
+      "g4_3_0.mp4@1",
+      "g4_3_1.mp4@1"
+     ]
+    },
+    {
+     "say": "In the US, it can also find appointments, like a four pm nail slot, and even call local businesses to check for you.",
+     "graphic": {
+      "type": "feature",
+      "icon": "calendar",
+      "title": "Finds appointments",
+      "subtitle": "US first: it can call local businesses for you."
+     },
+     "footage": [
+      "beauty salon",
+      "dog grooming",
+      "car repair mechanic"
+     ],
+     "clips": [
+      "g4_4_0.mp4@1",
+      "g4_4_1.mp4@1",
+      "g4_4_2.mp4@1"
+     ]
+    },
+    {
+     "say": "And Ask Maps is expanding to thirty more European countries, including the UK, Germany and Spain.",
+     "graphic": {
+      "type": "stat",
+      "value": 30,
+      "suffix": "",
+      "label": "more European countries",
+      "note": "Including the UK, Germany and Spain"
+     },
+     "footage": [
+      "london city",
+      "berlin city",
+      "barcelona city"
+     ],
+     "clips": [
+      "g4_5_0.mp4@1",
+      "g4_5_1.mp4@1",
+      "g4_5_2.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "title": "AI Mode gets a private button",
+   "short": "AI MODE",
+   "lines": [
+    {
+     "say": "Story four. Google's AI Mode in Search now has its own incognito button. Google calls it temporary threads.",
+     "footage": [
+      {
+       "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIM_Temporary_Thread_Stills_2784x1566_1.max-1440x810.png",
+       "q": "Google official: AI Mode temporary threads"
+      },
+      "man laptop dark room"
+     ],
+     "clips": [
+      "g5_0_0.png",
+      "g5_0_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Click the temporary threads icon in the top right corner of AI Mode. There are no settings to change.",
+     "graphic": {
+      "type": "feature",
+      "icon": "pen",
+      "title": "Top-right icon",
+      "subtitle": "One click starts a temporary thread."
+     },
+     "footage": [
+      "computer mouse click",
+      "laptop screen dark"
+     ],
+     "clips": [
+      "g5_1_0.mp4@1",
+      "g5_1_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Those chats aren't saved to your history, your past searches don't shape the answers, and they won't change what Google shows you later.",
+     "footage": [
+      "woman laptop home",
+      "person typing laptop",
+      "typing keyboard closeup"
+     ],
+     "clips": [
+      "g5_2_0.mp4@1",
+      "g5_2_1.mp4@1",
+      "g5_2_2.mp4@1"
+     ]
+    },
+    {
+     "say": "Close the thread, and it's gone. It's rolling out worldwide in phone and computer browsers, in every language AI Mode supports.",
+     "footage": [
+      "closing laptop",
+      "people smartphones city",
+      "globe network"
+     ],
+     "clips": [
+      "g5_3_0.mp4@1",
+      "g5_3_1.mp4@1",
+      "g5_3_2.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "title": "Gemini 4 Hydrogen gets faster",
+   "short": "GEMINI 4 HYDROGEN",
+   "lines": [
+    {
+     "say": "Story five. Gemini 4 Hydrogen is Google's new fast model, and it already powers Google Search for everyone.",
+     "footage": [
+      {
+       "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+       "q": "Google official: Gemini 4 Hydrogen key art"
+      },
+      "server room lights"
+     ],
+     "clips": [
+      "g6_0_0.jpg",
+      "g6_0_1.mp4@1"
+     ]
+    },
+    {
+     "say": "Google says it finishes tasks two and a half times faster than Gemini 3.8 Flash.",
+     "graphic": {
+      "type": "stat",
+      "value": 2.5,
+      "suffix": "x",
+      "label": "faster than Gemini 3.8 Flash",
+      "note": "Google's own numbers"
+     },
+     "footage": [
+      "fast light trails",
+      "running sprint"
+     ],
+     "clips": [
+      "g6_1_0.mp4@1",
+      "g6_1_1.mp4@1"
+     ]
+    },
+    {
+     "say": "It also makes over five times fewer made up claims, according to Google.",
+     "graphic": {
+      "type": "stat",
+      "value": 5,
+      "prefix": "",
+      "suffix": "x",
+      "label": "fewer made-up claims",
+      "note": "Google's own numbers"
+     },
+     "footage": [
+      "checking documents",
+      "woman reading laptop"
+     ],
+     "clips": [
+      "g6_2_0.mp4@1",
+      "g6_2_1.mp4@1"
+     ]
+    },
+    {
+     "say": "In the Gemini app, it's in the model menu, and free users get it automatically when it fits the question.",
+     "footage": [
+      "phone app scrolling",
+      "girl smartphone"
+     ],
+     "clips": [
+      "g6_3_0.mp4@1",
+      "g6_3_1.mp4@1"
+     ]
+    },
+    {
+     "say": "It's also better at working with your Gmail and Drive, and it's the engine behind the Tasks agent from story one.",
+     "footage": [
+      "woman checking email laptop",
+      "office work computer"
+     ],
+     "clips": [
+      "g6_4_1.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "title": "Quick hits",
+   "short": "QUICK HITS",
+   "lines": [
+    {
+     "say": "Quick hits. First, Anthropic, the company behind Claude, went public on the Nasdaq. It priced its shares at eighty-three dollars, and raised about eighty-one billion dollars.",
+     "graphic": {
+      "type": "stat",
+      "value": 81,
+      "prefix": "$",
+      "suffix": "B",
+      "label": "raised in Anthropic's IPO",
+      "note": "Priced at $83 a share on Nov 18 · Nasdaq: ANT"
+     },
+     "footage": [
+      "stock market screen",
+      "new york city",
+      "office building glass"
+     ],
+     "clips": [
+      "g7_0_0.mp4@1",
+      "g7_0_1.mp4@1",
+      "g7_0_2.mp4@1"
+     ]
+    },
+    {
+     "say": "Second, Suno Visuals turns your songs into short music videos, lyric videos and album art, with clips up to fifteen seconds. Visual credits are sold separately.",
+     "graphic": {
+      "type": "feature",
+      "icon": "film",
+      "title": "Suno Visuals",
+      "subtitle": "Song to music video: clips up to 15 seconds."
+     },
+     "footage": [
+      {
+       "url": "https://cdn.sanity.io/images/cl7b1q1i/production/89947c59d1f2c8fda3d2133d67c0f7e11da012c5-3840x2160.jpg?w=1920&h=1080&fit=crop&auto=format",
+       "q": "Suno official: Visuals"
+      },
+      "music producer studio",
+      "concert lights"
+     ],
+     "clips": [
+      "g7_1_0.jpg",
+      "g7_1_1.mp4@1",
+      "g7_1_2.mp4@1"
+     ]
+    },
+    {
+     "say": "And third, Instagram now alerts eligible creators when someone reposts their Reels, so they can block the copy, or add an original by link.",
+     "graphic": {
+      "type": "feature",
+      "icon": "shield",
+      "title": "Repost alerts",
+      "subtitle": "Block copies of your Reels or add an \"original by\" link."
+     },
+     "footage": [
+      "girl filming smartphone",
+      "content creator camera"
+     ],
+     "clips": [
+      "g7_2_0.mp4@1",
+      "g7_2_1.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "recap",
+   "lines": [
+    {
+     "say": "Quick recap. Gemini's agent is free in six countries. ChatGPT types live while you talk. Maps plans your trips. AI Mode has a private button. And Hydrogen makes Google's AI faster.",
+     "graphic": {
+      "type": "bullets",
+      "title": "THIS WEEK IN AI",
+      "items": [
+       "Gemini Tasks: free in 6 countries",
+       "ChatGPT: live dictation, all plans",
+       "Google Maps: AI trip plans",
+       "AI Mode: temporary threads",
+       "Gemini 4 Hydrogen: 2.5x faster"
+      ]
+     },
+     "footage": [
+      "sunset city timelapse"
+     ],
+     "clips": [
+      "g8_0_0.mp4@1"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "cta",
+   "lines": [
+    {
+     "say": "Which one will you try first? Tell me in the comments. And subscribe to AI Daily Drop, for the AI news that matters every Sunday, plus new Shorts during the week.",
+     "graphic": {
+      "type": "cta",
+      "lines": [
+       "Which will you",
+       "try first?"
+      ]
+     },
+     "footage": []
+    }
+   ]
+  }
  ]
 }

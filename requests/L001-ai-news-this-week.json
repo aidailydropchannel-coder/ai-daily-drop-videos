@@ -1,0 +1,392 @@
+{
+ "id": "L001-ai-news-this-week",
+ "orientation": "landscape",
+ "items": [
+  {
+   "name": "g0_0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png",
+   "q": "Google official: Tasks in Gemini hero",
+   "kind": "url"
+  },
+  {
+   "name": "g0_0_1",
+   "q": "woman talking smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "g0_0_2",
+   "q": "aerial road trip car",
+   "kind": "video"
+  },
+  {
+   "name": "g0_1_0",
+   "q": "stock market screen",
+   "kind": "video"
+  },
+  {
+   "name": "g0_1_1",
+   "q": "city skyline night",
+   "kind": "video"
+  },
+  {
+   "name": "g0_2_0",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "g2_0_0",
+   "q": "woman using smartphone home",
+   "kind": "video"
+  },
+  {
+   "name": "g2_0_1",
+   "q": "man phone couch",
+   "kind": "video"
+  },
+  {
+   "name": "g2_1_0",
+   "q": "world map globe",
+   "kind": "video"
+  },
+  {
+   "name": "g2_1_1",
+   "q": "busy city street people",
+   "kind": "video"
+  },
+  {
+   "name": "g2_2_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_Gemini_Tasks_-_Text__Ema.width-1200.format-webp.webp",
+   "q": "Google official: Gemini Tasks text and email",
+   "kind": "url"
+  },
+  {
+   "name": "g2_2_1",
+   "q": "hands typing phone",
+   "kind": "video"
+  },
+  {
+   "name": "g2_3_0",
+   "q": "paper bills calculator",
+   "kind": "video"
+  },
+  {
+   "name": "g2_3_1",
+   "q": "online shopping laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g2_3_2",
+   "q": "woman relaxing sofa",
+   "kind": "video"
+  },
+  {
+   "name": "g2_4_0",
+   "q": "credit card payment phone",
+   "kind": "video"
+  },
+  {
+   "name": "g2_4_1",
+   "q": "wallet money",
+   "kind": "video"
+  },
+  {
+   "name": "g2_5_0",
+   "q": "man texting phone",
+   "kind": "video"
+  },
+  {
+   "name": "g2_5_1",
+   "q": "email laptop office",
+   "kind": "video"
+  },
+  {
+   "name": "g2_5_2",
+   "q": "woman thinking laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g3_0_0",
+   "q": "woman talking phone",
+   "kind": "video"
+  },
+  {
+   "name": "g3_0_1",
+   "q": "man speaking microphone",
+   "kind": "video"
+  },
+  {
+   "name": "g3_1_0",
+   "q": "stopwatch timer",
+   "kind": "video"
+  },
+  {
+   "name": "g3_1_1",
+   "q": "sound wave",
+   "kind": "video"
+  },
+  {
+   "name": "g3_2_0",
+   "q": "smartphone hands",
+   "kind": "video"
+  },
+  {
+   "name": "g3_2_1",
+   "q": "laptop desk home",
+   "kind": "video"
+  },
+  {
+   "name": "g3_2_2",
+   "q": "people using phones",
+   "kind": "video"
+  },
+  {
+   "name": "g3_3_0",
+   "q": "finger touch screen",
+   "kind": "video"
+  },
+  {
+   "name": "g3_3_1",
+   "q": "typing smartphone closeup",
+   "kind": "video"
+  },
+  {
+   "name": "g3_4_0",
+   "q": "phone settings",
+   "kind": "video"
+  },
+  {
+   "name": "g3_4_1",
+   "q": "woman phone privacy",
+   "kind": "video"
+  },
+  {
+   "name": "g4_0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.width-1300.png",
+   "q": "Google official: Ask Maps hero",
+   "kind": "url"
+  },
+  {
+   "name": "g4_0_1",
+   "q": "aerial city travel",
+   "kind": "video"
+  },
+  {
+   "name": "g4_1_0",
+   "q": "couple travel city",
+   "kind": "video"
+  },
+  {
+   "name": "g4_1_1",
+   "q": "tourist walking old town",
+   "kind": "video"
+  },
+  {
+   "name": "g4_1_2",
+   "q": "map phone travel",
+   "kind": "video"
+  },
+  {
+   "name": "g4_2_0",
+   "q": "city traffic aerial",
+   "kind": "video"
+  },
+  {
+   "name": "g4_2_1",
+   "q": "restaurant lunch friends",
+   "kind": "video"
+  },
+  {
+   "name": "g4_2_2",
+   "q": "mountain viewpoint",
+   "kind": "video"
+  },
+  {
+   "name": "g4_3_0",
+   "q": "friends looking phone",
+   "kind": "video"
+  },
+  {
+   "name": "g4_3_1",
+   "q": "laptop desk work",
+   "kind": "video"
+  },
+  {
+   "name": "g4_4_0",
+   "q": "beauty salon",
+   "kind": "video"
+  },
+  {
+   "name": "g4_4_1",
+   "q": "dog grooming",
+   "kind": "video"
+  },
+  {
+   "name": "g4_4_2",
+   "q": "car mechanic garage",
+   "kind": "video"
+  },
+  {
+   "name": "g4_5_0",
+   "q": "london city",
+   "kind": "video"
+  },
+  {
+   "name": "g4_5_1",
+   "q": "berlin city",
+   "kind": "video"
+  },
+  {
+   "name": "g4_5_2",
+   "q": "barcelona city",
+   "kind": "video"
+  },
+  {
+   "name": "g5_0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIM_Temporary_Thread_Stills_2784x1566_1.max-1440x810.png",
+   "q": "Google official: AI Mode temporary threads",
+   "kind": "url"
+  },
+  {
+   "name": "g5_0_1",
+   "q": "man laptop night",
+   "kind": "video"
+  },
+  {
+   "name": "g5_1_0",
+   "q": "computer mouse click",
+   "kind": "video"
+  },
+  {
+   "name": "g5_1_1",
+   "q": "laptop screen dark",
+   "kind": "video"
+  },
+  {
+   "name": "g5_2_0",
+   "q": "woman laptop home",
+   "kind": "video"
+  },
+  {
+   "name": "g5_2_1",
+   "q": "person typing laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g5_2_2",
+   "q": "laptop keyboard closeup",
+   "kind": "video"
+  },
+  {
+   "name": "g5_3_0",
+   "q": "closing laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g5_3_1",
+   "q": "people smartphones city",
+   "kind": "video"
+  },
+  {
+   "name": "g5_3_2",
+   "q": "globe network",
+   "kind": "video"
+  },
+  {
+   "name": "g6_0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+   "q": "Google official: Gemini 4 Hydrogen key art",
+   "kind": "url"
+  },
+  {
+   "name": "g6_0_1",
+   "q": "data center servers",
+   "kind": "video"
+  },
+  {
+   "name": "g6_1_0",
+   "q": "fast light trails",
+   "kind": "video"
+  },
+  {
+   "name": "g6_1_1",
+   "q": "running sprint",
+   "kind": "video"
+  },
+  {
+   "name": "g6_2_0",
+   "q": "checking documents",
+   "kind": "video"
+  },
+  {
+   "name": "g6_2_1",
+   "q": "woman reading laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g6_3_0",
+   "q": "phone app scrolling",
+   "kind": "video"
+  },
+  {
+   "name": "g6_3_1",
+   "q": "student phone",
+   "kind": "video"
+  },
+  {
+   "name": "g6_4_0",
+   "q": "email inbox laptop",
+   "kind": "video"
+  },
+  {
+   "name": "g6_4_1",
+   "q": "office work computer",
+   "kind": "video"
+  },
+  {
+   "name": "g7_0_0",
+   "q": "stock market screen",
+   "kind": "video"
+  },
+  {
+   "name": "g7_0_1",
+   "q": "new york city",
+   "kind": "video"
+  },
+  {
+   "name": "g7_0_2",
+   "q": "office building glass",
+   "kind": "video"
+  },
+  {
+   "name": "g7_1_0",
+   "url": "https://cdn.sanity.io/images/cl7b1q1i/production/89947c59d1f2c8fda3d2133d67c0f7e11da012c5-3840x2160.jpg?w=1920&h=1080&fit=crop&auto=format",
+   "q": "Suno official: Visuals",
+   "kind": "url"
+  },
+  {
+   "name": "g7_1_1",
+   "q": "music studio headphones",
+   "kind": "video"
+  },
+  {
+   "name": "g7_1_2",
+   "q": "concert lights",
+   "kind": "video"
+  },
+  {
+   "name": "g7_2_0",
+   "q": "girl filming smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "g7_2_1",
+   "q": "content creator camera",
+   "kind": "video"
+  },
+  {
+   "name": "g8_0_0",
+   "q": "sunset city timelapse",
+   "kind": "video"
+  }
+ ]
+}

@@ -1,7 +1,8 @@
 """Runs on GitHub Actions: download Pixabay stock clips/photos for a request file.
 
 Request file: requests/<id>.json
-  {"id": "002-...", "items": [{"name": "s1", "q": "person typing laptop", "kind": "video"}, ...]}
+  {"id": "002-...", "orientation": "portrait", "items": [{"name": "s1", "q": "person typing laptop", "kind": "video"}, ...]}
+  "orientation": "portrait" (default, Shorts 1080x1920) or "landscape" (long videos 1920x1080).
 Result: GitHub release "stock-<id>" with <name>.mp4 / <name>.jpg and manifest.json (sources).
 Pixabay Content License: free for commercial use, no attribution required.
 """
@@ -36,7 +37,7 @@ def relevance(q, tags):
     return sum(1 for w in words if w in text or w.rstrip("s") in text) / max(1, len(words))
 
 
-def pick_video(q, used, min_dur=4, max_dur=60):
+def pick_video(q, used, min_dur=4, max_dur=60, landscape=False):
     data = get("https://pixabay.com/api/videos/?" + urllib.parse.urlencode(
         {"key": KEY, "q": q, "per_page": 30, "safesearch": "true", "order": "popular"}))
     best = None
@@ -47,27 +48,28 @@ def pick_video(q, used, min_dur=4, max_dur=60):
         vids = {k: v for k, v in h["videos"].items() if v.get("url") and v.get("width")}
         if not vids: continue
         vertical = any(v["height"] > v["width"] for v in vids.values())
-        # want a file that can fill 1080x1920 after a centre crop, without huge 4K downloads when possible
+        # want a file that fills the frame after a centre crop, without huge 4K downloads when possible
         def ok(v):
+            if landscape:  # 1920x1080: a horizontal 1080p file is perfect
+                return v["width"] >= 1920 and v["height"] >= 1080 and v["width"] > v["height"]
             return (v["width"] >= 1080 and v["height"] >= 1920) if v["height"] > v["width"] else v["height"] >= 2160
         cands = sorted(vids.values(), key=lambda v: (not ok(v), v.get("size", 0) or v["width"] * v["height"]))
         f = cands[0]
         if not ok(f):
             f = max(vids.values(), key=lambda v: v["width"] * v["height"])
-        score = (round(rel, 1), ok(f), vertical, h.get("likes", 0) + h.get("downloads", 0) / 50)
+        score = (round(rel, 1), ok(f), (not vertical) if landscape else vertical, h.get("likes", 0) + h.get("downloads", 0) / 50)
         if best is None or score > best[0]:
             best = (score, h, f)
     return (best[1], best[2]) if best else (None, None)
 
 
-def pick_photo(q, used):
+def pick_photo(q, used, landscape=False):
+    size = {"orientation": "horizontal", "min_width": 1920} if landscape else {"orientation": "vertical", "min_height": 1920}
     data = get("https://pixabay.com/api/?" + urllib.parse.urlencode(
-        {"key": KEY, "q": q, "image_type": "photo", "orientation": "vertical", "per_page": 30,
-         "safesearch": "true", "min_height": 1920}))
+        {"key": KEY, "q": q, "image_type": "photo", "per_page": 30, "safesearch": "true", **size}))
     hits = [h for h in data.get("hits", []) if h["id"] not in used and relevance(q, h.get("tags")) >= 0.34]
     hits.sort(key=lambda h: -relevance(q, h.get("tags")))
     return hits[0] if hits else None
-    return None
 
 
 def main():
@@ -79,6 +81,7 @@ def main():
             print("skip", tag); continue
         out = out_root / req["id"]; out.mkdir(exist_ok=True)
         manifest, used = [], set()
+        landscape = req.get("orientation") == "landscape"
         for item in req["items"]:
             try:
                 if item.get("kind") == "url":
@@ -91,7 +94,7 @@ def main():
                                      "source": item["url"]})
                     print("ok", item["name"], item["url"]); continue
                 if item.get("kind", "video") == "video":
-                    h, f = pick_video(item["q"], used)
+                    h, f = pick_video(item["q"], used, landscape=landscape)
                     if not h:
                         manifest.append({"name": item["name"], "q": item["q"], "error": "no result"}); continue
                     used.add(h["id"]); dest = out / f"{item['name']}.mp4"
@@ -100,7 +103,7 @@ def main():
                                      "source": h["pageURL"], "author": h.get("user"), "duration": h["duration"],
                                      "width": f["width"], "height": f["height"], "tags": h.get("tags")})
                 else:
-                    h = pick_photo(item["q"], used)
+                    h = pick_photo(item["q"], used, landscape=landscape)
                     if not h:
                         manifest.append({"name": item["name"], "q": item["q"], "error": "no result"}); continue
                     used.add(h["id"]); dest = out / f"{item['name']}.jpg"

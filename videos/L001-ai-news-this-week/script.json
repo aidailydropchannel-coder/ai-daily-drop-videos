@@ -5,7 +5,7 @@
  "voice": "bm_george",
  "speed": 1.04,
  "music": "snowfall-asher-fulero",
- "title": "AI News This Week: Gemini's AI Agent Is Now Free + 5 More",
+ "title": "AI News This Week: Gemini's AI Agent Goes Free + 4 More",
  "description_intro": "AI News This Week #1: Google made its Gemini AI agent (Tasks) free in six countries, ChatGPT now types your words live while you talk, Google Maps plans whole trips, AI Mode in Search gets a private \"temporary threads\" button, and Gemini 4 Hydrogen speeds up Google's AI. Plus quick hits: Anthropic's IPO, Suno Visuals and Instagram's new repost protection.\n\nWhich one will you try first? Tell us in the comments!\n\n🔔 Subscribe to AI Daily Drop: AI News This Week every Sunday, plus new AI Shorts during the week.",
  "sources_text": "Sources:\n- Google, \"Tasks in Gemini is now free\" (Nov 17, 2026) + 9to5Google, Digital Trends\n- OpenAI, ChatGPT release notes: Live Dictation (Nov 18, 2026) + Digital Trends, Gizmodo\n- Google, \"New Ask Maps features for the holidays\" (Nov 16, 2026) + TechCrunch\n- Google, \"Temporary threads are now available in AI Mode in Search\" (Nov 17, 2026) + TechCrunch\n- Google, \"Introducing Gemini 4 Hydrogen\" (Nov 12, 2026) + Digital Trends\n- Anthropic newsroom, IPO pricing (Nov 18, 2026) + Al Jazeera, The Wrap\n- Suno, \"Introducing Visuals\" (Nov 17, 2026)\n- Instagram content protection via TechCrunch and PetaPixel (Nov 17, 2026)\nProduct images: official company press images. Stock footage: Pixabay.",
  "hashtags": "#AInews #AItools #Gemini #ChatGPT #GoogleMaps",
@@ -62,10 +62,11 @@
       "aerial road trip car"
      ],
      "clips": [
-      "g0_0_0.png",
       "g0_0_1.mp4@1",
+      "g0_0_0.png",
       "g0_0_2.mp4@1"
-     ]
+     ],
+     "clips_locked": true
     },
     {
      "say": "Plus, the company behind Claude just raised over eighty-one billion dollars by going public.",
@@ -173,9 +174,9 @@
       "wallet money"
      ],
      "clips": [
-      "g2_4_0.mp4@1",
       "g2_4_1.mp4@1"
-     ]
+     ],
+     "clips_locked": true
     },
     {
      "say": "In the US, you can even text Gemini, or forward it an email. Google says Tasks can still make mistakes, so check its work.",
@@ -228,9 +229,9 @@
       "sound wave"
      ],
      "clips": [
-      "g3_1_0.mp4@1",
       "g3_1_1.mp4@1"
-     ]
+     ],
+     "clips_locked": true
     },
     {
      "say": "It's rolling out to every plan, including free, on iPhone, Android, the web, and the desktop app.",
@@ -322,9 +323,9 @@
      ],
      "clips": [
       "g4_2_0.mp4@1",
-      "g4_2_1.mp4@1",
-      "g4_2_2.mp4@1"
-     ]
+      "g4_2_1.mp4@1"
+     ],
+     "clips_locked": true
     },
     {
      "say": "You can share the plan with friends, or export it to Google Docs on a computer.",
@@ -352,9 +353,9 @@
      ],
      "clips": [
       "g4_4_0.mp4@1",
-      "g4_4_1.mp4@1",
-      "g4_4_2.mp4@1"
-     ]
+      "g4_4_1.mp4@1"
+     ],
+     "clips_locked": true
     },
     {
      "say": "And Ask Maps is expanding to thirty more European countries, including the UK, Germany and Spain.",
@@ -457,9 +458,9 @@
       "server room lights"
      ],
      "clips": [
-      "g6_0_0.jpg",
-      "g6_0_1.mp4@1"
-     ]
+      "g6_0_0.jpg"
+     ],
+     "clips_locked": true
     },
     {
      "say": "Google says it finishes tasks two and a half times faster than Gemini 3.8 Flash.",
@@ -487,7 +488,7 @@
       "prefix": "",
       "suffix": "x",
       "label": "fewer made-up claims",
-      "note": "Google's own numbers"
+      "note": "Google's own numbers: more than 5x"
      },
      "footage": [
       "checking documents",
@@ -516,8 +517,10 @@
       "office work computer"
      ],
      "clips": [
-      "g6_4_1.mp4@1"
-     ]
+      "g6_4_1.mp4@1",
+      "g2_5_1.mp4@1"
+     ],
+     "clips_locked": true
     }
    ]
   },
@@ -629,5 +632,78 @@
     }
    ]
   }
- ]
+ ],
+ "thumbs": [
+  {
+   "name": "A",
+   "idea": "benefit + one hero (phone in hand), $0 in yellow",
+   "lines": [
+    "AI AGENT",
+    "FOR $0"
+   ],
+   "accent": 1,
+   "accent_color": "yellow",
+   "badge": "NEW",
+   "hero": {
+    "type": "image",
+    "src": "g2_0_0.mp4@2"
+   }
+  },
+  {
+   "name": "B",
+   "idea": "giant real number + our own icons for the 5 upgrades",
+   "lines": [
+    "FREE AI",
+    "UPGRADES",
+    "THIS WEEK"
+   ],
+   "accent": 0,
+   "accent_color": "yellow",
+   "hero": {
+    "type": "number",
+    "text": "5",
+    "icons": [
+     "spark",
+     "mic",
+     "pin",
+     "lock",
+     "gauge"
+    ],
+    "cx": 930
+   }
+  },
+  {
+   "name": "C",
+   "idea": "official product key art + speed claim",
+   "lines": [
+    "GOOGLE AI",
+    "2.5X",
+    "FASTER"
+   ],
+   "accent": 1,
+   "accent_color": "cyan",
+   "hero": {
+    "type": "image",
+    "src": "g6_0_0.jpg",
+    "cx": 985,
+    "size": [
+     520,
+     390
+    ]
+   },
+   "text_w": 520
+  }
+ ],
+ "thumb_choice": "B",
+ "chapters": [
+  "00:00 Intro",
+  "00:21 Gemini's agent is now free",
+  "01:05 ChatGPT types while you talk",
+  "01:42 Google Maps plans your trip",
+  "02:27 AI Mode gets a private button",
+  "03:01 Gemini 4 Hydrogen gets faster",
+  "03:36 Quick hits",
+  "04:10 Recap"
+ ],
+ "description": "AI News This Week #1: Google made its Gemini AI agent (Tasks) free in six countries, ChatGPT now types your words live while you talk, Google Maps plans whole trips, AI Mode in Search gets a private \"temporary threads\" button, and Gemini 4 Hydrogen speeds up Google's AI. Plus quick hits: Anthropic's IPO, Suno Visuals and Instagram's new repost protection.\n\nWhich one will you try first? Tell us in the comments!\n\n🔔 Subscribe to AI Daily Drop: AI News This Week every Sunday, plus new AI Shorts during the week.\n\nChapters:\n00:00 Intro\n00:21 Gemini's agent is now free\n01:05 ChatGPT types while you talk\n01:42 Google Maps plans your trip\n02:27 AI Mode gets a private button\n03:01 Gemini 4 Hydrogen gets faster\n03:36 Quick hits\n04:10 Recap\n\nSources:\n- Google, \"Tasks in Gemini is now free\" (Nov 17, 2026) + 9to5Google, Digital Trends\n- OpenAI, ChatGPT release notes: Live Dictation (Nov 18, 2026) + Digital Trends, Gizmodo\n- Google, \"New Ask Maps features for the holidays\" (Nov 16, 2026) + TechCrunch\n- Google, \"Temporary threads are now available in AI Mode in Search\" (Nov 17, 2026) + TechCrunch\n- Google, \"Introducing Gemini 4 Hydrogen\" (Nov 12, 2026) + Digital Trends\n- Anthropic newsroom, IPO pricing (Nov 18, 2026) + Al Jazeera, The Wrap\n- Suno, \"Introducing Visuals\" (Nov 17, 2026)\n- Instagram content protection via TechCrunch and PetaPixel (Nov 17, 2026)\nProduct images: official company press images. Stock footage: Pixabay.\n\n#AInews #AItools #Gemini #ChatGPT #GoogleMaps"
 }

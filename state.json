@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 2,
+ "next_voice_index": 0,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 4,
+ "next_music_index": 5,
  "videos": [
   {
    "id": "001v2",
@@ -196,7 +196,8 @@
    "metricool_uuid": "2672966611790939337",
    "cloudinary": "ai-daily-drop/011-google-ai-mode-incognito",
    "thumbnail": "ai-daily-drop/011-google-ai-mode-incognito-thumb",
-   "status": "scheduled"
+   "status": "published",
+   "youtube_id": "U561U-JtRMM"
   }
  ],
  "posts_this_month": {
@@ -210,5 +211,20 @@
   "vs",
   "warning"
  ],
- "next_video_number": 12
+ "next_video_number": 12,
+ "long_videos": [
+  {
+   "id": "L001-ai-news-this-week",
+   "episode": 1,
+   "title": "AI News This Week: Gemini's AI Agent Goes Free + 4 More",
+   "stories": "Gemini Tasks free in 6 countries; ChatGPT Live Dictation; Google Maps Ask Maps itineraries + appointments; AI Mode temporary threads; Gemini 4 Hydrogen; quick hits: Anthropic IPO ($83, ~$81B), Suno Visuals, Instagram repost protection (week of 15-22 Nov 2026)",
+   "length_s": 275.6,
+   "voice": "bm_george",
+   "music": "snowfall-asher-fulero",
+   "thumbnail_choice": "B",
+   "slot_pkt": "2026-11-22T21:00",
+   "status": "building"
+  }
+ ],
+ "next_long_number": 2
 }

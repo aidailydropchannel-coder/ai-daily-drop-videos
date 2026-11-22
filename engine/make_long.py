@@ -129,8 +129,24 @@ def render(vid):
     voice(vid)
     bd = build_dir(vid); out = ROOT / "videos" / vid / "final.mp4"
     info = do_render(ROOT / "videos" / vid / "script.json", bd, ROOT / "music", out)
+    fit_size(out, bd)
     write_description(vid, info["chapters"])
     check(vid)
+
+
+def fit_size(out, bd, max_mb=92):
+    """GitHub (100 MB per file) and Cloudinary free (100 MB per video) limits: 2-pass x264 to just under max_mb."""
+    mb = out.stat().st_size / 1e6
+    if mb <= max_mb: print(f"size {mb:.0f} MB ok"); return
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)],
+                               capture_output=True, text=True).stdout)
+    vk = int(max_mb * 8e3 / dur - 192 - 40)          # video kbit/s = total budget - audio - container overhead
+    print(f"size {mb:.0f} MB > {max_mb}: re-encoding video at {vk} kbit/s (2-pass)", flush=True)
+    tmp = out.with_suffix(".fit.mp4"); log = str(bd / "x264pass")
+    common = ["-c:v", "libx264", "-preset", "medium", "-b:v", f"{vk}k", "-pix_fmt", "yuv420p", "-passlogfile", log]
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", str(out), *common, "-pass", "1", "-an", "-f", "null", "/dev/null")
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", str(out), *common, "-pass", "2", "-c:a", "copy", "-movflags", "+faststart", str(tmp))
+    tmp.replace(out); print(f"size now {out.stat().st_size / 1e6:.0f} MB")
 
 
 def fmt(t):

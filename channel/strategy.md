@@ -32,23 +32,25 @@ From 1 Feb 2027 new applicants need 8,000 watch hours (365 days) or 20M Shorts v
 - Last line flows back into the first (loop) or asks a question that invites a comment.
 - One topic, no filler. If a sentence can be cut without losing the point, cut it.
 
-## Posting plan (free: Metricool free plan = 20 posts/month)
-- **5 Shorts per week, Tuesday to Saturday** (about 21/month; the run skips a day if the month's 20 are used).
-  Big 2026 studies agree Thursday-Saturday are the strongest days for Shorts; Metricool's own study found more uploads
-  do not automatically mean faster growth, so 5 strong videos beat 7 rushed ones.
-- Production runs Mon-Fri at 23:34 PKT (night only - the owner uses Claude in the day). Each run makes tomorrow's Short.
-- Two time slots under test on the posting day (Asia/Karachi):
-  - **Slot B 04:00 PKT** (= 6 PM New York / 3 PM Los Angeles, the US evening window most studies favour for Shorts)
-  - **Slot A 16:00 PKT** (Metricool's YouTube activity peak; = Europe afternoon, Asia evening, US early morning)
-  - Alternate A/B by video number (odd = A, even = B) for the first 4 weeks, then use the winner from performance.csv.
+## Posting plan (free: Metricool free plan = 20 posts/month) - updated 22 Nov 2026
+**4 Shorts (Tue-Fri) + 1 long video (Sunday) per week.** Shorts views do not count toward the 4,000 watch hours,
+so the weekly long video is what moves us toward monetization.
 
-| Day | Pillar | Example |
-|---|---|---|
-| Tue | New AI tool you can use today | "This free AI turns photos into 3D" |
-| Wed | Free AI that replaces a paid app | "Stop paying for Canva: try this" |
-| Thu | Biggest AI news of the week, explained simply | "OpenAI just raised $11B" |
-| Fri | 3 AI tools you didn't know | quick-fire list, 3 tools in 30 s |
-| Sat | AI tip / how-to (made by the Friday-night run, which also writes the weekly report) | "Make ChatGPT write like you" |
+| Day (PKT) | What | Made by | Goes live |
+|---|---|---|---|
+| Mon 23:34 | Short: Free AI Tool #N | nightly run | Tue 16:00 |
+| Tue 23:34 | Short: ChatGPT/Gemini trick | nightly run | Wed 16:00 |
+| Wed 23:34 | Short: 3 AI Tools You Missed #N | nightly run | Thu 16:00 |
+| Thu 23:34 | Short: biggest AI news people use + **weekly report** | nightly run | Fri 16:00 |
+| Sun 10:40 | **Long video: "AI News This Week" #N** (4-6 min, 3 thumbnail options) | weekly long-video task | Sun 21:00 |
+| Wed + Sat night | growth analysis (vidIQ credits, fixes) | growth analysis task | - |
+
+- 16:00 PKT for Shorts (the slot test is over: ~5x the views of 04:00).
+- Sunday 21:00 PKT for the long video (= 16:00 UK / 11:00 New York / 21:30 India: Sunday is a high-viewing day for
+  long-form; to be tested against performance once we have 4+ episodes).
+- Monthly budget: ~17 Shorts + 4-5 long videos = 21-22 in long months. If the 20 are used, the long video gets the slot
+  and the month's last Short is made + committed but uploaded by hand in YouTube Studio.
+- Every thumbnail (long + Shorts) follows channel/thumbnail_playbook.md.
 
 ## Free tools only (current stack)
 Claude (scripts, research, editing, analysis) - Kokoro voice (free, local) - Pixabay stock (free) - GitHub (free, robot +

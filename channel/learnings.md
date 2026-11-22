@@ -1,5 +1,24 @@
 # Learnings (newest first)
 
+## 2026-11-22 Sunday: first weekly long video (L001) + long-video engine + thumbnail playbook
+- New: engine/render_long.py + engine/make_long.py (stock | voice | render | thumb | check) for 1920x1080 4-6 min videos;
+  fetch_stock.py takes "orientation": "landscape"; engine/thumbnail_long.py makes 3 options + a phone-size compare sheet.
+- Thumbnail research -> channel/thumbnail_playbook.md (12 rules). vidIQ niche scan (15 credits, 100 left): AI-news
+  leaders use one hero + 2-3 huge words; small-channel breakouts lean on FREE / a big number; thumbnail swaps that doubled
+  views replaced busy UI screenshots with a big product subject + 2-3 words.
+- L001 thumbnail options: A "AI AGENT FOR $0" (phone photo), B giant "5" + "FREE AI UPGRADES THIS WEEK", C "GOOGLE AI 2.5X
+  FASTER" (Hydrogen press art). Chose B: the biggest single subject, still readable at 168x94, brightest, true curiosity
+  gap (which 5?), does not repeat the title. A's stock face looked calm/neutral; C's hero was small and niche.
+- Fact check correction: Short 008 said Ask Maps is "now in 200+ countries". Google's post says it is expanding to 30
+  more European countries and WILL then be in 200+. The long video says it correctly. Read "will" vs "is" carefully.
+- Stock robot (landscape): good 1080p results for phones/laptops/cities. Bad: "busy city street people" (religious
+  festival tag), "online shopping laptop" + "credit card payment phone" (cartoons), "phone settings" (a lake),
+  "stopwatch timer" (digits fight a number graphic), "server room lights" (hacker clip), "tourists mountain view"
+  (Crimea-tagged). The robot can return the SAME clip for a retry phrase that matches an earlier line: check tags.
+- Scheduled-task changes need the owner's approval and cannot be made from a scheduled run: see channel/scheduled_tasks.md.
+- Render: 2-CPU sandbox renders 1080p at ~0.5x real time (~10-15 min for 4.6 min). GitHub/Cloudinary 100 MB limit:
+  make_long.py fits the file to 92 MB with 2-pass x264.
+
 ## 2026-11-20 Friday night run (video 011) + week 2 review
 - vidIQ (YouTube Analytics, 23 Oct-20 Nov, 5 credits, 115 left): 1,887 views on 7 Shorts. FIRST SUBSCRIBER came from 007 Gemini 4 Hydrogen (Metricool YTEV01 = 1 on 18 and 19 Nov).
   007 (Slot A, shock-claim, 26.9 s): only 28 views so far but 9 engaged and avg 20 s = 74% viewed, the best retention yet next to 002 (69%). 008-010 not in YouTube Analytics yet (2-day lag).

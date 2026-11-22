@@ -15,7 +15,7 @@ import json, math, re, subprocess, wave
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 from render import (BG, NAVY, ACC, ACC_LIGHT, WHITE, MUTED, F_BLACK, F_XBOLD, F_BOLD, F_SEMI, F_MED,
                     clamp, ease_out, ease_back, prog, glow, text_sprite, wrap, place, logo_mark, icon, pill,
@@ -144,8 +144,12 @@ class Graphic:
         self.label = glow(text_sprite(self.g["label"], F_BOLD(66)), color=(0, 0, 0), radius=12, strength=1.3)
         self.note = glow(text_sprite(self.g["note"], F_MED(40), fill=MUTED), color=(0, 0, 0), radius=10, strength=1.3) if self.g.get("note") else None
         self.cache = {}
+        # soft dark pool behind the number + label so they read over busy footage
+        m = Image.new("L", (1300, 700), 0); ImageDraw.Draw(m).ellipse((150, 100, 1150, 600), fill=200)
+        self.pool = Image.new("RGBA", m.size, BG + (0,)); self.pool.putalpha(m.filter(ImageFilter.GaussianBlur(90)))
 
     def draw_stat(self, c, t):
+        place(c, self.pool, W / 2, 480, alpha=clamp(t / 0.3))
         v = self.g["value"]; p = ease_out(prog(t, 0.1, 1.0))
         val = f"{v * p:.1f}" if isinstance(v, float) and not v.is_integer() else str(int(round(v * p)))
         txt = f"{self.g.get('prefix', '')}{val}{self.g.get('suffix', '')}"
@@ -166,7 +170,7 @@ class Graphic:
     def prep_feature(self):
         self.ic = icon(self.g["icon"], 230)
         self.title = text_sprite(self.g["title"], F_BLACK(96))
-        f = F_SEMI(46); self.sub = [text_sprite(l, f, fill=(225, 233, 243)) for l in wrap(self.g["subtitle"], f, 900)]
+        f = F_SEMI(46); self.sub = [text_sprite(l, f, fill=(225, 233, 243)) for l in wrap(self.g["subtitle"], f, 1000)]
         w = 360 + max([self.title.width] + [s.width for s in self.sub]) + 80
         h = max(330, 130 + self.title.height + 60 * len(self.sub))
         self.card = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -273,7 +277,7 @@ def render(script_path, build, music_dir, out):
     units, chapters, total = build_timeline(spec, build)
     n_frames = int(round(total * FPS))
     base = brand_background(); g_plain, g_dim = grade(), grade(0.30)
-    mark_small = logo_mark(70); brand = text_sprite("AI DAILY DROP", F_XBOLD(34))
+    mark_small = logo_mark(70); brand = text_sprite("AI DAILY DROP", F_XBOLD(34), stroke=3, stroke_fill=(2, 6, 16))
     ch_pills = {}
     for u in units:
         if u["kind"] == "line" and u["chapter"]:
@@ -305,11 +309,18 @@ def chrome(c, mark_small, brand, pill_spr=None):
     if pill_spr is not None: place(c, pill_spr, W - 60 - pill_spr.width / 2, 62)
 
 
+_HEAVY = []
+def _heavy_dim():
+    """Stronger darkening for full-screen text graphics (bright press images must not fight the headline)."""
+    if not _HEAVY: _HEAVY.append(grade(0.48))
+    return _HEAVY[0]
+
+
 def line_frames(u, n, base, g_plain, g_dim, mark_small, brand, ch_pills, stock, enc, frame_no, total):
     line = u["line"]; clips = line.get("clips") or []
     st = sentence_times(line["say"], u["voice"])
     gfx = Graphic(line["graphic"], u["dur"], st) if line.get("graphic") else None
-    gr = g_dim if gfx else g_plain
+    gr = (_heavy_dim() if line["graphic"]["type"] in ("headline", "bullets", "cta") else g_dim) if gfx else g_plain
     feeds, cuts = [], []
     if clips:
         seg = u["dur"] / len(clips)

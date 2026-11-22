@@ -11,7 +11,15 @@ work alone, and only stop to ask the owner when something is truly blocked (expi
 - GitHub repo (public): `aidailydropchannel-coder/ai-daily-drop-videos` - engine, music, videos, state, stock robot
 - Stock robot: GitHub Action `fetch-stock` (Pixabay, secret `PIXABAY_API_KEY`). Never write any key into a file.
 
-## Routine (runs Mon-Fri nights at 23:34 PKT; each run makes the Short for the NEXT day, Tue-Sat)
+## Weekly timetable (inside Metricool's free 20 posts/month)
+- Shorts: 4 a week, Tue-Fri at 16:00 PKT, made by the nightly run Mon-Thu at 23:34 PKT (each run makes TOMORROW's Short).
+- Long video: 1 a week, "AI News This Week", made by the Sunday task at 10:40 PKT and scheduled for that Sunday 21:00 PKT.
+- 4 Shorts x ~4.3 weeks + 4-5 long videos = 21-22 posts in a 5-Sunday month: if the month's 20 are used, the long video
+  wins (watch hours); the last Short of the month is made and committed but uploaded by hand (see Hard rules).
+
+## Routine (runs Mon-Thu nights at 23:34 PKT; each run makes the Short for the NEXT day, Tue-Fri)
+If a nightly run fires on a Friday night (old Mon-Fri schedule not yet changed by the owner), do NOT make a Saturday
+Short: write only the weekly report and remind the owner to approve the new schedule (channel/scheduled_tasks.md).
 The owner uses Claude in the daytime, so runs happen only at night. The "posting day" is tomorrow's date (PKT).
 
 ### 0. Setup (about 2 min)
@@ -49,6 +57,7 @@ Copy the format of `videos/001v2/script.json`. Rules that make people stay:
 - SEO: the main keyword (tool/company name) in the first 3 words of the title AND the first line of the description.
 - Pinned-style first comment: write `"first_comment"` in script.json - a short question or poll ("Free or paid: which
   would you pick? 👇") that is different from the question in the video. Pass it as Metricool `firstCommentText`.
+- Thumbnails (Shorts covers AND long videos): follow `channel/thumbnail_playbook.md` every time.
 - Thumbnail text: add `"thumb": {"lines": [...], "accent": <index>, "badge": "NEW"}` to script.json. 2-3 lines,
   max ~12 characters each, ALL CAPS, a curiosity hook that is NOT just the title (e.g. "CHATGPT / NOW MAKES / GIFS").
   Badge optional and short (NEW, FREE, WARNING, VS). Must be true to the video - no clickbait lies.
@@ -95,8 +104,42 @@ Fix any word printed in "spelled-out words" warning.
 ### 7. Report
 - Each run: one short message to the owner: the new video's title + when it goes live, yesterday's numbers (views, subs),
   and one thing you learned or changed.
-- Friday-night run: also the weekly report - totals vs last week, best and worst video and why, the plan for next week.
+- Thursday-night run: also the weekly report - totals vs last week (Shorts + the Sunday long video), best and worst video
+  and why, the plan for next week.
 - Only ask the owner for help when blocked (expired connector, Metricool post limit, YouTube warning/strike, money).
+
+## Weekly long video ("AI News This Week", every Sunday)
+Made by the Sunday 10:40 PKT task, scheduled for the same Sunday 21:00 PKT (if under 1 hour away: Monday 16:00 PKT).
+Shorts views do not count toward the 4,000 watch hours; this video does, so make it worth watching to the end.
+1. Setup as in step 0. Read `channel/thumbnail_playbook.md`, the last long video's script.json (format) and
+   `state.json` (long_videos, voice/music rotation, posts_this_month).
+2. Stories: the Shorts of the last 7 days in state.json are the base; add the 1-2 biggest consumer AI stories of the week
+   that we did not cover. Go one level deeper on each (how to use it, who gets it, limits, numbers). Verify every fact
+   against the primary source + one other outlet; leave out anything unconfirmed. No politics/tragedy/medical/financial advice.
+3. Script `videos/L<NNN>-ai-news-this-week/script.json` (copy L001): segments cold_open (~15 s, the 3 biggest hooks,
+   headline graphic at frame 0) -> sting -> 5-6 chapters (title + short label, 4-6 lines each) -> recap (bullets) -> cta.
+   650-720 words at voice speed 1.04 = 4.5-5 min. 1 footage phrase per ~4 s of speech (2-3 per line), max ~6 official
+   company press images in total. Graphics: headline, stat, feature, flow, bullets, cta (see engine/render_long.py).
+   Title <= 60 chars: "AI News This Week: <biggest benefit> + N More" style (keyword first, benefit + curiosity,
+   must match the thumbnail's number). description_intro, sources_text, hashtags, 12-15 tags, first_comment (a poll).
+   Voice + music: next in the rotations (shared with Shorts).
+4. `python3 engine/make_long.py voice <id>` (length + spelled-out words -> CUSTOM in voice.py), then
+   `python3 engine/make_long.py stock <id>`; look at build/<id>/sheet.jpg AND the tag lines. Replace bad shots
+   (text, logos, cartoons, religious/political, off-topic, dark) with `stock <id> --retry b --only g2_1_1,...` or by
+   editing a line's `clips` + `"clips_locked": true` (re-use a good shot from another line).
+5. Thumbnails: write 3 clearly different options in script.json `thumbs` (see engine/thumbnail_long.py), run
+   `python3 engine/make_long.py thumb <id>`, look at build/<id>/thumb_compare.jpg (full size, 320x180, 168x94),
+   fix, pick the strongest by the playbook, set `thumb_choice`, run thumb again (-> videos/<id>/thumb.jpg).
+6. `python3 engine/make_long.py render <id>` (~25-35 min) -> videos/<id>/final.mp4, chapters written into the
+   description from the real start times. Then look at build/<id>/frames.jpg (and more frames if needed) and check
+   the printed loudness (target -14 LUFS, true peak <= -1.5 dBTP). Fix and re-render if anything overlaps or is unreadable.
+7. Publish like the Shorts: commit + push; Cloudinary upload-asset video (raw.githubusercontent URL of final.mp4,
+   folder ai-daily-drop, public_id <id>) + image (thumb.jpg, public_id <id>-thumb); Metricool createScheduledPost with
+   youtubeData {title, type "video", privacy "public", tags, category "SCIENCE_TECHNOLOGY", madeForKids false,
+   isAiGeneratedContent false}, videoThumbnailUrl, firstCommentText. Check posts_this_month first.
+8. Update state.json (`long_videos` entry, rotations, posts_this_month, next_long_number), channel/learnings.md, commit, push.
+   Report to the owner: title, go-live time, length, chosen thumbnail + why, last week's numbers.
+Final files over ~95 MB cannot go to GitHub: lower the bitrate (crf) before committing.
 
 ## Hard rules
 - Never upload other people's videos or clips (no reuploads from TikTok/Douyin/YouTube). Footage only from Pixabay via the robot.

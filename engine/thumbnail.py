@@ -31,7 +31,7 @@ def make(vid):
     stock = ROOT / "build" / vid / "stock"
     if clips and (stock / clips[0].split("@")[0]).exists():
         name, _, st = clips[0].partition("@")
-        bg = frame_from(stock / name, float(st or 1) + 0.8)
+        bg = frame_from(stock / name, 0 if name.lower().endswith((".png", ".jpg", ".jpeg", ".webp")) else float(st or 1) + 0.8)
     else:
         bg = frame_from(ROOT / "videos" / vid / "final.mp4", 0.05)
 

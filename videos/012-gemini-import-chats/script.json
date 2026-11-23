@@ -43,6 +43,11 @@
     },
     "hand scrolling smartphone",
     "woman phone night"
+   ],
+   "clips": [
+    "s0_0.png",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -51,10 +56,14 @@
    "icon": "chat",
    "title": "Export it",
    "subtitle": "ChatGPT: Settings > Data controls.",
-   "say": "In ChatGPT, open Settings, then Data controls, and tap Export. You get a ZIP file.",
+   "say": "In ChatGPT, go to Settings, Data controls, Export. You get a ZIP.",
    "footage": [
     "person typing laptop",
     "laptop keyboard closeup"
+   ],
+   "clips": [
+    "s1_0.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -63,26 +72,35 @@
    "icon": "spark",
    "title": "Import it",
    "subtitle": "Gemini: Import memory > Add.",
-   "say": "In Gemini, open Import memory, tap Add under Import chats, and pick that ZIP.",
+   "say": "In Gemini, open Import memory, tap Add, and pick that ZIP.",
    "footage": [
     {
      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Switch_Import_Chat_History_2.width-1200.format-webp.webp",
      "q": "Google official mockup of importing chats into Gemini"
     },
     "finger tapping phone screen"
+   ],
+   "clips": [
+    "s2_0.webp",
+    "s2_1.mp4@1"
    ]
   },
   {
    "type": "stat",
    "kicker": "THE LIMITS",
    "value": 5,
-   "label": "per file, 5 files a day",
-   "say": "Up to five gigabytes per file, five files a day. It works for Claude chats too.",
+   "label": "per ZIP file",
+   "say": "Up to five gigabytes per file. Claude chats work too.",
    "footage": [
     "data center servers",
     "young man laptop"
    ],
-   "suffix": " GB"
+   "suffix": " GB",
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1"
+   ],
+   "note": "Claude chats work too"
   },
   {
    "type": "feature",
@@ -90,10 +108,14 @@
    "icon": "shield",
    "title": "No paid plan",
    "subtitle": "18+, not in EU or UK yet.",
-   "say": "No paid plan needed. You must be eighteen, and it's not in Europe or the UK yet.",
+   "say": "No paid plan needed. Eighteen plus, and not in Europe or the UK yet.",
    "footage": [
     "woman smiling phone",
     "friends using phones"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1"
    ]
   },
   {
@@ -103,10 +125,14 @@
     "Would you",
     "switch?"
    ],
-   "say": "So, would you switch? Comment below, and follow AI Daily Drop.",
+   "say": "Would you switch? Comment below, and follow AI Daily Drop.",
    "footage": [
     "young man smartphone",
     "woman laptop home"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
    ]
   }
  ],

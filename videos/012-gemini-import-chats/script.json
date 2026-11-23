@@ -1,0 +1,123 @@
+{
+ "id": "012-gemini-import-chats",
+ "voice": "am_michael",
+ "speed": 1.15,
+ "music": "resolution-or-reflection-the-grey-room-clark-sims",
+ "series": "Free AI Tool #1",
+ "title": "Gemini Can Import Your ChatGPT Chats | Free AI Tool #1 📦",
+ "description": "Gemini can import your whole ChatGPT chat history from one ZIP file, so you can switch without starting over. Export your data in ChatGPT (Settings, Data controls, Export), then in Gemini open Import memory and add the ZIP under Import chats: up to 5 GB per file and 5 files a day. It also works with Claude, and a copy-paste prompt brings over what your old AI remembers about you. Works on personal Google accounts, 18+, on web and the Gemini app; not yet in the EU, UK or Switzerland.\n\nWould you switch from ChatGPT to Gemini? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for a new free AI tool every Tuesday.\n\nSource: Google, \"ICYMI: Transfer your history from other AI apps into Gemini\" (November 19, 2026) and Gemini Help, \"Import from other AI platforms to Gemini Apps\"; MacRumors (launch coverage)\n\n#AItools #AInews #Shorts #Gemini #ChatGPT",
+ "tags": [
+  "Gemini",
+  "Gemini import chats",
+  "ChatGPT to Gemini",
+  "import ChatGPT history",
+  "switch from ChatGPT",
+  "Google Gemini",
+  "ChatGPT",
+  "free AI tools",
+  "AI tools",
+  "AI tips",
+  "AI news"
+ ],
+ "sources": [
+  "https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/",
+  "https://support.google.com/gemini/answer/16868299?hl=en",
+  "https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/",
+  "https://www.macrumors.com/2026/03/26/gemini-import-tool/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "FREE AI TOOL #1",
+   "headline": [
+    "Move your",
+    "ChatGPT",
+    "to Gemini"
+   ],
+   "accent_line": 1,
+   "say": "One ZIP file moves your whole ChatGPT history into Gemini. Here's how.",
+   "footage": [
+    {
+     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PlayStore_Promo_Switch-To-Gemini_Horizontal.width-1300.png",
+     "q": "Google official Switch to Gemini promo image"
+    },
+    "hand scrolling smartphone",
+    "woman phone night"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "STEP 1",
+   "icon": "chat",
+   "title": "Export it",
+   "subtitle": "ChatGPT: Settings > Data controls.",
+   "say": "In ChatGPT, open Settings, then Data controls, and tap Export. You get a ZIP file.",
+   "footage": [
+    "person typing laptop",
+    "laptop keyboard closeup"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "STEP 2",
+   "icon": "spark",
+   "title": "Import it",
+   "subtitle": "Gemini: Import memory > Add.",
+   "say": "In Gemini, open Import memory, tap Add under Import chats, and pick that ZIP.",
+   "footage": [
+    {
+     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Switch_Import_Chat_History_2.width-1200.format-webp.webp",
+     "q": "Google official mockup of importing chats into Gemini"
+    },
+    "finger tapping phone screen"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "THE LIMITS",
+   "value": 5,
+   "label": "per file, 5 files a day",
+   "say": "Up to five gigabytes per file, five files a day. It works for Claude chats too.",
+   "footage": [
+    "data center servers",
+    "young man laptop"
+   ],
+   "suffix": " GB"
+  },
+  {
+   "type": "feature",
+   "kicker": "WHO GETS IT",
+   "icon": "shield",
+   "title": "No paid plan",
+   "subtitle": "18+, not in EU or UK yet.",
+   "say": "No paid plan needed. You must be eighteen, and it's not in Europe or the UK yet.",
+   "footage": [
+    "woman smiling phone",
+    "friends using phones"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Would you",
+    "switch?"
+   ],
+   "say": "So, would you switch? Comment below, and follow AI Daily Drop.",
+   "footage": [
+    "young man smartphone",
+    "woman laptop home"
+   ]
+  }
+ ],
+ "first_comment": "ChatGPT, Gemini or Claude: which one do you use most? 👇",
+ "thumb": {
+  "lines": [
+   "TAKE YOUR",
+   "CHATGPT",
+   "WITH YOU"
+  ],
+  "accent": 1,
+  "badge": "FREE"
+ }
+}

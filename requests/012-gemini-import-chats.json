@@ -1,0 +1,72 @@
+{
+ "id": "012-gemini-import-chats",
+ "items": [
+  {
+   "name": "s0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PlayStore_Promo_Switch-To-Gemini_Horizontal.width-1300.png",
+   "q": "Google official Switch to Gemini promo image",
+   "kind": "url"
+  },
+  {
+   "name": "s0_1",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "woman phone night",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "q": "person typing laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s1_1",
+   "q": "laptop keyboard closeup",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Switch_Import_Chat_History_2.width-1200.format-webp.webp",
+   "q": "Google official mockup of importing chats into Gemini",
+   "kind": "url"
+  },
+  {
+   "name": "s2_1",
+   "q": "finger tapping phone screen",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "data center servers",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "young man laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "woman smiling phone",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "friends using phones",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman laptop home",
+   "kind": "video"
+  }
+ ]
+}

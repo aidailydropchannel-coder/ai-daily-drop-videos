@@ -109,3 +109,10 @@
 - Stock robot: Pixabay returns off-topic results for vague words; tag-relevance filter + blocklist added.
   Concrete visual phrases ("hand scrolling smartphone", "friends selfie phone") work best.
 - No performance data yet. First pattern review after 5 videos.
+
+## 2026-11-23 night run (video 012)
+- Metricool daily views (YTEV02) now work: ~2,050 views 9-19 Nov (best days: 13 Nov 817, 11 Nov 646). Rows for 20-22 Nov are still empty (lag ~3 days). L001 (long video #1) is live: youtube id qb5gotN7gDk.
+- Quiet news window (20-23 Nov): few consumer launches that are free + broad. The Gemini GIF maker (Omni 1.2 Flash, 8 countries, 18+) was skipped because Google's Help page says a Google AI plan is needed while news sites say free: unclear, so not used for "Free AI Tool".
+- Video 012 = first "Free AI Tool #1" (series counter in state.json). An evergreen how-to (Gemini imports ChatGPT/Claude chats) that Google re-promoted on 19 Nov; framed as a tool, not as "new". number hook, am_michael, 69 words at 1.15 = 25.1 s (85 words = 30.1 s: ~2.75 words/s).
+- Official images: blog.google images (storage.googleapis.com) are blocked by the session proxy but the stock robot fetches them fine (png and webp both worked).
+- Engine fix: thumbnail.py crashed when scene 0's first clip is a still image (seeked 1.8 s into a PNG); now seeks 0 for images.

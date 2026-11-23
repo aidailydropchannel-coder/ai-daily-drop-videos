@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 0,
+ "next_voice_index": 1,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 5,
+ "next_music_index": 6,
  "videos": [
   {
    "id": "001v2",
@@ -198,10 +198,27 @@
    "thumbnail": "ai-daily-drop/011-google-ai-mode-incognito-thumb",
    "status": "published",
    "youtube_id": "U561U-JtRMM"
+  },
+  {
+   "id": "012-gemini-import-chats",
+   "story": "Gemini import from other AI apps - ChatGPT/Claude chat history ZIP (up to 5 GB, 5 files/day) + memory prompt, personal accounts 18+, not EEA/UK/CH (Google ICYMI post 2026-11-19; launched 2026-03-26)",
+   "pillar": "free-ai-tool",
+   "series": "Free AI Tool #1",
+   "hook_style": "number",
+   "voice": "am_michael",
+   "music": "resolution-or-reflection-the-grey-room-clark-sims",
+   "length_s": 25.1,
+   "slot_pkt": "2026-11-24T16:00",
+   "slot": "A",
+   "metricool_post_id": 439258341,
+   "metricool_uuid": "-8373981855691029013",
+   "cloudinary": "ai-daily-drop/012-gemini-import-chats",
+   "thumbnail": "ai-daily-drop/012-gemini-import-chats-thumb",
+   "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 12
+  "2026-11": 13
  },
  "hook_styles": [
   "shock-claim",
@@ -211,7 +228,7 @@
   "vs",
   "warning"
  ],
- "next_video_number": 12,
+ "next_video_number": 13,
  "long_videos": [
   {
    "id": "L001-ai-news-this-week",
@@ -230,5 +247,9 @@
    "thumbnail": "ai-daily-drop/L001-ai-news-this-week-thumb"
   }
  ],
- "next_long_number": 2
+ "next_long_number": 2,
+ "series_counters": {
+  "Free AI Tool": 1,
+  "3 AI Tools You Missed": 0
+ }
 }

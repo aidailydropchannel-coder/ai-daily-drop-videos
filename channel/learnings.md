@@ -123,3 +123,12 @@
 - Official image lesson: Google's Vids hero image has a big centred text line ("Anyone can create a personal avatar in Google Vids"). As scene-0 clip it clashed with our headline AND showed through the thumbnail. Dropped it; frame 0 now a bright stock shot. Check official images for big text before using them as scene-0 / thumbnail background.
 - News check 22-24 Nov: GPT-6.2 Sol in ChatGPT chat (paid only), ChatGPT Space for Plus (paid), AI Mode + Wallet/Drive (US-type rollout, not EU/UK): skipped as not free/global.
 - Stock robot: "woman face closeup" gave lip-gloss makeup, "young woman portrait smiling" and "woman smiling laptop" gave anime AI art, "scanning qr code phone" no result, "smartphone camera hand" a cartoon. Re-used good clips via `clips` instead.
+
+## 2026-11-25 growth analysis (Wed 02:10 PKT)
+- vidIQ 28 Oct-24 Nov (10 credits, 90 left to 12 Dec): Shorts 001-011 = 2,314 views, 288 engaged (12%). Engaged % 001-006 ~9%,
+  007-011 ~27% (pattern, 5 videos) but reach per new Short is only 13-150 views vs 622-777 for 003/005.
+- L001 long video: 37 views, 20 engaged, 125 s avg (46%), 2 subs; its views came from "related/suggested" (152 s avg).
+- Traffic: Shorts feed 88%, search 8%. 04:00 PKT Shorts (002/004/006/008) all < 135 views.
+- Frame check: all first frames dark (mean 36-80/255). 010/011 (brand in kicker + first words) best engaged %; 013 hides the brand until ~4 s.
+- Engine: render.py now lifts footage brightness/saturation and draws the scene-0 kicker as a big solid pill (tested on 013 preview frames).
+- vidIQ shorts_stayed_to_watch needs the vidIQ browser extension (not connected); no credits were charged for the failed call.

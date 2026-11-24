@@ -66,6 +66,8 @@ Copy the format of `videos/001v2/script.json`. Rules that make people stay:
 ### 3b. Make the first second stop the scroll (biggest problem: ~90% swiped away in week 1-2)
 - The engine shows the scene-1 headline and caption fully from frame 0. Write a headline that is a bold, concrete claim
   in <= 3 short lines (<= 11 characters each); no slow build-up.
+- Scene-0 `kicker` = famous brand + benefit ("CHATGPT · FREE", "GOOGLE · NEW"); the first spoken sentence names the brand
+  within its first 4 words. Scene-0 footage must be bright (daylight, faces, phone screens), never dark/night.
 - Show the REAL product when the story is about one: in a scene's `footage` list you may put
   `{"url": "<image or mp4 URL>", "q": "what it shows"}` using ONLY official media from the company itself (its newsroom,
   press kit, or the announcement blog post images). Never use images from news sites, other creators or social posts.

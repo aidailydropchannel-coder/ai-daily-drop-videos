@@ -76,3 +76,10 @@ compliance audit is approved (unaudited API uploads are locked to private, so it
   Tue: Free AI Tool #N | Wed: ChatGPT/Gemini trick | Thu: 3 AI Tools You Missed #N | Fri: biggest AI news people use |
   Sun: long video "AI News This Week".
 - The growth analysis task (Wed + Sat nights) reviews this plan every few days and may change it based on data.
+
+## Update 2026-11-25 (growth analysis: ~2,350 views, ~11 subs)
+- Biggest problem now: reach. Engaged views rose to ~27% but new Shorts stall at 13-150 views (avg viewed 38-52%).
+- First second: brand name in a big scene-0 pill + in the first spoken words; bright scene-0 footage (engine now lifts
+  brightness/saturation). End CTA names the next numbered episode.
+- Funnel: Shorts -> weekly long video (watch hours + 2 subs from 37 views on L001). Owner can link each Short to the latest
+  long video with YouTube's "Related video" field (Studio only; Metricool cannot).

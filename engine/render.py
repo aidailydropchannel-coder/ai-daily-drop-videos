@@ -9,7 +9,7 @@ import json, math, re, subprocess, sys, wave
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 W, H, FPS = 1080, 1920, 30
 BG = (5, 11, 26)
@@ -295,6 +295,15 @@ class Footage:
         return im.resize((W, H), Image.BILINEAR, box=(cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2))
 
 
+# Footage lift (2026-11-25 growth analysis): stock clips came out dark/muted under the navy grade (frame-0 mean
+# brightness 36-80/255). Bright, saturated first frames stop the scroll better, so lift shadows + saturation a bit.
+_LIFT_LUT = [min(255, int(255 * ((v / 255) ** 0.85) * 1.04)) for v in range(256)] * 3
+
+
+def lift(im):
+    return ImageEnhance.Color(im.point(_LIFT_LUT)).enhance(1.18)
+
+
 def grade_layer(strength=1.0):
     """Navy tint + darker top/bottom so brand bar and captions always read."""
     y = np.linspace(0, 1, H)[:, None]
@@ -380,7 +389,11 @@ class Scene:
                 name, _, st = c.partition("@")
                 self.feeds.append(Footage(Path(stock_dir) / name, seg + 0.05, start=float(st or 1.0), drift=drift))
                 self.cuts.append(t0); t0 += seg
-        self.kicker = pill(spec.get("kicker", ""), F_BOLD(40)) if spec.get("kicker") else None
+        # Scene 0 kicker is the brand/"NOW FREE" label: bigger, solid accent pill so it reads at feed size.
+        if spec.get("kicker") and idx == 0:
+            self.kicker = pill(spec["kicker"], F_XBOLD(54), fg=BG, bg=ACC, pad=(40, 18))
+        else:
+            self.kicker = pill(spec.get("kicker", ""), F_BOLD(40)) if spec.get("kicker") else None
         getattr(self, "prep_" + spec["type"])()
 
     # --- hook / cta: big stacked headline ---
@@ -530,7 +543,7 @@ def render(script_path, build, music_dir, out, preview_frames=None, stock_dir=No
         flash = 0.0
         if sc.feeds:
             bgim, tc, k = sc.background(t_local)
-            c = bgim.convert("RGBA"); c.alpha_composite(grade)
+            c = lift(bgim).convert("RGBA"); c.alpha_composite(grade)
             since = tc if (k > 0 or i > 0) else 99
             flash = max(0.0, 1 - since / 0.12) * 0.35
         else:

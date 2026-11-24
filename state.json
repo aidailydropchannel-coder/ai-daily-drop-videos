@@ -256,11 +256,12 @@
    "music": "snowfall-asher-fulero",
    "thumbnail_choice": "B",
    "slot_pkt": "2026-11-22T21:00",
-   "status": "scheduled",
+   "status": "published",
    "metricool_post_id": 437312193,
    "metricool_uuid": "-6910487172301828401",
    "cloudinary": "ai-daily-drop/L001-ai-news-this-week",
-   "thumbnail": "ai-daily-drop/L001-ai-news-this-week-thumb"
+   "thumbnail": "ai-daily-drop/L001-ai-news-this-week-thumb",
+   "youtube_id": "qb5gotN7gDk"
   }
  ],
  "next_long_number": 2,

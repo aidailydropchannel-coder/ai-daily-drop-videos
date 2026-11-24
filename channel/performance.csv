@@ -1,15 +1,15 @@
-id,title,published_pkt,pillar,hook_style,voice,music,length_s,views,avg_view_s,retention_pct,likes,comments,shares,checked_at
-001v2,ChatGPT Can Now Make GIFs 🤯 (Images 2.6),2026-11-09 21:15,new-ai-tool,you-can-now,am_michael,pulsar,36.6,144,15,41.0,0,,,"2026-11-20 (vidIQ, 13 engaged views)"
-002-meta-muse-spaces,Meta's AI Now Builds You Your Own Mini App 📱,2026-11-10 04:00,new-ai-tool,shock-claim,bf_emma,laniakea,28.3,74,19,67.1,1,,,"2026-11-20 (vidIQ, 4 engaged views)"
-003-instagram-effect-builder,Make Your Own Instagram Filter Just by Typing ✨,2026-11-11 16:00,free-ai-replaces-paid,question,bm_george,singularity,31.1,622,14,45.0,2,,,"2026-11-20 (vidIQ, 38 engaged views)"
-004-claude-sheets,Claude vs Excel? Claude Just Got Its Own Spreadsheets 📊,2026-11-12 04:00,news-of-the-week,vs,am_michael,fascination,31.7,114,13,41.0,1,,,"2026-11-20 (vidIQ, 19 engaged views)"
-005-3-ai-tools,"3 AI Tools You Missed: Reddit, Spotify, Lightroom 🤯",2026-11-13 16:00,3-ai-tools,number,bf_emma,snowfall,28.5,775,13,45.6,7,,,"2026-11-20 (vidIQ, 83 engaged views)"
-006-gemini-carplay,Gemini on CarPlay: Stop Grabbing Your Phone 🚗,2026-11-14 04:00,ai-tip,warning,bm_george,resolution-or-reflection,28.6,130,7,24.5,0,,,"2026-11-20 (vidIQ, 10 engaged views)"
-007-gemini-4-hydrogen,Gemini 4 Hydrogen: Google's Free AI Just Got Faster ⚡,2026-11-17 16:00,new-ai-tool,shock-claim,am_michael,anno-domini,26.9,28,20,74.3,1,,,"2026-11-20 (vidIQ, 9 engaged views)"
-008-google-maps-trips,Google Maps Now Plans Your Whole Trip 🗺️,2026-11-19 04:00,news-of-the-week,question,bf_emma,pulsar,26.0,,,,,,,
-009-gemini-tasks-free,Gemini Tasks Is Now Free + 2 More New AI Tools 🤯,2026-11-20 16:00,3-ai-tools,number,bm_george,laniakea,32.2,,,,,,,
-010-chatgpt-live-dictation,ChatGPT Now Types While You Talk Free 🎙️,2026-11-20 04:00,free-ai-replaces-paid,you-can-now,am_michael,singularity,32.2,,,,,,,
-011-google-ai-mode-incognito,Google AI Mode Now Has Its Own Incognito Mode 🕵️,2026-11-21 16:00,ai-tip,question,bf_emma,fascination,28.0,,,,,,,
-L001-ai-news-this-week,AI News This Week: Gemini's AI Agent Goes Free + 4 More,2026-11-22 21:00,long-ai-news-this-week,cold-open-3-hooks,bm_george,snowfall,275.6,,,,,,,
-012-gemini-import-chats,Gemini Can Import Your ChatGPT Chats | Free AI Tool #1 📦,2026-11-24 16:00,free-ai-tool,number,am_michael,resolution-or-reflection,25.1,,,,,,,
-013-google-vids-avatar,"Google Vids: Free AI Avatar of You, No Camera 🎬",2026-11-25 16:00,ai-trick,question,bf_emma,anno-domini,24.2,,,,,,,
+id,title,published_pkt,pillar,hook_style,voice,music,length_s,views,avg_view_s,retention_pct,likes,engaged_views,engaged_pct,subs,comments,shares,checked_at
+001v2,ChatGPT Can Now Make GIFs 🤯 (Images 2.6),2026-11-09 21:15,new-ai-tool,you-can-now,am_michael,pulsar,36.6,144,15,41.5,0,13,9.0,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+002-meta-muse-spaces,Meta's AI Now Builds You Your Own Mini App 📱,2026-11-10 04:00,new-ai-tool,shock-claim,bf_emma,laniakea,28.3,74,19,68.7,1,4,5.4,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+003-instagram-effect-builder,Make Your Own Instagram Filter Just by Typing ✨,2026-11-11 16:00,free-ai-replaces-paid,question,bm_george,singularity,31.1,622,14,46.3,2,38,6.1,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+004-claude-sheets,Claude vs Excel? Claude Just Got Its Own Spreadsheets 📊,2026-11-12 04:00,news-of-the-week,vs,am_michael,fascination,31.7,115,13,42.8,1,19,16.5,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+005-3-ai-tools,"3 AI Tools You Missed: Reddit, Spotify, Lightroom 🤯",2026-11-13 16:00,3-ai-tools,number,bf_emma,snowfall,28.5,777,13,46.6,7,84,10.8,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+006-gemini-carplay,Gemini on CarPlay: Stop Grabbing Your Phone 🚗,2026-11-14 04:00,ai-tip,warning,bm_george,resolution-or-reflection,28.6,132,7,26.0,0,10,7.6,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+007-gemini-4-hydrogen,Gemini 4 Hydrogen: Google's Free AI Just Got Faster ⚡,2026-11-17 16:00,new-ai-tool,shock-claim,am_michael,anno-domini,26.9,38,16,62.7,1,13,34.2,1,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+008-google-maps-trips,Google Maps Now Plans Your Whole Trip 🗺️,2026-11-19 04:00,news-of-the-week,question,bf_emma,pulsar,26.0,13,11,41.9,0,3,23.1,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+009-gemini-tasks-free,Gemini Tasks Is Now Free + 2 More New AI Tools 🤯,2026-11-20 16:00,3-ai-tools,number,bm_george,laniakea,32.2,117,15,47.2,1,24,20.5,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+010-chatgpt-live-dictation,ChatGPT Now Types While You Talk Free 🎙️,2026-11-20 04:00,free-ai-replaces-paid,you-can-now,am_michael,singularity,32.2,138,12,37.8,2,40,29.0,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+011-google-ai-mode-incognito,Google AI Mode Now Has Its Own Incognito Mode 🕵️,2026-11-21 16:00,ai-tip,question,bf_emma,fascination,28.0,144,15,52.3,0,40,27.8,0,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+L001-ai-news-this-week,AI News This Week: Gemini's AI Agent Goes Free + 4 More,2026-11-22 21:00,long-ai-news-this-week,cold-open-3-hooks,bm_george,snowfall,275.6,37,125,45.6,2,20,54.1,2,,,"2026-11-25 (vidIQ, 28 Oct-24 Nov)"
+012-gemini-import-chats,Gemini Can Import Your ChatGPT Chats | Free AI Tool #1 📦,2026-11-24 16:00,free-ai-tool,number,am_michael,resolution-or-reflection,25.1,,,,,,,,,,
+013-google-vids-avatar,"Google Vids: Free AI Avatar of You, No Camera 🎬",2026-11-25 16:00,ai-trick,question,bf_emma,anno-domini,24.2,,,,,,,,,,

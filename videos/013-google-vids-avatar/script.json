@@ -35,17 +35,12 @@
    "accent_line": 2,
    "say": "Want a video of you talking, without filming it? It's now free.",
    "footage": [
-    {
-     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_s.width-1200.format-webp.webp",
-     "q": "Google official Vids personal avatars image"
-    },
     "woman talking to camera",
     "woman recording video smartphone"
    ],
    "clips": [
-    "s0_0.webp",
     "s0_1.mp4@1",
-    "s0_2.mp4@1"
+    "s4_1.mp4@3"
    ]
   },
   {
@@ -56,15 +51,12 @@
    "subtitle": "Any personal Google account.",
    "say": "Google Vids gives anyone with a personal Google account an AI avatar of themselves.",
    "footage": [
-    {
-     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_static_1.max-1440x810.png",
-     "q": "Google official Vids avatars promo image"
-    },
-    "woman laptop home"
+    "woman laptop home",
+    "woman recording video smartphone"
    ],
    "clips": [
-    "s1_0.png",
-    "s1_1.mp4@1"
+    "s1_1.mp4@1",
+    "s0_2.mp4@4"
    ]
   },
   {
@@ -90,7 +82,7 @@
    "icon": "chat",
    "title": "Type. Done.",
    "subtitle": "Your avatar says it.",
-   "say": "Then just type what you want to say. Your avatar says it, scene after scene.",
+   "say": "Then just type what you want to say, and your avatar says it, scene after scene.",
    "footage": [
     "typing laptop keyboard",
     "hands typing keyboard"
@@ -106,14 +98,14 @@
    "icon": "shield",
    "title": "Only your face",
    "subtitle": "Linked to your account.",
-   "say": "It only works with your own face, not anyone else's.",
+   "say": "It's linked to your account, and only works with your own face.",
    "footage": [
     "young woman portrait smiling",
     "portrait smiling man"
    ],
    "clips": [
-    "s4_0.mp4@1",
-    "s4_1.mp4@1"
+    "s4_1.mp4@1",
+    "s0_1.mp4@3"
    ]
   },
   {
@@ -123,14 +115,14 @@
     "Would you",
     "use it?"
    ],
-   "say": "Would you let AI you make your videos? Comment, and follow AI Daily Drop.",
+   "say": "Would you let an AI you make your videos? Comment below, and follow AI Daily Drop.",
    "footage": [
     "young woman smartphone",
     "woman smiling laptop"
    ],
    "clips": [
     "s5_0.mp4@1",
-    "s5_1.mp4@1"
+    "s1_1.mp4@3"
    ]
   }
  ],

@@ -1,0 +1,77 @@
+{
+ "id": "013-google-vids-avatar",
+ "items": [
+  {
+   "name": "s0_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_s.width-1200.format-webp.webp",
+   "q": "Google official Vids personal avatars image",
+   "kind": "url"
+  },
+  {
+   "name": "s0_1",
+   "q": "woman talking to camera",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "woman vlogging",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_static_1.max-1440x810.png",
+   "q": "Google official Vids avatars promo image",
+   "kind": "url"
+  },
+  {
+   "name": "s1_1",
+   "q": "woman laptop home",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "scanning qr code phone",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "phone camera selfie",
+   "kind": "video"
+  },
+  {
+   "name": "s2_2",
+   "q": "man laptop desk",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "typing laptop keyboard",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "person typing laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "woman face closeup",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "portrait smiling man",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young woman smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman laptop home",
+   "kind": "video"
+  }
+ ]
+}

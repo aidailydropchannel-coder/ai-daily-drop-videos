@@ -1,0 +1,105 @@
+{
+ "id": "013-google-vids-avatar",
+ "voice": "bf_emma",
+ "speed": 1.15,
+ "music": "anno-domini-beats-all-for-you",
+ "title": "Google Vids: Free AI Avatar of You, No Camera 🎬",
+ "description": "Google Vids now gives everyone with a personal Google account a free AI avatar of themselves. Open vids.new on a computer, scan the QR code to capture your likeness, then type what you want to say and your avatar says it, scene after scene. The avatar is linked to your Google Account and can only be your own likeness.\n\nWould you let an AI version of you make your videos? Tell us in the comments!\n\n🔔 Follow AI Daily Drop for a new AI trick every Wednesday.\n\nSource: Google, \"Anyone can create a personal avatar of themselves in Google Vids, at no cost.\" (November 17, 2026); The Mobile Indian (November 18, 2026)\n\n#AItools #AInews #Shorts #GoogleVids #AIavatar",
+ "tags": [
+  "Google Vids",
+  "Google Vids avatar",
+  "AI avatar free",
+  "personal AI avatar",
+  "AI video of yourself",
+  "free AI video maker",
+  "Google AI",
+  "Gemini",
+  "free AI tools",
+  "AI tools",
+  "AI tips",
+  "AI news"
+ ],
+ "sources": [
+  "https://blog.google/products-and-platforms/products/workspace/vids-personal-avatars-no-cost/",
+  "https://themobileindian.com/news/google-rolls-out-gemini-tasks-for-all-users-for-free-also-debuts-temporary-threads-in-ai-mode-and-personal-avatars-in-google-vids-for-everyone"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "NOW FREE",
+   "headline": ["You on", "video,", "no camera"],
+   "accent_line": 2,
+   "say": "Want a video of you talking, without filming it? It's now free.",
+   "footage": [
+    {"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_s.width-1200.format-webp.webp", "q": "Google official Vids personal avatars image"},
+    "woman talking to camera",
+    "woman vlogging"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "GOOGLE VIDS",
+   "icon": "film",
+   "title": "Your AI twin",
+   "subtitle": "Any personal Google account.",
+   "say": "Google Vids gives anyone with a personal Google account an AI avatar of themselves.",
+   "footage": [
+    {"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_static_1.max-1440x810.png", "q": "Google official Vids avatars promo image"},
+    "woman laptop home"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "STEP 1",
+   "icon": "spark",
+   "title": "Scan a code",
+   "subtitle": "vids.new on a computer.",
+   "say": "Open vids dot new on a computer, and scan the QR code to capture your look.",
+   "footage": [
+    "scanning qr code phone",
+    "phone camera selfie",
+    "man laptop desk"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "STEP 2",
+   "icon": "chat",
+   "title": "Type. Done.",
+   "subtitle": "Your avatar says it.",
+   "say": "Then just type what you want to say. Your avatar says it, scene after scene.",
+   "footage": [
+    "typing laptop keyboard",
+    "person typing laptop"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "THE RULE",
+   "icon": "shield",
+   "title": "Only your face",
+   "subtitle": "Linked to your account.",
+   "say": "It only works with your own face, not anyone else's.",
+   "footage": [
+    "woman face closeup",
+    "portrait smiling man"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": ["Would you", "use it?"],
+   "say": "Would you let AI you make your videos? Comment, and follow AI Daily Drop.",
+   "footage": [
+    "young woman smartphone",
+    "woman laptop home"
+   ]
+  }
+ ],
+ "first_comment": "Would you show your face on YouTube, or use an AI avatar instead? 👇",
+ "thumb": {
+  "lines": ["YOUR AI", "TWIN IS", "FREE NOW"],
+  "accent": 2,
+  "badge": "FREE"
+ }
+}

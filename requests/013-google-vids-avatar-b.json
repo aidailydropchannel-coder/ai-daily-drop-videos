@@ -1,0 +1,40 @@
+{
+ "id": "013-google-vids-avatar-b",
+ "items": [
+  {
+   "name": "s0_2",
+   "q": "woman recording video smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "smartphone camera hand",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "woman taking selfie",
+   "kind": "video"
+  },
+  {
+   "name": "s2_2",
+   "q": "woman taking selfie phone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "hands typing keyboard",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "young woman portrait smiling",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "woman smiling laptop",
+   "kind": "video"
+  }
+ ]
+}

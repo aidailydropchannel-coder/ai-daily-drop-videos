@@ -27,13 +27,25 @@
   {
    "type": "hook",
    "kicker": "NOW FREE",
-   "headline": ["You on", "video,", "no camera"],
+   "headline": [
+    "You on",
+    "video,",
+    "no camera"
+   ],
    "accent_line": 2,
    "say": "Want a video of you talking, without filming it? It's now free.",
    "footage": [
-    {"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_s.width-1200.format-webp.webp", "q": "Google official Vids personal avatars image"},
+    {
+     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_s.width-1200.format-webp.webp",
+     "q": "Google official Vids personal avatars image"
+    },
     "woman talking to camera",
-    "woman vlogging"
+    "woman recording video smartphone"
+   ],
+   "clips": [
+    "s0_0.webp",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -44,8 +56,15 @@
    "subtitle": "Any personal Google account.",
    "say": "Google Vids gives anyone with a personal Google account an AI avatar of themselves.",
    "footage": [
-    {"url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_static_1.max-1440x810.png", "q": "Google official Vids avatars promo image"},
+    {
+     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vids_Personal_Avatars_Freemium_static_1.max-1440x810.png",
+     "q": "Google official Vids avatars promo image"
+    },
     "woman laptop home"
+   ],
+   "clips": [
+    "s1_0.png",
+    "s1_1.mp4@1"
    ]
   },
   {
@@ -56,9 +75,13 @@
    "subtitle": "vids.new on a computer.",
    "say": "Open vids dot new on a computer, and scan the QR code to capture your look.",
    "footage": [
-    "scanning qr code phone",
-    "phone camera selfie",
-    "man laptop desk"
+    "smartphone camera hand",
+    "woman taking selfie",
+    "woman taking selfie phone"
+   ],
+   "clips": [
+    "s2_1.mp4@1",
+    "s2_2.mp4@1"
    ]
   },
   {
@@ -70,7 +93,11 @@
    "say": "Then just type what you want to say. Your avatar says it, scene after scene.",
    "footage": [
     "typing laptop keyboard",
-    "person typing laptop"
+    "hands typing keyboard"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1"
    ]
   },
   {
@@ -81,24 +108,39 @@
    "subtitle": "Linked to your account.",
    "say": "It only works with your own face, not anyone else's.",
    "footage": [
-    "woman face closeup",
+    "young woman portrait smiling",
     "portrait smiling man"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1"
    ]
   },
   {
    "type": "cta",
    "kicker": "COMMENT BELOW",
-   "headline": ["Would you", "use it?"],
+   "headline": [
+    "Would you",
+    "use it?"
+   ],
    "say": "Would you let AI you make your videos? Comment, and follow AI Daily Drop.",
    "footage": [
     "young woman smartphone",
-    "woman laptop home"
+    "woman smiling laptop"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
    ]
   }
  ],
  "first_comment": "Would you show your face on YouTube, or use an AI avatar instead? 👇",
  "thumb": {
-  "lines": ["YOUR AI", "TWIN IS", "FREE NOW"],
+  "lines": [
+   "YOUR AI",
+   "TWIN IS",
+   "FREE NOW"
+  ],
   "accent": 2,
   "badge": "FREE"
  }

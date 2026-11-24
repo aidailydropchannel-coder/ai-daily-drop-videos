@@ -116,3 +116,10 @@
 - Video 012 = first "Free AI Tool #1" (series counter in state.json). An evergreen how-to (Gemini imports ChatGPT/Claude chats) that Google re-promoted on 19 Nov; framed as a tool, not as "new". number hook, am_michael, 69 words at 1.15 = 25.1 s (85 words = 30.1 s: ~2.75 words/s).
 - Official images: blog.google images (storage.googleapis.com) are blocked by the session proxy but the stock robot fetches them fine (png and webp both worked).
 - Engine fix: thumbnail.py crashed when scene 0's first clip is a still image (seeked 1.8 s into a PNG); now seeks 0 for images.
+
+## 2026-11-24 night run (video 013)
+- Metricool: daily views (YTEV02) filled up to 20 Nov only (17 Nov 31, 18 Nov 12, 19 Nov 125, 20 Nov 129); ~1 new subscriber a day 20-23 Nov (3 on 23 Nov).
+- Video 013 = Wednesday "AI trick": Google Vids personal avatars now free for any personal Google account (Google blog 17 Nov). question hook, bf_emma, 74 words at 1.15 = 24.2 s.
+- Official image lesson: Google's Vids hero image has a big centred text line ("Anyone can create a personal avatar in Google Vids"). As scene-0 clip it clashed with our headline AND showed through the thumbnail. Dropped it; frame 0 now a bright stock shot. Check official images for big text before using them as scene-0 / thumbnail background.
+- News check 22-24 Nov: GPT-6.2 Sol in ChatGPT chat (paid only), ChatGPT Space for Plus (paid), AI Mode + Wallet/Drive (US-type rollout, not EU/UK): skipped as not free/global.
+- Stock robot: "woman face closeup" gave lip-gloss makeup, "young woman portrait smiling" and "woman smiling laptop" gave anime AI art, "scanning qr code phone" no result, "smartphone camera hand" a cartoon. Re-used good clips via `clips` instead.

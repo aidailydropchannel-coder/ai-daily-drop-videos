@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 1,
+ "next_voice_index": 2,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 6,
+ "next_music_index": 0,
  "videos": [
   {
    "id": "001v2",
@@ -215,10 +215,26 @@
    "cloudinary": "ai-daily-drop/012-gemini-import-chats",
    "thumbnail": "ai-daily-drop/012-gemini-import-chats-thumb",
    "status": "scheduled"
+  },
+  {
+   "id": "013-google-vids-avatar",
+   "story": "Google Vids personal avatars free for everyone with a personal Google account - scan QR code at vids.new (desktop), type what to say, avatar reused across scenes, restricted to own likeness (Google blog 2026-11-17)",
+   "pillar": "ai-trick",
+   "hook_style": "question",
+   "voice": "bf_emma",
+   "music": "anno-domini-beats-all-for-you",
+   "length_s": 24.2,
+   "slot_pkt": "2026-11-25T16:00",
+   "slot": "A",
+   "metricool_post_id": 440736435,
+   "metricool_uuid": "8567538218962864966",
+   "cloudinary": "ai-daily-drop/013-google-vids-avatar",
+   "thumbnail": "ai-daily-drop/013-google-vids-avatar-thumb",
+   "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 13
+  "2026-11": 14
  },
  "hook_styles": [
   "shock-claim",
@@ -228,7 +244,7 @@
   "vs",
   "warning"
  ],
- "next_video_number": 13,
+ "next_video_number": 14,
  "long_videos": [
   {
    "id": "L001-ai-news-this-week",

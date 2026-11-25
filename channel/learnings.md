@@ -132,3 +132,9 @@
 - Frame check: all first frames dark (mean 36-80/255). 010/011 (brand in kicker + first words) best engaged %; 013 hides the brand until ~4 s.
 - Engine: render.py now lifts footage brightness/saturation and draws the scene-0 kicker as a big solid pill (tested on 013 preview frames).
 - vidIQ shorts_stayed_to_watch needs the vidIQ browser extension (not connected); no credits were charged for the failed call.
+
+## 2026-11-25 night run (video 014)
+- Metricool: daily views (YTEV02) filled to 21 Nov (20 Nov 129, 21 Nov 149); new subs per day (YTEV01) 1, 1, 1, 3, 3 for 20-24 Nov. 012 (6yD_0vRfO8w) and 013 (-iaY0zKblv0) published.
+- Video 014 = first "3 AI Tools You Missed #1": Muse in Instagram DMs (brand in kicker pill + first word), Pinterest AI-content parental control, Claude Install as App. number hook, bm_george, 80 words at 1.15 = 28.1 s (90 words was ~32 s: keep 3-tools scripts to ~75-80 words).
+- Sources: Meta announced Muse-in-DMs only via Muse's Instagram account (no newsroom post), so it was verified with TechCrunch + Engadget + News24. claude.com and support.claude.com pages could not be fetched in the unattended run (permission prompt timed out); Claude facts taken from two outlets quoting Anthropic's help article (TestingCatalog, Unite.AI). Pinterest's newsroom image (ctfassets.net, jpg via ?fm=jpg) worked through the stock robot and has no big text.
+- Stock robot: "coffee shop phone" returned a cartoon, "tokyo city street day" a blurred chain, "man laptop desk" a whiteboard meeting; re-used good clips instead. Title was 62 chars with the series name: keep the hook part <= 28 chars.

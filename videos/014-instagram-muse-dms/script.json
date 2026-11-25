@@ -44,6 +44,10 @@
     "woman texting smartphone smiling",
     "hand scrolling smartphone",
     "young woman phone daylight"
+   ],
+   "clips": [
+    "s0_2.mp4@0",
+    "s0_1.mp4@1"
    ]
   },
   {
@@ -52,11 +56,15 @@
    "icon": "chat",
    "title": "Muse in your DMs",
    "subtitle": "Share a post, get a plan.",
-   "say": "One: Meta's Muse is now in Instagram DMs. Share a post, and it adds the place to your trip.",
+   "say": "One: Meta's Muse is now in Instagram DMs. Share a post, and it adds that place to your trip.",
    "footage": [
     "woman travel phone city",
     "tourist smartphone street",
     "coffee shop phone"
+   ],
+   "clips": [
+    "s1_0.mp4@0",
+    "s1_1.mp4@0"
    ]
   },
   {
@@ -66,10 +74,14 @@
    "suffix": "",
    "label": "countries",
    "note": "incl. the US + Canada",
-   "say": "It's rolling out in five countries, including the US.",
+   "say": "Rolling out in five countries, including the US.",
    "footage": [
     "new york city aerial",
     "tokyo city street day"
+   ],
+   "clips": [
+    "s2_0.mp4@0",
+    "s5_1.mp4@2"
    ]
   },
   {
@@ -86,6 +98,10 @@
     },
     "mother daughter smartphone",
     "teenager using phone"
+   ],
+   "clips": [
+    "s3_0.jpg",
+    "s3_2.mp4@0"
    ]
   },
   {
@@ -98,6 +114,10 @@
    "footage": [
     "man laptop desk",
     "woman working laptop office"
+   ],
+   "clips": [
+    "s4_1.mp4@0",
+    "s4_1.mp4@4"
    ]
   },
   {
@@ -111,6 +131,10 @@
    "footage": [
     "young man smartphone",
     "friends looking phone"
+   ],
+   "clips": [
+    "s5_0.mp4@0",
+    "s5_1.mp4@0"
    ]
   }
  ],

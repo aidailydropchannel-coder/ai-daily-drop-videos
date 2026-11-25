@@ -1,0 +1,127 @@
+{
+ "id": "014-instagram-muse-dms",
+ "voice": "bm_george",
+ "speed": 1.15,
+ "music": "pulsar-the-grey-room-density-time",
+ "series": "3 AI Tools You Missed #1",
+ "title": "Instagram's AI Is Now in Your DMs | 3 AI Tools You Missed #1 📩",
+ "description": "Instagram now has Meta's Muse AI agent right inside your DMs: share a post with it and ask it to add that place to your trip plan, or catch up on chats you missed. It is rolling out on iOS and Android in the US, Canada, Mexico, Japan and Singapore. Also new: Pinterest lets parents turn down how much AI-generated content their teens see, and Claude can install the apps it builds as real Mac and Windows apps (beta, on every plan including Free).\nFull AI news every Sunday: AI News This Week on our channel.\n\nWhich one would you try first? Tell us in the comments!\n\n🔔 Follow AI Daily Drop: 3 AI Tools You Missed #2 drops next Thursday.\n\nSource: TechCrunch, \"Meta brings its Muse AI assistant directly into Instagram DMs\" (November 24, 2026) + Engadget (November 24, 2026); Pinterest Newsroom, \"Helping families navigate controls for teens on Pinterest\" (November 23, 2026) + TechCrunch (November 24, 2026); Anthropic Help Center, \"Install an artifact as an app\" via TestingCatalog and Unite.AI (November 24-25, 2026)\n\n#AItools #AInews #Shorts #Instagram #MetaAI",
+ "tags": [
+  "Instagram AI",
+  "Meta Muse",
+  "Muse Instagram DMs",
+  "Instagram new feature",
+  "Pinterest parental controls",
+  "Pinterest AI content",
+  "Claude install as app",
+  "Claude AI",
+  "new AI tools",
+  "free AI tools",
+  "AI tools",
+  "AI news"
+ ],
+ "sources": [
+  "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+  "https://www.engadget.com/2326663/meta-is-bringing-muse-to-instagram/",
+  "https://news24online.com/tech/meta-brings-muse-ai-to-instagram-dms-but-indian-users-will-have-to-wait/956773/",
+  "https://newsroom.pinterest.com/en-gb/news/helping-families-navigate-controls-for-teens-on-pinterest",
+  "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+  "https://www.testingcatalog.com/anthropic-now-allows-installing-artifacts-as-desktop-apps/",
+  "https://www.unite.ai/anthropic-lets-claude-users-install-ai-built-tools-as-desktop-apps/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "INSTAGRAM · NEW",
+   "headline": [
+    "AI in your",
+    "Insta DMs",
+    "+2 more"
+   ],
+   "accent_line": 1,
+   "say": "Instagram just put AI in your DMs. Plus two more tools you missed.",
+   "footage": [
+    "woman texting smartphone smiling",
+    "hand scrolling smartphone",
+    "young woman phone daylight"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "1. INSTAGRAM",
+   "icon": "chat",
+   "title": "Muse in your DMs",
+   "subtitle": "Share a post, get a plan.",
+   "say": "One: Meta's Muse is now in Instagram DMs. Share a post, and it adds the place to your trip.",
+   "footage": [
+    "woman travel phone city",
+    "tourist smartphone street",
+    "coffee shop phone"
+   ]
+  },
+  {
+   "type": "stat",
+   "kicker": "ROLLING OUT IN",
+   "value": 5,
+   "suffix": "",
+   "label": "countries",
+   "note": "incl. the US + Canada",
+   "say": "It's rolling out in five countries, including the US.",
+   "footage": [
+    "new york city aerial",
+    "tokyo city street day"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "2. PINTEREST",
+   "icon": "shield",
+   "title": "Less AI for teens",
+   "subtitle": "Parents set the amount.",
+   "say": "Two: Pinterest lets parents cut the AI-made content teens see.",
+   "footage": [
+    {
+     "url": "https://images.ctfassets.net/2pyx8rwuvz6x/4UoNJ7vy4L6YnkIOeYqLKB/49800de33f20b31e4b459da8ce484173/ParentalControls-Newsroom-Header-HF-Entry_enGB.jpg?fm=jpg&q=85&w=1680&h=1680",
+     "q": "Pinterest official image: two phone screens showing parental controls"
+    },
+    "mother daughter smartphone",
+    "teenager using phone"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "3. CLAUDE",
+   "icon": "spark",
+   "title": "Chat to app",
+   "subtitle": "Mac + Windows, beta.",
+   "say": "Three: Claude turns the apps it builds into real desktop apps, even on the free plan.",
+   "footage": [
+    "man laptop desk",
+    "woman working laptop office"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "Which one",
+    "first?"
+   ],
+   "say": "Which would you try first? Comment, and follow for part two next Thursday.",
+   "footage": [
+    "young man smartphone",
+    "friends looking phone"
+   ]
+  }
+ ],
+ "first_comment": "Would you let an AI read your Instagram DMs? Yes or no 👇",
+ "thumb": {
+  "lines": [
+   "AI IS IN",
+   "YOUR DMS",
+   "+2 MORE"
+  ],
+  "accent": 1,
+  "badge": "NEW"
+ }
+}

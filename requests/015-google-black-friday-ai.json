@@ -1,0 +1,76 @@
+{
+ "id": "015-google-black-friday-ai",
+ "items": [
+  {
+   "name": "s0_0",
+   "q": "woman shopping smartphone smiling",
+   "kind": "video"
+  },
+  {
+   "name": "s0_1",
+   "q": "online shopping smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s0_2",
+   "q": "shopping bags happy woman",
+   "kind": "video"
+  },
+  {
+   "name": "s1_0",
+   "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Black_Friday_herosocial_alt.width-1300.png",
+   "q": "Google official image: collage of holiday shopping products",
+   "kind": "url"
+  },
+  {
+   "name": "s1_1",
+   "q": "gift box wrapping",
+   "kind": "video"
+  },
+  {
+   "name": "s1_2",
+   "q": "woman typing phone couch",
+   "kind": "video"
+  },
+  {
+   "name": "s2_0",
+   "q": "man shopping online laptop",
+   "kind": "video"
+  },
+  {
+   "name": "s2_1",
+   "q": "hand scrolling smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s3_0",
+   "q": "smartphone notification hand",
+   "kind": "video"
+  },
+  {
+   "name": "s3_1",
+   "q": "woman looking phone surprised",
+   "kind": "video"
+  },
+  {
+   "name": "s4_0",
+   "q": "supermarket shelf shopping",
+   "kind": "video"
+  },
+  {
+   "name": "s4_1",
+   "q": "woman shopping store phone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_0",
+   "q": "young man smartphone",
+   "kind": "video"
+  },
+  {
+   "name": "s5_1",
+   "q": "friends shopping mall",
+   "kind": "video"
+  }
+ ]
+}

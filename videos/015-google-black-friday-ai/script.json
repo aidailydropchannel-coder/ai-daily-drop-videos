@@ -1,0 +1,122 @@
+{
+ "id": "015-google-black-friday-ai",
+ "voice": "am_michael",
+ "speed": 1.15,
+ "music": "laniakea-the-grey-room-density-time",
+ "series": "",
+ "title": "Google's Free AI Hunts Black Friday Deals for You 🛍️",
+ "description": "Google's free AI shopping tools can do the hard part of Black Friday for you: describe someone in AI Mode or the Gemini app to get gift ideas with reviews, check if a price is low, typical or high, tap Track price for a drop alert, and point Google Lens at a store shelf to see reviews. Availability of some shopping features varies by country.\nFull AI news every Sunday: AI News This Week on our channel.\n\nWhat are you buying this Black Friday? Tell us in the comments!\n\n🔔 Follow AI Daily Drop: Free AI Tool #2 drops next Tuesday.\n\nSource: Google, \"How to find the best Black Friday deals and shop smarter\" (November 16, 2026) + Google Help, \"About price tracking on Google\" + 9to5Google on Google price tracking\n\n#AItools #AInews #Shorts #BlackFriday #Google",
+ "tags": [
+  "Google AI",
+  "Black Friday deals",
+  "Black Friday 2026",
+  "Google price tracking",
+  "Google Lens",
+  "AI Mode",
+  "Gemini app",
+  "AI shopping",
+  "free AI tools",
+  "AI tools",
+  "AI news"
+ ],
+ "sources": [
+  "https://blog.google/products-and-platforms/products/shopping/black-friday-cyber-monday-shopping-tips-2026/",
+  "https://support.google.com/googleshopping/answer/13971184",
+  "https://support.google.com/faqs/answer/10675605",
+  "https://9to5google.com/2025/07/24/google-price-tracking-update/",
+  "https://blog.google/products-and-platforms/products/shopping/agentic-checkout-holiday-ai-shopping/"
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "GOOGLE · FREE",
+   "headline": [
+    "AI hunts",
+    "your deals",
+    "for you"
+   ],
+   "accent_line": 1,
+   "say": "Google's free AI can hunt Black Friday deals for you. Here's how.",
+   "footage": [
+    "woman shopping smartphone smiling",
+    "online shopping smartphone",
+    "shopping bags happy woman"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "1. GIFT IDEAS",
+   "icon": "chat",
+   "title": "Describe them",
+   "subtitle": "AI Mode or Gemini app.",
+   "say": "One: describe the person in AI Mode or Gemini. You get gift ideas with reviews.",
+   "footage": [
+    {
+     "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Black_Friday_herosocial_alt.width-1300.png",
+     "q": "Google official image: collage of holiday shopping products"
+    },
+    "gift box wrapping",
+    "woman typing phone couch"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "2. PRICE CHECK",
+   "icon": "chart",
+   "title": "Low or high?",
+   "subtitle": "See the price history.",
+   "say": "Two: tap a product to see if today's price is low, typical or high.",
+   "footage": [
+    "man shopping online laptop",
+    "hand scrolling smartphone"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "3. TRACK PRICE",
+   "icon": "gauge",
+   "title": "Drop alert",
+   "subtitle": "Tap Track price.",
+   "say": "Three: tap Track price. Google alerts you when it drops.",
+   "footage": [
+    "smartphone notification hand",
+    "woman looking phone surprised"
+   ]
+  },
+  {
+   "type": "feature",
+   "kicker": "4. IN THE SHOP",
+   "icon": "spark",
+   "title": "Point Lens",
+   "subtitle": "Reviews on the shelf.",
+   "say": "In a shop? Point Google Lens at the shelf to see reviews.",
+   "footage": [
+    "supermarket shelf shopping",
+    "woman shopping store phone"
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "COMMENT BELOW",
+   "headline": [
+    "What are",
+    "you buying?"
+   ],
+   "say": "What are you buying? Comment, and follow: Free AI Tool number two drops Tuesday.",
+   "footage": [
+    "young man smartphone",
+    "friends shopping mall"
+   ]
+  }
+ ],
+ "first_comment": "Would you let Google's AI buy something for you automatically? Yes or no 👇",
+ "thumb": {
+  "lines": [
+   "LET AI FIND",
+   "THE DEAL",
+   "FOR YOU"
+  ],
+  "accent": 1,
+  "badge": "FREE"
+ }
+}

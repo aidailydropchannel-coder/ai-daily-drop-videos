@@ -41,6 +41,11 @@
     "woman shopping smartphone smiling",
     "online shopping smartphone",
     "shopping bags happy woman"
+   ],
+   "clips": [
+    "s0_0.mp4@1",
+    "s0_1.mp4@1",
+    "s0_2.mp4@1"
    ]
   },
   {
@@ -55,8 +60,13 @@
      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Black_Friday_herosocial_alt.width-1300.png",
      "q": "Google official image: collage of holiday shopping products"
     },
-    "gift box wrapping",
+    "wrapped presents table",
     "woman typing phone couch"
+   ],
+   "clips": [
+    "s1_0.png",
+    "s1_1.mp4@1",
+    "s1_2.mp4@1"
    ]
   },
   {
@@ -69,6 +79,10 @@
    "footage": [
     "man shopping online laptop",
     "hand scrolling smartphone"
+   ],
+   "clips": [
+    "s2_0.mp4@1",
+    "s2_1.mp4@1"
    ]
   },
   {
@@ -79,8 +93,12 @@
    "subtitle": "Tap Track price.",
    "say": "Three: tap Track price. Google alerts you when it drops.",
    "footage": [
-    "smartphone notification hand",
+    "woman reading phone sofa",
     "woman looking phone surprised"
+   ],
+   "clips": [
+    "s3_0.mp4@1",
+    "s3_1.mp4@1"
    ]
   },
   {
@@ -93,6 +111,10 @@
    "footage": [
     "supermarket shelf shopping",
     "woman shopping store phone"
+   ],
+   "clips": [
+    "s4_0.mp4@1",
+    "s4_1.mp4@1"
    ]
   },
   {
@@ -106,6 +128,10 @@
    "footage": [
     "young man smartphone",
     "friends shopping mall"
+   ],
+   "clips": [
+    "s5_0.mp4@1",
+    "s5_1.mp4@1"
    ]
   }
  ],

@@ -44,8 +44,7 @@
    ],
    "clips": [
     "s0_0.mp4@1",
-    "s0_1.mp4@1",
-    "s0_2.mp4@1"
+    "s0_1.mp4@1"
    ]
   },
   {
@@ -65,7 +64,6 @@
    ],
    "clips": [
     "s1_0.png",
-    "s1_1.mp4@1",
     "s1_2.mp4@1"
    ]
   },
@@ -97,8 +95,8 @@
     "woman looking phone surprised"
    ],
    "clips": [
-    "s3_0.mp4@1",
-    "s3_1.mp4@1"
+    "s3_1.mp4@1",
+    "s4_1.mp4@6"
    ]
   },
   {
@@ -130,8 +128,8 @@
     "friends shopping mall"
    ],
    "clips": [
-    "s5_0.mp4@1",
-    "s5_1.mp4@1"
+    "s5_1.mp4@1",
+    "s0_2.mp4@3"
    ]
   }
  ],

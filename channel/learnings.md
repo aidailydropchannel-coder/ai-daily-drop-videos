@@ -138,3 +138,11 @@
 - Video 014 = first "3 AI Tools You Missed #1": Muse in Instagram DMs (brand in kicker pill + first word), Pinterest AI-content parental control, Claude Install as App. number hook, bm_george, 80 words at 1.15 = 28.1 s (90 words was ~32 s: keep 3-tools scripts to ~75-80 words).
 - Sources: Meta announced Muse-in-DMs only via Muse's Instagram account (no newsroom post), so it was verified with TechCrunch + Engadget + News24. claude.com and support.claude.com pages could not be fetched in the unattended run (permission prompt timed out); Claude facts taken from two outlets quoting Anthropic's help article (TestingCatalog, Unite.AI). Pinterest's newsroom image (ctfassets.net, jpg via ?fm=jpg) worked through the stock robot and has no big text.
 - Stock robot: "coffee shop phone" returned a cartoon, "tokyo city street day" a blurred chain, "man laptop desk" a whiteboard meeting; re-used good clips instead. Title was 62 chars with the series name: keep the hook part <= 28 chars.
+
+## 2026-11-26 night run (video 015, Thursday)
+- Metricool: daily views (YTEV02) now filled to 22 Nov (49 views that day, L001 premiere day); new subs (YTEV01) 3 a day on 23, 24 and 25 Nov (best streak so far). 014 published as njDlrD5MGKc.
+- Quiet consumer-news window again (24-26 Nov): GPT-6.2 Sol in ChatGPT Chat = Plus/Pro/Business/Enterprise only; Chat+Work shared limits = small Pro test; Genie 4 / Gemini 4 Neon = paid. All skipped (not free/broad).
+- Video 015 = Friday "biggest AI news people use", made timely instead of new: Google's own Black Friday guide (blog.google 16 Nov) -> 4 free tools (AI Mode/Gemini gift ideas, Price Insights, Track price, Lens) posted ON Black Friday. you-can-now hook, am_michael, 77 words at 1.15 = 25.7 s. Test: does a calendar-event topic beat launch news?
+- Official image: Google's Black Friday hero (storage.googleapis.com ...Black_Friday_herosocial_alt.width-1300.png) is a product-photo collage with NO text -> good scene-1 still.
+- Stock robot: "gift box wrapping" = AI-art puppies in gift box, "smartphone notification hand" = cartoon, "wrapped presents table" = animated glitter graphic, "woman reading phone sofa" = dark bedroom. Re-used good clips. "young man smartphone" came tagged "ai generated": avoid.
+- Metricool accepted videoThumbnailUrl again.

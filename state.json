@@ -4,7 +4,7 @@
   "bf_emma",
   "bm_george"
  ],
- "next_voice_index": 0,
+ "next_voice_index": 1,
  "music_rotation": [
   "pulsar-the-grey-room-density-time",
   "laniakea-the-grey-room-density-time",
@@ -14,7 +14,7 @@
   "resolution-or-reflection-the-grey-room-clark-sims",
   "anno-domini-beats-all-for-you"
  ],
- "next_music_index": 1,
+ "next_music_index": 2,
  "videos": [
   {
    "id": "001v2",
@@ -249,11 +249,28 @@
    "metricool_uuid": "6938435008919261011",
    "cloudinary": "ai-daily-drop/014-instagram-muse-dms",
    "thumbnail": "ai-daily-drop/014-instagram-muse-dms-thumb",
+   "status": "published",
+   "youtube_id": "njDlrD5MGKc"
+  },
+  {
+   "id": "015-google-black-friday-ai",
+   "story": "Google's free AI shopping tools for Black Friday: AI Mode/Gemini gift ideas with reviews, Price Insights (low/typical/high + history), Track price drop alerts, Google Lens on store shelves (Google blog 'How to find the best Black Friday deals' 2026-11-16; Google Help price tracking; 9to5Google)",
+   "pillar": "biggest-ai-news",
+   "hook_style": "you-can-now",
+   "voice": "am_michael",
+   "music": "laniakea-the-grey-room-density-time",
+   "length_s": 25.7,
+   "slot_pkt": "2026-11-27T16:00",
+   "slot": "A",
+   "metricool_post_id": 443510212,
+   "metricool_uuid": "2000942293459550578",
+   "cloudinary": "ai-daily-drop/015-google-black-friday-ai",
+   "thumbnail": "ai-daily-drop/015-google-black-friday-ai-thumb",
    "status": "scheduled"
   }
  ],
  "posts_this_month": {
-  "2026-11": 15
+  "2026-11": 16
  },
  "hook_styles": [
   "shock-claim",
@@ -263,7 +280,7 @@
   "vs",
   "warning"
  ],
- "next_video_number": 15,
+ "next_video_number": 16,
  "long_videos": [
   {
    "id": "L001-ai-news-this-week",

@@ -146,3 +146,11 @@
 - Official image: Google's Black Friday hero (storage.googleapis.com ...Black_Friday_herosocial_alt.width-1300.png) is a product-photo collage with NO text -> good scene-1 still.
 - Stock robot: "gift box wrapping" = AI-art puppies in gift box, "smartphone notification hand" = cartoon, "wrapped presents table" = animated glitter graphic, "woman reading phone sofa" = dark bedroom. Re-used good clips. "young man smartphone" came tagged "ai generated": avoid.
 - Metricool accepted videoThumbnailUrl again.
+
+## 2026-11-27 Friday-night run (no Short: weekly report only)
+- The nightly task still has the old cron `34 23 * * 1-5`, so it fired on Friday. Per CLAUDE.md no Saturday Short was made.
+- The Sunday "AI Daily Drop weekly long video" task does NOT exist yet (list of scheduled tasks: only the nightly run and the
+  growth analysis). Unless the owner applies channel/scheduled_tasks.md, long video #2 will not be made on Sun 29 Nov.
+- Metricool: daily views (YTEV02) filled only to 23 Nov (34). Week 9-15 Nov = 1,875 views, week 16-22 Nov = 498 views.
+  New subs (YTEV01): 0 in week 9-15, 5 in week 16-22, 12 in 23-26 Nov (3 a day, 4 days running). 015 published as BEE8IMYHai8.
+- posts_this_month: 16 of 20 used (4 left for November; only the Sunday 29 Nov long video needs one).

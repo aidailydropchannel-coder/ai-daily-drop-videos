@@ -83,3 +83,11 @@ compliance audit is approved (unaudited API uploads are locked to private, so it
   brightness/saturation). End CTA names the next numbered episode.
 - Funnel: Shorts -> weekly long video (watch hours + 2 subs from 37 views on L001). Owner can link each Short to the latest
   long video with YouTube's "Related video" field (Studio only; Metricool cannot).
+
+## Update 2026-11-28 (growth analysis: ~2,580 views, ~21 subs)
+- Pattern over 13 Shorts: <= 27 s Shorts average 56% viewed, 28-29 s 48%, 31-37 s 43%. New length target **22-25 s**
+  (~62-70 words). Best so far: 012 "Free AI Tool #1" at 25.1 s = 65% viewed.
+- Engine: headline lines now have a dark outline + soft dark band so they stay readable on the brighter footage.
+- 3 AI Tools You Missed: lead with the broadest item and give it ~half the video; the other two get one line each.
+- Topic angle to test (from niche outliers, signal only): one free product + a concrete result for a named group
+  ("for students", "for your job interview", "for office work").

@@ -43,7 +43,7 @@ The "AI Daily Drop growth analysis" task (Wed + Sat nights) owns vidIQ credits, 
 
 ### 3. Write the script -> `videos/<NNN-slug>/script.json`
 Copy the format of `videos/001v2/script.json`. Rules that make people stay:
-- 25-28 s total (about 80 words at voice speed 1.15), 5-6 scenes. Scene 1 = hook in under 2 s that states the surprising thing (no "hi guys", no intro).
+- 22-25 s total (about 62-70 words at voice speed 1.15; 3-tools episodes max ~72 words), 5-6 scenes. Scene 1 = hook in under 2 s that states the surprising thing (no "hi guys", no intro).
   The algorithm judges 'viewed vs swiped away' in the first 1-2 s and then completion %: see channel/strategy.md.
 - Last line should loop back to the opening or ask a question that invites comments.
 - Rotate hook styles (record which in state): `shock-claim`, `question`, `you-can-now`, `number`, `vs`, `warning`.

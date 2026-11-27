@@ -399,16 +399,32 @@ class Scene:
     # --- hook / cta: big stacked headline ---
     def prep_hook(self):
         self.lines, self.line_h = [], []
+        # 2026-11-28 growth analysis: after the footage lift, the cyan accent line washed out on bright frames
+        # (012/015 frame 0). Every line now gets a thin dark outline + dark halo; the accent line keeps a light glow.
         for i, line in enumerate(self.s["headline"]):
             acc = i == self.s.get("accent_line", -1)
             self.line_h.append(int((168 if acc else 138) * 1.08))
-            spr = text_sprite(line, F_BLACK(168 if acc else 138), fill=ACC_LIGHT if acc else WHITE)
-            if acc: spr = glow(spr, radius=26, strength=0.75)
-            else: spr = glow(spr, color=(0, 0, 0), radius=16, strength=1.3)
+            spr = text_sprite(line, F_BLACK(168 if acc else 138), fill=ACC_LIGHT if acc else WHITE,
+                              stroke=5, stroke_fill=(2, 8, 22))
+            spr = glow(spr, color=(0, 0, 0), radius=16, strength=1.5)
+            if acc: spr = glow(spr, radius=26, strength=0.45)
             self.lines.append(spr)
+        # soft dark band behind the headline block (only drawn over footage)
+        top = 560 if self.s["type"] == "hook" else 600
+        hgt = sum(h + 6 for h in self.line_h)
+        y = np.arange(H)[:, None].astype(np.float32); x = np.linspace(-1, 1, W)[None, :]
+        mid, half = top + hgt / 2, hgt / 2 + 90
+        a = np.clip(1 - np.abs(y - mid) / half, 0, 1) ** 0.7 * (1 - 0.35 * x ** 2) * 0.42
+        rgba = np.zeros((H, W, 4), np.uint8); rgba[..., :3] = BG; rgba[..., 3] = (a * 255).astype(np.uint8)
+        self.band = Image.fromarray(rgba, "RGBA")
 
     def draw_hook(self, c, t):
         y = 560 if self.s["type"] == "hook" else 600
+        if self.feeds:
+            band = self.band
+            pb = clamp(prog(t, 0.0, 0.3))
+            if pb < 1: band = band.copy(); band.putalpha(band.split()[3].point(lambda v: int(v * pb)))
+            c.alpha_composite(band)
         for i, spr in enumerate(self.lines):
             p = ease_out(prog(t, 0.08 + i * 0.14, 0.45))
             h = self.line_h[i]

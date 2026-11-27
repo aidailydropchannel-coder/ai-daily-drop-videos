@@ -154,3 +154,17 @@
 - Metricool: daily views (YTEV02) filled only to 23 Nov (34). Week 9-15 Nov = 1,875 views, week 16-22 Nov = 498 views.
   New subs (YTEV01): 0 in week 9-15, 5 in week 16-22, 12 in 23-26 Nov (3 a day, 4 days running). 015 published as BEE8IMYHai8.
 - posts_this_month: 16 of 20 used (4 left for November; only the Sunday 29 Nov long video needs one).
+
+## 2026-11-28 growth analysis (Sat 02:10 PKT)
+- vidIQ 31 Oct-27 Nov (10 credits, 80 left to 12 Dec): ~2,580 views total; 012 (25.1 s) = 65% viewed, best of any Short
+  with real views; 013 = 69 views, 17% engaged. 014/015 not in analytics yet (2-day lag).
+- Subs (Metricool YTEV01): 3-4 a day since 23 Nov, ~21 total; vidIQ attributes only 3 to single videos.
+- Pattern (13 Shorts): <= 27 s avg 56% viewed, 28-29 s 48%, 31-37 s 43% -> new target 22-25 s (~62-70 words).
+- Frame check: after the 25 Nov brightness lift, the cyan accent headline line washed out on bright footage (012, 015).
+  Engine fix: dark outline + dark halo on every headline line and a soft navy band behind the headline block (footage only).
+  Tested with before/after preview frames of 012 and 015 scene 0.
+- Outliers (signal): one free product + concrete result per Short wins in our niche (a Claude "apps on Mac/Windows" Short
+  got 11.4K on a 22K-sub channel; we had it as item 3 of 014). Lead 3-tools episodes with the broadest item.
+- Engine test trick: stock clips for any old video can be re-downloaded from the GitHub release
+  stock-<id>[-b]/<file>; a 1-scene script + 3 s silent vo_0.wav is enough for render.py preview frames.
+- The Sunday long-video task still does not exist and the nightly task is still Mon-Fri (owner action).

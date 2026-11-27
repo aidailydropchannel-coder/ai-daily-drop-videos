@@ -18,3 +18,17 @@ https://owlclaw.com/benchmarks/youtube-shorts-benchmarks/ ; https://creatortribu
 https://unityfilms.net/youtube-shorts-analytics/
 Next topics to rotate: Shorts hooks/first second; retention editing; titles/thumbnails CTR (long video); long-video
 watch time; series/playlists; posting cadence; what monetised faceless channels did.
+
+## 2026-11-28 - Shorts first second / swipe-away benchmarks (evidence: weak)
+- No YouTube-official number for a "good" viewed-vs-swiped rate was found. Marketing blogs quote "under 30% swiped away"
+  and "70%+ average viewed" as healthy for 2026 (unityfilms.net); its one cited claim (Shorts under 30% swipe-away get
+  ~4x the sustained distribution of those over 50%, "Tubular") links only to a homepage, so treat it as unverified.
+- A 2026 academic dataset of 92,654 Shorts from 345 Western creators (YTShorts-92K, arXiv 2611.13002) found only weak
+  linear links between simple content features and views: on-screen text r = -0.08, hashtag count r = -0.06,
+  duration r = -0.05. It has no retention data. Takeaway: surface features (text, hashtags, length alone) do not
+  decide reach; what viewers do in the first seconds does - which only Studio's "viewed vs swiped" shows.
+- Our own data is the stronger guide here: shorter Shorts reach a higher % viewed (pattern over 13 videos, see
+  analysis/2026-11-28.md). Connecting the vidIQ browser extension would unlock per-Short "stayed to watch".
+Sources: https://arxiv.org/html/2611.13002 ; https://unityfilms.net/youtube-shorts-analytics/
+Next topics to rotate: retention editing; titles/thumbnails CTR (long video); long-video watch time; series/playlists;
+posting cadence; what monetised faceless channels did.
